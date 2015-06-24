@@ -1,18 +1,34 @@
 import pymongo
 from bson.objectid import ObjectId
 import attributecorrector
+from difflib import SequenceMatcher
 
 connection = pymongo.MongoClient()
 db = connection["Attribute_Correction"]
 CFVars = db["CFVars"]
 KnownFixes = db["KnownFixes"]
 
-def fix_attribute(attr):
-	# Use attribute corrector to make guess of word
-	correctedAttr = attributeCorrector.correct(attr)
-	# Add corrected attribute to KnownFixes collection
-	db.KnownFixes.insert({"Incorrect Var": attr, "Known Fix": correctedAttr, "Times Seen": 1})
-	return correctedAttr
+def get_CF_Standard_Names():
+	cursor = db.CFVars.find()
+	CFStandards = []
+	for attr in cursor:
+		CFStandards.append(attr["CF Standard Name"])
+	return CFStandards
+
+def similar(a,b):
+	a = a.lower()
+	b = b.lower()
+	return SequenceMatcher(None, a, b).ratio()
+
+def fix_attribute(wrongAttr):
+	CFStandards = get_CF_Standard_Names()
+	Similarities = []
+	for attr in CFStandards:
+		percentOff = similar(wrongAttr, attr)
+		Similarities.append((attr, percentOff))
+	Similarities.sort(key=lambda x: x[1])
+	return Similarities
+
 
 def identify_attribute(attr):
 	# Check if attr is valid CF Standard Name
@@ -43,16 +59,6 @@ def identify_attribute(attr):
 			return fix_attribute(attr)
 
 	return
+                 
+print identify_attribute("upward velocity")
 
-cursor = db.CFVars.find()
-CFConventions = []
-for x in cursor:
-	CFConventions.append(x["CF Standard Name"])
-                    
-
-print identify_attribute("air-temperatur")
-
-cursor = db.KnownFixes.find()
-
-for x in cursor:
-	print x

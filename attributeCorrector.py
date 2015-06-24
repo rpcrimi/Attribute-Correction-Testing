@@ -19,7 +19,6 @@ def train(features):
 
 NATTRIBUTES = train(grab_attributes())
 
-
 alphabet = 'abcdefghijklmnopqrstuvwxyz_0123456789'
 
 def edits1(attribute):
