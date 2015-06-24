@@ -58,11 +58,12 @@ for word in variables:
 
 attributes["Global Attributes"] = {}
 for word in global_attributes:
-	print(word)
+	temp = word.replace("\t", "")
+	print(temp)
 	# Split attribute by " = "
-	attr = word.split(" = ")
-	attrName = attr[0]
-	attrValue = attr[1]
-	attributes["Global Attributes"][attrName] = attrValue
+	#attr = word.split(" = ")
+	#attrName = attr[0]
+	#attrValue = attr[1]
+	#attributes["Global Attributes"][attrName] = attrValue
 
 pprint.pprint(attributes)

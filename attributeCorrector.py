@@ -1,8 +1,15 @@
-import re, collections
+import re, collections, pymongo
 
-knownFixes = {}
+connection = pymongo.MongoClient()
+db = connection["Attribute_Correction"]
+CFVars = db["CFVars"]
 
-def attributes(text): return str.split(text)
+def grab_attributes():
+  cursor = db.CFVars.find()
+  CFStandardNames = ""
+  for attr in cursor:
+    CFStandardNames += " " + attr["CF Standard Name"]
+  return str.split(str(CFStandardNames))
 
 def train(features):
     model = collections.defaultdict(lambda: 1)
@@ -10,7 +17,8 @@ def train(features):
         model[f] += 1
     return model
 
-NATTRIBUTES = train(attributes(file('big.txt').read()))
+NATTRIBUTES = train(grab_attributes())
+
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz_0123456789'
 
@@ -34,16 +42,6 @@ def known_edits(attribute):
 def known(attributes): return set(w for w in attributes if w in NATTRIBUTES)
 
 def correct(attribute):
-    # Check if we have seen the given attribute before
-    if(attribute not in knownFixes):
-      candidates = known([attribute]) or known(edits1(attribute)) or known_edits2(attribute) or known_edits3(attribute) or [attribute]
-      correctedAttribute = max(candidates, key=NATTRIBUTES.get)
-      
-      # update known fixes dict with new link
-      knownFixes[attribute] = correctedAttribute
-      return correctedAttribute
-    else:
-      return knownFixes[attribute]
-
-print(correct("air temperatu"))
-print(knownFixes)
+    candidates = known([attribute]) or known(edits1(attribute)) or known_edits2(attribute) or known_edits3(attribute)
+    correctedAttribute = max(candidates, key=NATTRIBUTES.get)
+    return correctedAttribute
