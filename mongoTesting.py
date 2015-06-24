@@ -1,6 +1,6 @@
 import pymongo
 from bson.objectid import ObjectId
-import attributeCorrector
+import attributecorrector
 
 connection = pymongo.MongoClient()
 db = connection["Attribute_Correction"]
