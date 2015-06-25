@@ -35,9 +35,7 @@ def get_standard_names(ncFolder):
 		p.stdout.close()
 		out, err = p2.communicate()
 
-		# If the file has a standard_name attribute add (filename, standard_names) tuple to standardNames list
-		if out:
-			standardNames.append((f, format_output(out)))
+		standardNames.append((f, format_output(out)))
 	
 	return standardNames
 

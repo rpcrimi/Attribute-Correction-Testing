@@ -25,7 +25,7 @@ def similar(a,b):
 	return SequenceMatcher(None, a, b).ratio()
 
 # Return the "N" # of CF Standard Vars with the most similarity to "wrongAttr"
-def fix_attribute(wrongAttr):
+def fix_attribute(wrongAttr, N):
 	# Grab CF Standard Names
 	CFStandards = get_CF_Standard_Names()
 	similarities = []
@@ -36,12 +36,18 @@ def fix_attribute(wrongAttr):
 		similarities.append((attr, percentOff))
 	# Sort similarities list by second element in tuple
 	similarities.sort(key=lambda x: x[1])
-	return similarities
+	# If N is less than size of similarities return last N elements
+	if len(similarities) >= N:
+		# Reverse order so top match is first in list
+		return list(reversed(similarities[-N:]))
+	# Else return full list
+	else:
+		return list(reversed(similarities))
 
 # Return validation of correct attribute
 # or corrected attribute from Known fixes collection
 # or return the top "N" matches from CFVars collection
-def identify_attribute(attr):
+def identify_attribute(attr, N):
 	# Check if attr is valid CF Standard Name
 	cursor = db.CFVars.find({"CF Standard Name": { '$exists': True, '$eq': attr}})
 	
@@ -67,9 +73,9 @@ def identify_attribute(attr):
 			# Return the known fix for the incorrect attr
 			return cursor[0]["Known Fix"]
 		else:
-			return fix_attribute(attr)
+			return fix_attribute(attr, N)
 
 	return
                  
-print identify_attribute("air_temperature")
+print identify_attribute("Geopotential Due To", 3)
 
