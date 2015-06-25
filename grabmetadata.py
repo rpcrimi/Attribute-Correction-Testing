@@ -28,5 +28,5 @@ def get_standard_names(ncFolder):
 		print format_output(out)
 
 
-currentDir = os.getcwd() + "/netCDF"
+currentDir = os.getcwd() + "/NOAA-GFDL"
 print get_standard_names(currentDir)
