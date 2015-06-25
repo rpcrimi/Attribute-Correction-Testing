@@ -10,5 +10,3 @@ def get_nc_files(dir):
 		for filename in fnmatch.filter(filenames, '*.nc'):
 			matches.append(os.path.join(root, filename))
 	return matches
-
-print get_nc_files(f)

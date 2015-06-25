@@ -4,16 +4,29 @@ import subprocess
 import os
 # Split command line arguments
 import shlex
+# Match filenames
+import fnmatch
 
 def format_output(out):
 	out = out.replace("\t", "").replace("\n", "").split(" ;")
 	return filter(None, out)
 
-currentDir = os.getcwd()
-f = currentDir + '/test.nc'
-p  = subprocess.Popen(['./ncdump.sh', f], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-p2 = subprocess.Popen(shlex.split('grep :standard_name'), stdin=p.stdout, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-p.stdout.close()
-out, err = p2.communicate()
+def get_nc_files(dir):
+	matches = []
+	for root, dirnames, filenames in os.walk(currentDir):
+		for filename in fnmatch.filter(filenames, '*.nc'):
+			matches.append(os.path.join(root, filename))
+	return matches
 
-print format_output(out)
+def get_standard_names(ncFolder):
+	for f in get_nc_files(ncFolder):
+		p  = subprocess.Popen(['./ncdump.sh', f], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+		p2 = subprocess.Popen(shlex.split('grep :standard_name'), stdin=p.stdout, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+		p.stdout.close()
+		out, err = p2.communicate()
+
+		print format_output(out)
+
+
+currentDir = os.getcwd() + "/netCDF"
+print get_standard_names(currentDir)
