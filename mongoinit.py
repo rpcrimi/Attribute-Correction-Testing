@@ -49,7 +49,7 @@ CFVars.insert({"Variable": "2m dewpoint temperature",                       "Var
 CFVars.insert({"Variable": "Latitude",                                      "Var Name": "lat",      "CF Standard Name": "latitude",                                       "Units": "degree_north"})
 CFVars.insert({"Variable": "Longitude",                                     "Var Name": "lon",      "CF Standard Name": "longitude",                                      "Units": "degree_east"})
 CFVars.insert({"Variable": "Time",                                          "Var Name": "time",     "CF Standard Name": "time",                                           "Units": "s"})
-CFVars.insert({"Variable": "Height",                                        "Var Name": "height",       "CF Standard Name": "height",                                         "Units": "m"})
+CFVars.insert({"Variable": "Height",                                        "Var Name": "zh",       "CF Standard Name": "height",                                         "Units": "m"})
 
 
 

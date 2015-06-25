@@ -43,6 +43,12 @@ def log(logFile, fileName, text, logType):
 	elif logType == 'No Standard Names':
 		logging.debug("[" + fileName + "]: no standard names defined")
 
+	elif logType == 'No Matching Var Name':
+		splitText = text.split(",")
+		attr = splitText[0]
+		recommendations = splitText[1]
+		logging.debug("[" + attr + "] recommended Variable Names: " + recommendations)
+
 # Return list of CF Standard Names from CFVars Collection
 def get_CF_Standard_Names():
 	# Query CFVars for all Variables
@@ -86,10 +92,18 @@ def identify_attribute(var, attr, N, logFile, fileName):
 	# Check if attr is valid CF Standard Name
 	cursor = db.CFVars.find({ '$and': [{"CF Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 	
-	# If attr exists in CF Standards ==> log notification of correct attribute
+	# If (var,attr) pair exists in CF Standards collection ==> log notification of correct attribute
 	if (cursor.count() != 0):
 		text = var + ":" + attr
 		log(logFile, fileName, text, "Variable Confirmed")
+
+	# Standard Name exists but input variable does not match
+	elif (db.CFVars.find({"CF Standard Name": { '$eq': attr}}).count() != 0):
+		cursor = db.CFVars.find({"CF Standard Name": { '$eq': attr}})
+		recommendations = var + ":" + attr + ","
+		for var in cursor:
+			recommendations += var["Var Name"] + " | "
+		log(logFile, fileName, recommendations, 'No Matching Var Name')
 
 	# attr does not exist in CF Standards
 	else:
