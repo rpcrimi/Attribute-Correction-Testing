@@ -11,4 +11,8 @@ p2 = subprocess.Popen(shlex.split('grep :standard_name'), stdin=p.stdout, stdout
 p.stdout.close()
 out, err = p2.communicate()
 
-print out.replace("\t", "").replace("\n", "").split(" ;")
+def format_output(out):
+	out = out.replace("\t", "").replace("\n", "").split(" ;")
+	return filter(None, out)
+
+print format_output(out)
