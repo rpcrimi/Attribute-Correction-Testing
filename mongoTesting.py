@@ -8,28 +8,39 @@ db = connection["Attribute_Correction"]
 CFVars = db["CFVars"]
 KnownFixes = db["KnownFixes"]
 
+# Return list of CF Standard Names from CFVars Collection
 def get_CF_Standard_Names():
+	# Query CFVars for all Variables
 	cursor = db.CFVars.find()
 	CFStandards = []
+	# Append each CF STandard Name to CFStandards list
 	for attr in cursor:
 		CFStandards.append(attr["CF Standard Name"])
 	return CFStandards
 
+# Return similarity ratio of string "a" and "b"
 def similar(a,b):
 	a = a.lower()
 	b = b.lower()
 	return SequenceMatcher(None, a, b).ratio()
 
+# Return the "N" # of CF Standard Vars with the most similarity to "wrongAttr"
 def fix_attribute(wrongAttr):
+	# Grab CF Standard Names
 	CFStandards = get_CF_Standard_Names()
-	Similarities = []
+	similarities = []
+	# Calculate percent difference between the wrong attribute and each CF Standard Name
+	# Append (attr, percentOff) tuple to similarities for future sorting
 	for attr in CFStandards:
 		percentOff = similar(wrongAttr, attr)
-		Similarities.append((attr, percentOff))
-	Similarities.sort(key=lambda x: x[1])
-	return Similarities
+		similarities.append((attr, percentOff))
+	# Sort similarities list by second element in tuple
+	similarities.sort(key=lambda x: x[1])
+	return similarities
 
-
+# Return validation of correct attribute
+# or corrected attribute from Known fixes collection
+# or return the top "N" matches from CFVars collection
 def identify_attribute(attr):
 	# Check if attr is valid CF Standard Name
 	cursor = db.CFVars.find({"CF Standard Name": { '$exists': True, '$eq': attr}})
