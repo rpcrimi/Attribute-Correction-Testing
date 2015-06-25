@@ -60,5 +60,5 @@ def identify_attribute(attr):
 
 	return
                  
-print identify_attribute("upward velocity")
+print identify_attribute("air_temperature")
 
