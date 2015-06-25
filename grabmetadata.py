@@ -38,8 +38,3 @@ def get_standard_names(ncFolder):
 		standardNames.append((f, format_output(out)))
 	
 	return standardNames
-
-
-currentDir = os.getcwd() + "/netCDF"
-
-print get_standard_names(currentDir)
