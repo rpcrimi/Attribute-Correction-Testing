@@ -11,6 +11,7 @@ db = connection["Attribute_Correction"]
 CFVars = db["CFVars"]
 KnownFixes = db["KnownFixes"]
 logFile = os.getcwd() + "/results.log"
+	
 
 # Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
@@ -20,7 +21,7 @@ def log(logFile, fileName, text, logType):
 		logging.debug("Starting in file [%s]:", fileName)
 
 	elif logType == 'File Confirmed':
-		logging.info("Completed file: [%s]", fileName)
+		logging.info("Confirmed file: [%s]", fileName)
 
 	elif logType == 'Variable Confirmed':
 		logging.info("Standard Name [%s] confirmed", text)
@@ -97,6 +98,8 @@ def identify_attribute(var, attr, N, logFile, fileName):
 	if (cursor.count() != 0):
 		text = var + ":" + attr
 		log(logFile, fileName, text, "Variable Confirmed")
+		# Return true for confirming file
+		return True
 
 	# Standard Name exists but input variable does not match
 	# Log recommendations for variables corresponding to the CF Standard Name
@@ -106,6 +109,8 @@ def identify_attribute(var, attr, N, logFile, fileName):
 		for var in cursor:
 			recommendations += var["Var Name"] + " | "
 		log(logFile, fileName, recommendations, 'No Matching Var Name')
+		# Return false for confirming file
+		return False
 
 	# attr does not exist in CF Standards
 	else:
@@ -125,8 +130,8 @@ def identify_attribute(var, attr, N, logFile, fileName):
 			# Log the fix
 			text = var + "," + attr + "," + cursor[0]["Known Fix"]
 			log(logFile, fileName, text, 'Switched Attribute')
-			# Return the known fix for the incorrect attr
-			return cursor[0]["Known Fix"]
+			# Return true for confirming file
+			return True
 		# Get best N best estimates for "attr"
 		else:
 			bestEstimatesList = best_estimates(attr, N)
@@ -135,20 +140,36 @@ def identify_attribute(var, attr, N, logFile, fileName):
 				bestEstimates += str(e[0]) + " " + str(e[1]) + " | "
 			text = var + "," + attr + "," + str(N) + "," + bestEstimates
 			log(logFile, fileName, text, 'Estimated')
+			# Return false for confirming file
+			return False
 
 	return
 
 def fix_files(folder, logFile):
+	# Full path of folder that contains netCDF files
 	ncFolder = os.getcwd() + "/" + folder
+	# (filename, standard_name) list of all files in ncFolder
 	standardNames = grabmetadata.get_standard_names(ncFolder)
+
+	# Flag for confirming file
+	fileFlag = True
+	# For each file in the list, log the file has started
 	for f in standardNames:
 		log(logFile, f[0], "", 'File Started')
+		# If the file has no standard names, log the issue
 		if not f[1]:
 			log(logFile, f[0], "", 'No Standard Names')
+			fileFlag = False
+		# For each attribute in standard_name list, format and identify attribute
 		else:
 			for attr in f[1]:
 				splitAttr = attr.replace("standard_name = ", "").replace("\"", "").split(":")
-				identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, f[0])
+				flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, f[0])
+				if flag == False:
+					fileFlag = False
+		if fileFlag:
+			log(logFile, f[0], "", 'File Confirmed')
+		fileFlag = True
 
 fix_files("ncFiles", logFile)
 
