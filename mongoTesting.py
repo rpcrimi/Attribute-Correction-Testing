@@ -17,7 +17,7 @@ def log(logFile, fileName, text, logType):
 	logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=logFile, filemode='w')
 	if logType == 'File Started':
 		logging.info("--------------------------------------------------------------------------------------------------------------------------------------")
-		logging.info("Starting in file [" + fileName + "]:")
+		logging.debug("Starting in file [" + fileName + "]:")
 
 	elif logType == 'File Confirmed':
 		logging.info("Completed file: [" + fileName + "]")
@@ -90,7 +90,7 @@ def best_estimates(wrongAttr, N):
 # or corrected attribute from Known fixes collection
 # or return the top "N" matches from CFVars collection
 def identify_attribute(var, attr, N, logFile, fileName):
-	# Check if attr is valid CF Standard Name
+	# Check if (var, attr) is valid CF Standard Name pair
 	cursor = db.CFVars.find({ '$and': [{"CF Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 	
 	# If (var,attr) pair exists in CF Standards collection ==> log notification of correct attribute
@@ -99,6 +99,7 @@ def identify_attribute(var, attr, N, logFile, fileName):
 		log(logFile, fileName, text, "Variable Confirmed")
 
 	# Standard Name exists but input variable does not match
+	# Log recommendations for variables corresponding to the CF Standard Name
 	elif (db.CFVars.find({"CF Standard Name": { '$eq': attr}}).count() != 0):
 		cursor = db.CFVars.find({"CF Standard Name": { '$eq': attr}})
 		recommendations = var + ":" + attr + ","
