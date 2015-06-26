@@ -101,24 +101,22 @@ def best_estimates(wrongAttr, N):
 def identify_attribute(var, attr, N, logFile, fileName):
 	# Check if (var, attr) is valid CF Standard Name pair
 	cursor = db.CFVars.find({ '$and': [{"CF Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
-	
-	# If (var,attr) pair exists in CF Standards collection ==> log notification of correct attribute
+	# Log notification of correct attribute
 	if (cursor.count() != 0):
 		text = var + ":" + attr
 		log(logFile, fileName, text, "Variable Confirmed")
 		# Return true for confirming file
 		return True
 
-	# Standard Name exists but input variable does not match
-	# Log recommendations for variables corresponding to the CF Standard Name
-	elif (db.CFVars.find({"CF Standard Name": { '$eq': attr}}).count() != 0):
+	# Standard Name exists in CF Standard Name collection
+	cursor = db.CFVars.find({"CF Standard Name": { '$eq': attr}})
+	if (cursor.count() != 0):
+		# Check if (var, attr) pair is in VarNameFixes collection
 		cursor = db.VarNameFixes.find({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': attr}}]})
-		# If (var, attr) pair is in VarNameFixes collection, switch 
 		if (cursor.count() != 0):
 			# Grab id, times seen, and var name of known fix document
 			_id       = cursor[0]["_id"]
 			timesSeen = cursor[0]["Times Seen"]
-
 			# Update the times seen value by adding 1
 			db.VarNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
 
