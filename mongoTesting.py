@@ -10,10 +10,11 @@ connection = pymongo.MongoClient()
 db = connection["Attribute_Correction"]
 CFVars = db["CFVars"]
 KnownFixes = db["KnownFixes"]
-
 logFile = os.getcwd() + "/results.log"
+
+# Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
-	logging.basicConfig(filename=logFile, level=logging.DEBUG)
+	logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=logFile, filemode='w')
 	if logType == 'File Started':
 		logging.info("--------------------------------------------------------------------------------------------------------------------------------------")
 		logging.info("Starting in file [" + fileName + "]:")
