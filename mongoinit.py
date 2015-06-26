@@ -3,9 +3,10 @@ from bson.objectid import ObjectId
 
 connection = pymongo.MongoClient()
 
-db = connection["Attribute_Correction"]
-CFVars = db["CFVars"]
-KnownFixes = db["KnownFixes"]
+db                = connection["Attribute_Correction"]
+CFVars            = db["CFVars"]
+StandardNameFixes = db["StandardNameFixes"]
+VarNameFixes      = db["VarNameFixes"]
 
 # CF VARIABLES TABLE
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -70,7 +71,12 @@ CFVars.insert({"Variable": "Fresh water flux",                              "Var
 
 # KNOWN FIXES TABLE
 #-----------------------------------------------------------------------------------------------------------
-KnownFixes.insert({"Incorrect Var": "air temp",       "Known Fix": "air_temperature",      "Var Name": "tasmax", "Times Seen": 1})
-KnownFixes.insert({"Incorrect Var": "air temp",       "Known Fix": "air_temperature",      "Var Name": "tasmin", "Times Seen": 1})
-KnownFixes.insert({"Incorrect Var": "zonal velocity", "Known Fix": "sea_water_x_velocity", "Var Name": "uo",     "Times Seen": 1})
-KnownFixes.insert({"Incorrect Var": "lat",            "Known Fix": "latitude",             "Var Name": "lat",    "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "air temp",       "Var Name": "tasmax", "Known Fix": "air_temperature",      "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "air temp",       "Var Name": "tasmin", "Known Fix": "air_temperature",      "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "zonal velocity", "Var Name": "uo",     "Known Fix": "sea_water_x_velocity", "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "lat",            "Var Name": "lat",    "Known Fix": "latitude",             "Times Seen": 1})
+
+
+VarNameFixes.insert({"Incorrect Var Name": "height", "CF Standard Name": "height", "Known Fix": "zh", "Times Seen": 1})
+
+

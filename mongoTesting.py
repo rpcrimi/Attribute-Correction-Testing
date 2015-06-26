@@ -6,11 +6,12 @@ import logging
 import os
 import grabmetadata
 
-connection = pymongo.MongoClient()
-db = connection["Attribute_Correction"]
-CFVars = db["CFVars"]
-KnownFixes = db["KnownFixes"]
-logFile = os.getcwd() + "/results.log"
+connection        = pymongo.MongoClient()
+db                = connection["Attribute_Correction"]
+CFVars            = db["CFVars"]
+StandardNameFixes = db["StandardNameFixes"]
+VarNameFixes      = db["VarNameFixes"]
+logFile           = os.getcwd() + "/results.log"
 	
 
 # Log info in "logFile" for file "fileName"
@@ -28,11 +29,18 @@ def log(logFile, fileName, text, logType):
 
 	elif logType == 'Switched Attribute':
 		splitText = text.split(",")
-		var       = splitText[0]
+		attr      = splitText[0]
 		oldName   = splitText[1]
 		newName   = splitText[2]
-		logging.info
-		logging.info("Switched [%s] standard_name from [%s] to [%s]", var, oldName, newName)
+		logging.info("Switched [%s] standard_name from [%s] to [%s]", attr, oldName, newName)
+
+	elif logType == 'Switched Variable':
+		splitText = text.split(",")
+		oldName   = splitText[0]
+		newName   = splitText[1]
+		attr      = splitText[2]
+		logging.info("Switched variable name from [%s:%s] to [%s:%s]", oldName, attr, newName, attr)
+
 
 	elif logType == 'Estimated':
 		splitText    = text.split(",")
@@ -40,7 +48,7 @@ def log(logFile, fileName, text, logType):
 		wrongAttr    = splitText[1]
 		numEstimates = splitText[2]
 		estimates    = splitText[3]
-		logging.debug("[%s:%s] best %s estimates: %s", var, wrongAttr, numEstimates, estimates)
+		logging.debug("Standard Name [%s:%s] best %s estimates: %s", var, wrongAttr, numEstimates, estimates)
 
 	elif logType == 'No Standard Names':
 		logging.debug("[%s]: no standard names defined", fileName)
@@ -104,20 +112,36 @@ def identify_attribute(var, attr, N, logFile, fileName):
 	# Standard Name exists but input variable does not match
 	# Log recommendations for variables corresponding to the CF Standard Name
 	elif (db.CFVars.find({"CF Standard Name": { '$eq': attr}}).count() != 0):
-		cursor = db.CFVars.find({"CF Standard Name": { '$eq': attr}})
-		recommendations = var + ":" + attr + ","
-		for var in cursor:
-			recommendations += var["Var Name"] + " | "
-		log(logFile, fileName, recommendations, 'No Matching Var Name')
-		# Return false for confirming file
-		return False
+		cursor = db.VarNameFixes.find({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': attr}}]})
+		# If (var, attr) pair is in VarNameFixes collection, switch 
+		if (cursor.count() != 0):
+			# Grab id, times seen, and var name of known fix document
+			_id       = cursor[0]["_id"]
+			timesSeen = cursor[0]["Times Seen"]
+
+			# Update the times seen value by adding 1
+			db.VarNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
+
+			# Log the fix
+			text = var + "," + cursor[0]["Known Fix"] + "," + attr
+			log(logFile, fileName, text, 'Switched Variable')
+			# Return true for confirming file
+			return True
+		else:
+			cursor = db.CFVars.find({"CF Standard Name": { '$eq': attr}})
+			recommendations = var + ":" + attr + ","
+			for var in cursor:
+				recommendations += var["Var Name"] + " | "
+			log(logFile, fileName, recommendations, 'No Matching Var Name')
+			# Return false for confirming file
+			return False
 
 	# attr does not exist in CF Standards
 	else:
 		# Set all characters to lowercase
 		attr = attr.lower()
 		# Check if KnownFixes has seen this error before
-		cursor = db.KnownFixes.find({ '$and': [{"Incorrect Var": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
+		cursor = db.StandardNameFixes.find({ '$and': [{"Incorrect Var": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 		# If attr exists in KnownFixes
 		if (cursor.count() != 0):
 			# Grab id, times seen, and var name of known fix document
@@ -125,7 +149,7 @@ def identify_attribute(var, attr, N, logFile, fileName):
 			timesSeen = cursor[0]["Times Seen"]
 
 			# Update the times seen value by adding 1
-			db.KnownFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
+			db.StandardNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
 
 			# Log the fix
 			text = var + "," + attr + "," + cursor[0]["Known Fix"]

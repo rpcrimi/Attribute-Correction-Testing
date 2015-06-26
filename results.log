@@ -2,335 +2,371 @@ INFO     -----------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-DEBUG    [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
+DEBUG    Standard Name [pr:precipitation_flux] best 3 estimates: convective_precipitation_rate 0.595744680851 | large_scale_precipitation XXXXXXX 0.549019607843 | fresh_water_flux 0.529411764706 | 
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tas:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tas/tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmax:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmax/tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Standard Name [tasmin:air_temperature] confirmed
 INFO     Standard Name [time:time] confirmed
-DEBUG    [height:height] recommended Variable Names: zh | 
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles/day/atmos/v20140710/tasmin/tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]
