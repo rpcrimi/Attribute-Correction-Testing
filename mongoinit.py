@@ -77,6 +77,8 @@ StandardNameFixes.insert({"Incorrect Var": "zonal velocity", "Var Name": "uo",  
 StandardNameFixes.insert({"Incorrect Var": "lat",            "Var Name": "lat",    "Known Fix": "latitude",             "Times Seen": 1})
 
 
-VarNameFixes.insert({"Incorrect Var Name": "height", "CF Standard Name": "height", "Known Fix": "zh", "Times Seen": 1})
+VarNameFixes.insert({"Incorrect Var Name": "height", "CF Standard Name": "height",    "Known Fix": "zh",  "Times Seen": 1})
+VarNameFixes.insert({"Incorrect Var Name": "LAT",    "CF Standard Name": "latitude",  "Known Fix": "lat", "Times Seen": 1})
+VarNameFixes.insert({"Incorrect Var Name": "LON",    "CF Standard Name": "longitude", "Known Fix": "lon", "Times Seen": 1})
 
 

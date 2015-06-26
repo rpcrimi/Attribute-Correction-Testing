@@ -4,6 +4,7 @@ import attributecorrector
 from difflib import SequenceMatcher
 import logging
 import os
+from progressbar import *
 import grabmetadata
 
 connection        = pymongo.MongoClient()
@@ -120,6 +121,9 @@ def identify_attribute(var, attr, N, logFile, fileName):
 			# Update the times seen value by adding 1
 			db.VarNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
 
+			# TODO: INSERT FLAG FOR FIXING FILE
+			# TODO: IF FLAG TRUE ==> FIX FILE
+
 			# Log the fix
 			text = var + "," + cursor[0]["Known Fix"] + "," + attr
 			log(logFile, fileName, text, 'Switched Variable')
@@ -140,7 +144,7 @@ def identify_attribute(var, attr, N, logFile, fileName):
 		attr = attr.lower()
 		# Check if KnownFixes has seen this error before
 		cursor = db.StandardNameFixes.find({ '$and': [{"Incorrect Var": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
-		# If attr exists in KnownFixes
+		# If attr exists in StandardNameFixes collection
 		if (cursor.count() != 0):
 			# Grab id, times seen, and var name of known fix document
 			_id       = cursor[0]["_id"]
@@ -148,6 +152,9 @@ def identify_attribute(var, attr, N, logFile, fileName):
 
 			# Update the times seen value by adding 1
 			db.StandardNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
+
+			# TODO: INSERT FLAG FOR FIXING FILE
+			# TODO: IF FLAG TRUE ==> FIX FILE
 
 			# Log the fix
 			text = var + "," + attr + "," + cursor[0]["Known Fix"]
@@ -172,12 +179,19 @@ def fix_files(folder, logFile):
 	ncFolder = os.getcwd() + "/" + folder
 	# (filename, standard_name) list of all files in ncFolder
 	standardNames = grabmetadata.get_standard_names(ncFolder)
-
+	# Number of files for use in progress bar
+	totalFiles = len(standardNames)
+	i = 1
+	widgets = ['Percent Done: ', Percentage(), ' ', Bar(), ' ', ETA()]
+	bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
 	# Flag for confirming file
 	fileFlag = True
 	# For each file in the list, log the file has started
 	for f in standardNames:
 		log(logFile, f[0], "", 'File Started')
+
+		bar.update(i)
+		i = i + 1
 		# If the file has no standard names, log the issue
 		if not f[1]:
 			log(logFile, f[0], "", 'No Standard Names')
@@ -187,11 +201,14 @@ def fix_files(folder, logFile):
 			for attr in f[1]:
 				splitAttr = attr.replace("standard_name = ", "").replace("\"", "").split(":")
 				flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, f[0])
+				# Check if something in file was changed
 				if flag == False:
 					fileFlag = False
+		# If file had no errors or KnownFix occured ==> Confirm file
 		if fileFlag:
 			log(logFile, f[0], "", 'File Confirmed')
 		fileFlag = True
+	bar.finish()
 
-fix_files("ncFiles", logFile)
+fix_files("ncFiles2", logFile)
 
