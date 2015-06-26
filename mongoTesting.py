@@ -17,13 +17,13 @@ def log(logFile, fileName, text, logType):
 	logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=logFile, filemode='w')
 	if logType == 'File Started':
 		logging.info("--------------------------------------------------------------------------------------------------------------------------------------")
-		logging.debug("Starting in file [" + fileName + "]:")
+		logging.debug("Starting in file [%s]:", fileName)
 
 	elif logType == 'File Confirmed':
-		logging.info("Completed file: [" + fileName + "]")
+		logging.info("Completed file: [%s]", fileName)
 
 	elif logType == 'Variable Confirmed':
-		logging.info("Standard Name [" + text + "] confirmed")
+		logging.info("Standard Name [%s] confirmed", text)
 
 	elif logType == 'Switched Attribute':
 		splitText = text.split(",")
@@ -31,7 +31,7 @@ def log(logFile, fileName, text, logType):
 		oldName   = splitText[1]
 		newName   = splitText[2]
 		logging.info
-		logging.info("Switched [" + var + "] standard_name from [" + oldName + "] to [" + newName + "]")
+		logging.info("Switched [%s] standard_name from [%s] to [%s]", var, oldName, newName)
 
 	elif logType == 'Estimated':
 		splitText    = text.split(",")
@@ -39,16 +39,16 @@ def log(logFile, fileName, text, logType):
 		wrongAttr    = splitText[1]
 		numEstimates = splitText[2]
 		estimates    = splitText[3]
-		logging.debug("[" + var + ":" + wrongAttr + "] best " + numEstimates + " estimates: " + estimates)
+		logging.debug("[%s:%s] best %s estimates: %s", var, wrongAttr, numEstimates, estimates)
 
 	elif logType == 'No Standard Names':
-		logging.debug("[" + fileName + "]: no standard names defined")
+		logging.debug("[%s]: no standard names defined", fileName)
 
 	elif logType == 'No Matching Var Name':
 		splitText = text.split(",")
 		attr = splitText[0]
 		recommendations = splitText[1]
-		logging.debug("[" + attr + "] recommended Variable Names: " + recommendations)
+		logging.debug("[%s] recommended Variable Names: %s", attr, recommendations)
 
 # Return list of CF Standard Names from CFVars Collection
 def get_CF_Standard_Names():
