@@ -71,10 +71,12 @@ CFVars.insert({"Variable": "Fresh water flux",                              "Var
 
 # KNOWN FIXES TABLE
 #-----------------------------------------------------------------------------------------------------------
-StandardNameFixes.insert({"Incorrect Var": "air temp",       "Var Name": "tasmax", "Known Fix": "air_temperature",      "Times Seen": 1})
-StandardNameFixes.insert({"Incorrect Var": "air temp",       "Var Name": "tasmin", "Known Fix": "air_temperature",      "Times Seen": 1})
-StandardNameFixes.insert({"Incorrect Var": "zonal velocity", "Var Name": "uo",     "Known Fix": "sea_water_x_velocity", "Times Seen": 1})
-StandardNameFixes.insert({"Incorrect Var": "lat",            "Var Name": "lat",    "Known Fix": "latitude",             "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "air temp",                              "Var Name": "tasmax", "Known Fix": "air_temperature",      "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "air temp",                              "Var Name": "tasmin", "Known Fix": "air_temperature",      "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "zonal velocity",                        "Var Name": "uo",     "Known Fix": "sea_water_x_velocity", "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "lat",                                   "Var Name": "lat",    "Known Fix": "latitude",             "Times Seen": 1})
+StandardNameFixes.insert({"Incorrect Var": "geopotential height (above sea level)", "Var Name": "g",      "Known Fix": "geopotential",         "Times Seen": 1})
+
 
 
 VarNameFixes.insert({"Incorrect Var Name": "height", "CF Standard Name": "height",    "Known Fix": "zh",  "Times Seen": 1})

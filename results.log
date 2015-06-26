@@ -1,53 +1,63 @@
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]:
-DEBUG    Standard Name [G:geopotential height (above sea level)] best 3 estimates: geopotential 0.489795918367 | sea_surface_height_above_geoid 0.417910447761 | velocity_potential_200_hpa 0.412698412698 | 
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
 INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
 INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Confirmed file: [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/g/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [/Users/rcrimi/Documents/work/testing/attributecorrection/ncFiles2/atmos/hc/hc_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]:
 DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 0.393442622951 | geopotential 0.380952380952 | volume_fraction_of_condensed_water_in_soil 0.361111111111 | 
