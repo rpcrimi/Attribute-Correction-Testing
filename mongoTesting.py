@@ -6,6 +6,8 @@ import logging
 import os
 from progressbar import *
 import grabmetadata
+import ncatted
+import ncrename
 
 connection        = pymongo.MongoClient()
 db                = connection["Attribute_Correction"]
@@ -99,7 +101,7 @@ def best_estimates(wrongAttr, N):
 # Return validation of correct attribute
 # or corrected attribute from Known fixes collection
 # or return the top "N" matches from CFVars collection
-def identify_attribute(var, attr, N, logFile, fileName):
+def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 	# Check if (var, attr) is valid CF Standard Name pair
 	cursor = db.CFVars.find({ '$and': [{"CF Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 	# Log notification of correct attribute
@@ -115,7 +117,7 @@ def identify_attribute(var, attr, N, logFile, fileName):
 		# Check if (var, attr) pair is in VarNameFixes collection
 		cursor = db.VarNameFixes.find({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': attr}}]})
 		if (cursor.count() != 0):
-			# Grab id, times seen, and var name of known fix document
+			# Grab id, times seen of known fix document
 			_id       = cursor[0]["_id"]
 			timesSeen = cursor[0]["Times Seen"]
 			# Update the times seen value by adding 1
@@ -123,6 +125,8 @@ def identify_attribute(var, attr, N, logFile, fileName):
 
 			# TODO: INSERT FLAG FOR FIXING FILE
 			# TODO: IF FLAG TRUE ==> FIX FILE
+			if fixFlag:
+				ncrename.run(var, cursor[0]["Known Fix"], fileName, "test.nc")
 
 			# Log the fix
 			text = var + "," + cursor[0]["Known Fix"] + "," + attr
@@ -174,11 +178,11 @@ def identify_attribute(var, attr, N, logFile, fileName):
 
 	return
 
-def fix_files(folder, logFile):
+def fix_files(inputFolder, logFile, fixFlag):
 	# Full path of folder that contains netCDF files
-	ncFolder = os.getcwd() + "/" + folder
+	inputFolder = os.getcwd() + "/" + inputFolder
 	# (filename, standard_name) list of all files in ncFolder
-	standardNames = grabmetadata.get_standard_names(ncFolder)
+	standardNames = grabmetadata.get_standard_names(inputFolder)
 	# Number of files for use in progress bar
 	totalFiles = len(standardNames)
 	i = 1
@@ -197,7 +201,7 @@ def fix_files(folder, logFile):
 		else:
 			for attr in f[1]:
 				splitAttr = attr.replace("standard_name = ", "").replace("\"", "").split(":")
-				flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, f[0])
+				flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, f[0], fixFlag)
 				# Check if something in file was changed
 				if flag == False:
 					fileFlag = False
@@ -209,5 +213,5 @@ def fix_files(folder, logFile):
 		i = i + 1
 	bar.finish()
 
-fix_files("ncFiles2", logFile)
+fix_files("ncFiles2", logFile, False)
 

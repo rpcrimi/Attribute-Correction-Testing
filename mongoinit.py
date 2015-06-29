@@ -80,9 +80,10 @@ StandardNameFixes.insert({"Incorrect Var": "geopotential height (above sea level
 
 # VARIABLE NAME KNOWN FIXES TABLE
 #-----------------------------------------------------------------------------------------------------------
-VarNameFixes.insert({"Incorrect Var Name": "height", "CF Standard Name": "height",       "Known Fix": "zh",  "Times Seen": 1})
-VarNameFixes.insert({"Incorrect Var Name": "LAT",    "CF Standard Name": "latitude",     "Known Fix": "lat", "Times Seen": 1})
-VarNameFixes.insert({"Incorrect Var Name": "LON",    "CF Standard Name": "longitude",    "Known Fix": "lon", "Times Seen": 1})
-VarNameFixes.insert({"Incorrect Var Name": "G",      "CF Standard Name": "geopotential", "Known Fix": "g",   "Times Seen": 1})
+VarNameFixes.insert({"Incorrect Var Name": "height", "CF Standard Name": "height",           "Known Fix": "zh",  "Times Seen": 1})
+VarNameFixes.insert({"Incorrect Var Name": "LAT",    "CF Standard Name": "latitude",         "Known Fix": "lat", "Times Seen": 1})
+VarNameFixes.insert({"Incorrect Var Name": "LON",    "CF Standard Name": "longitude",        "Known Fix": "lon", "Times Seen": 1})
+VarNameFixes.insert({"Incorrect Var Name": "G",      "CF Standard Name": "geopotential",     "Known Fix": "g",   "Times Seen": 1})
+VarNameFixes.insert({"Incorrect Var Name": "T",      "CF Standard Name": "air_temperature",  "Known Fix": "t",   "Times Seen": 1})
 
 
