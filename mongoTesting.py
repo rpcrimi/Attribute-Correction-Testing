@@ -1,9 +1,10 @@
 import pymongo
 from bson.objectid import ObjectId
-import attributecorrector
 from difflib import SequenceMatcher
 import logging
 import os
+import shutil
+import ntpath
 from progressbar import *
 import grabmetadata
 import ncatted
@@ -126,7 +127,7 @@ def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 			# TODO: INSERT FLAG FOR FIXING FILE
 			# TODO: IF FLAG TRUE ==> FIX FILE
 			if fixFlag:
-				ncrename.run(var, cursor[0]["Known Fix"], fileName, "test.nc")
+				ncrename.run(var, cursor[0]["Known Fix"], fileName)
 
 			# Log the fix
 			text = var + "," + cursor[0]["Known Fix"] + "," + attr
@@ -159,6 +160,8 @@ def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 
 			# TODO: INSERT FLAG FOR FIXING FILE
 			# TODO: IF FLAG TRUE ==> FIX FILE
+			if fixFlag:
+				ncatted.run("standard_name", var, "o", "c", cursor[0]["Known Fix"], "-h", fileName)
 
 			# Log the fix
 			text = var + "," + attr + "," + cursor[0]["Known Fix"]
@@ -178,40 +181,47 @@ def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 
 	return
 
-def fix_files(inputFolder, logFile, fixFlag):
-	# Full path of folder that contains netCDF files
-	inputFolder = os.getcwd() + "/" + inputFolder
+def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 	# (filename, standard_name) list of all files in ncFolder
 	standardNames = grabmetadata.get_standard_names(inputFolder)
 	# Number of files for use in progress bar
 	totalFiles = len(standardNames)
 	i = 1
-	widgets = ['Percent Done: ', Percentage(), ' ', Bar(), ' ', ETA()]
+	widgets = ['Percent Done: ', Percentage(), ' ', Bar(marker=RotatingMarker()), ' ', ETA()]
 	bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
 	# Flag for confirming file
 	fileFlag = True
 	# For each file in the list, log the file has started
 	for f in standardNames:
-		log(logFile, f[0], "", 'File Started')
+		fileName = f[0]
+		standNames = f[1]
+		log(logFile, fileName, "", 'File Started')
 		# If the file has no standard names, log the issue
-		if not f[1]:
-			log(logFile, f[0], "", 'No Standard Names')
+		if not standNames:
+			log(logFile, fileName, "", 'No Standard Names')
 			fileFlag = False
 		# For each attribute in standard_name list, format and identify attribute
 		else:
-			for attr in f[1]:
+			for attr in standNames:
 				splitAttr = attr.replace("standard_name = ", "").replace("\"", "").split(":")
-				flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, f[0], fixFlag)
+				flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, fileName, fixFlag)
 				# Check if something in file was changed
 				if flag == False:
 					fileFlag = False
 		# If file had no errors or KnownFix occured ==> Confirm file
 		if fileFlag:
-			log(logFile, f[0], "", 'File Confirmed')
+			if fixFlag:
+				dstdir = outputFolder+os.path.dirname(fileName)
+				if not os.path.exists(dstdir):
+					os.makedirs(dstdir)
+				srcfile = ntpath.basename(fileName)
+				shutil.copy(fileName, dstdir)
+
+			log(logFile, fileName, "", 'File Confirmed')
 		fileFlag = True
 		bar.update(i)
 		i = i + 1
 	bar.finish()
 
-fix_files("ncFiles2", logFile, False)
+fix_files("netCDF/", "finished/", logFile, True)
 

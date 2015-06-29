@@ -13,7 +13,3 @@ then
 else
 	ncatted -a "$att_dsc" $input_file -O $output_file
 fi
-
-
-# Dump the header of the updated file
-ncdump -h $output_file
