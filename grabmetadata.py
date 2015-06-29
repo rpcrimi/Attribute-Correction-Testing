@@ -18,11 +18,12 @@ def format_output(out):
 def get_nc_files(directory):
 	matches = []
 	# Do a walk through input directory
-	for root, dirnames, filenames in os.walk(directory):
+	for root, dirnames, files in os.walk(directory):
 		# Find all filenames with .nc type
-		for filename in fnmatch.filter(filenames, '*.nc'):
-			# Add full path of netCDF file to matches list
-			matches.append(os.path.join(root, filename))
+		for filename in files:
+				if filename.endswith(('.nc', '.nc4')):
+					# Add full path of netCDF file to matches list
+					matches.append(os.path.join(root, filename))
 	return matches
 
 # Return a list of filenames and corresponding standard names in "ncFolder"

@@ -189,9 +189,6 @@ def fix_files(folder, logFile):
 	# For each file in the list, log the file has started
 	for f in standardNames:
 		log(logFile, f[0], "", 'File Started')
-		bar.update(i)
-		i = i + 1
-		
 		# If the file has no standard names, log the issue
 		if not f[1]:
 			log(logFile, f[0], "", 'No Standard Names')
@@ -208,6 +205,8 @@ def fix_files(folder, logFile):
 		if fileFlag:
 			log(logFile, f[0], "", 'File Confirmed')
 		fileFlag = True
+		bar.update(i)
+		i = i + 1
 	bar.finish()
 
 fix_files("ncFiles2", logFile)
