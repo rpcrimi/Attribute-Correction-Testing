@@ -223,5 +223,5 @@ def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 		i = i + 1
 	bar.finish()
 
-fix_files("netCDF/", "finished/", logFile, True)
+fix_files("ncFiles2/", "finished/", logFile, False)
 
