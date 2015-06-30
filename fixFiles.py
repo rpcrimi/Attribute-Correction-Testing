@@ -133,7 +133,7 @@ def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 			text = var + "," + cursor[0]["Known Fix"] + "," + attr
 			log(logFile, fileName, text, 'Switched Variable')
 			# Return true for confirming file
-			return True
+			return False
 		else:
 			cursor = db.CFVars.find({"CF Standard Name": { '$eq': attr}})
 			recommendations = var + ":" + attr + ","
@@ -183,45 +183,46 @@ def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 
 def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 	# (filename, standard_name) list of all files in ncFolder
-	standardNames = grabmetadata.get_standard_names(inputFolder)
-	# Number of files for use in progress bar
-	totalFiles = len(standardNames)
-	i = 1
-	widgets = ['Percent Done: ', Percentage(), ' ', Bar(marker=RotatingMarker()), ' ', ETA()]
-	bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
-	# Flag for confirming file
-	fileFlag = True
-	# For each file in the list, log the file has started
-	for f in standardNames:
-		fileName = f[0]
-		standNames = f[1]
-		log(logFile, fileName, "", 'File Started')
-		# If the file has no standard names, log the issue
-		if not standNames:
-			log(logFile, fileName, "", 'No Standard Names')
-			fileFlag = False
-		# For each attribute in standard_name list, format and identify attribute
-		else:
-			for attr in standNames:
-				splitAttr = attr.replace("standard_name = ", "").replace("\"", "").split(":")
-				flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, fileName, fixFlag)
-				# Check if something in file was changed
-				if flag == False:
-					fileFlag = False
-		# If file had no errors or KnownFix occured ==> Confirm file
-		if fileFlag:
-			if fixFlag:
-				dstdir = outputFolder+os.path.dirname(fileName)
-				if not os.path.exists(dstdir):
-					os.makedirs(dstdir)
-				srcfile = ntpath.basename(fileName)
-				shutil.copy(fileName, dstdir)
-
-			log(logFile, fileName, "", 'File Confirmed')
+	standardNames = grabmetadata.get_standard_names(inputFolder, outputFolder)
+	if standardNames:
+		# Number of files for use in progress bar
+		totalFiles = len(standardNames)
+		i = 1
+		widgets = ['Percent Done: ', Percentage(), ' ', Bar(marker=RotatingMarker()), ' ', ETA()]
+		bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
+		# Flag for confirming file
 		fileFlag = True
-		bar.update(i)
-		i = i + 1
-	bar.finish()
+		# For each file in the list, log the file has started
+		for f in standardNames:
+			fileName = f[0]
+			standNames = f[1]
+			log(logFile, fileName, "", 'File Started')
+			# If the file has no standard names, log the issue
+			if not standNames:
+				log(logFile, fileName, "", 'No Standard Names')
+				fileFlag = False
+			# For each attribute in standard_name list, format and identify attribute
+			else:
+				for attr in standNames:
+					splitAttr = attr.replace("standard_name = ", "").replace("\"", "").split(":")
+					flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, fileName, fixFlag)
+					# Check if something in file was changed
+					if flag == False:
+						fileFlag = False
+			# If file had no errors or KnownFix occured ==> Confirm file
+			if fileFlag:
+				if fixFlag:
+					dstdir = outputFolder+os.path.dirname(fileName)
+					if not os.path.exists(dstdir):
+						os.makedirs(dstdir)
+					srcfile = ntpath.basename(fileName)
+					shutil.copy(fileName, dstdir)
+					
+				log(logFile, fileName, "", 'File Confirmed')
+			fileFlag = True
+			bar.update(i)
+			i = i + 1
+		bar.finish()
 
 
 parser = argparse.ArgumentParser(description='Metadata Correction Algorithm')
