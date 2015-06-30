@@ -5,6 +5,7 @@ import logging
 import os
 import shutil
 import ntpath
+import argparse
 from progressbar import *
 import grabmetadata
 import ncatted
@@ -15,7 +16,6 @@ db                = connection["Attribute_Correction"]
 CFVars            = db["CFVars"]
 StandardNameFixes = db["StandardNameFixes"]
 VarNameFixes      = db["VarNameFixes"]
-logFile           = os.getcwd() + "/results.log"
 	
 
 # Log info in "logFile" for file "fileName"
@@ -223,5 +223,12 @@ def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 		i = i + 1
 	bar.finish()
 
-fix_files("ncFiles2/", "finished/", logFile, False)
+
+parser = argparse.ArgumentParser(description='Metadata Correction Algorithm')
+parser.add_argument("-i", "--inputFolder",  dest="inputFolder",  required=True,  help = "Folder of nc or nc4 files to handle")
+parser.add_argument("-o", "--outputFolder", dest="outputFolder", required=True,  help = "Folder to copy fixed files to")
+parser.add_argument("-l", "--logFile",      dest="logFile",      required=True,  help = "File to log metadata changes to")
+parser.add_argument("-f", "--fixFlag",      dest="fixFlag",      required=False, help = "Flag to fix files or only report possible changes", action='store_true', default=False, )
+args = parser.parse_args()
+fix_files(args.inputFolder, args.outputFolder, args.logFile, args.fixFlag)
 

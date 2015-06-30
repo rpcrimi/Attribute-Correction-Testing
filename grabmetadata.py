@@ -35,7 +35,6 @@ def get_standard_names(ncFolder):
 		p2 = subprocess.Popen(shlex.split('grep :standard_name'), stdin=p.stdout, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		p.stdout.close()
 		out, err = p2.communicate()
-
 		standardNames.append((f, format_output(out)))
 	
 	return standardNames

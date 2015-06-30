@@ -1,8 +1,8 @@
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [ncFiles2/atmos/g/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
-INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
-INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
 INFO     Confirmed file: [ncFiles2/atmos/g/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
 DEBUG    Starting in file [ncFiles2/atmos/g/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]:
