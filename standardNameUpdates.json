@@ -1,1 +1,1 @@
-{"Incorrect Var": "meridional surface stress", "Var Name": "STY", "Known Fix": "surface_meridional_stress_positive_to_the_north"}
+{"Incorrect Standard Name": "specific humidity", "Var Name": "HUS", "Known Fix": "specific_humidity"}

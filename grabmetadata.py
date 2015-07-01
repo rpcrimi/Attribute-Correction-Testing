@@ -15,25 +15,29 @@ def format_output(out):
 	return filter(None, out)
 
 # Return a list of all netCDF files in "direrctory"
-def get_nc_files(directory, dstFolder):
+def get_nc_files(srcDir, stgDir, dstDir):
 	matches = []
 	# Do a walk through input directory
-	for root, dirnames, files in os.walk(directory):
+	for root, dirnames, files in os.walk(srcDir):
 		# Find all filenames with .nc type
 		for filename in files:
 				if filename.endswith(('.nc', '.nc4')):
 					filename = os.path.join(root, filename)
-					dstFileName = dstFolder + filename
+					dstFileName = dstDir + filename
+					stgFileName = stgDir + filename
 					if not os.path.isfile(dstFileName):
-						# Add full path of netCDF file to matches list
-						matches.append(filename)
+						if os.path.isfile(stgFileName):
+							matches.append(stgFileName)
+						else:
+							# Add full path of netCDF file to matches list
+							matches.append(filename)
 	return matches
 
-# Return a list of filenames and corresponding standard names in "ncFolder"
-def get_standard_names(ncFolder, dstFolder):
+# Return a list of filenames and corresponding standard names in "srcDir"
+def run(srcDir, stgDir, dstDir):
 	standardNames = []
-	# Call ncdump and grep for :standard_name for each netCDF file in ncFolder
-	for f in get_nc_files(ncFolder, dstFolder):
+	# Call ncdump and grep for :standard_name for each netCDF file in srcDir
+	for f in get_nc_files(srcDir, stgDir, dstDir):
 		p  = subprocess.Popen(['./ncdump.sh', f], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		p2 = subprocess.Popen(shlex.split('grep :standard_name'), stdin=p.stdout, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		p.stdout.close()

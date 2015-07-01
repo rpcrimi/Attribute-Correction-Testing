@@ -8,8 +8,8 @@ output_file=$8
 # Keep History
 if [ $hist = -h ]
 then
-	ncatted -a "$att_dsc" -h $input_file -O $output_file
+	ncatted -a "$att_dsc" -h $input_file -o $output_file
 # Change History
 else
-	ncatted -a "$att_dsc" $input_file -O $output_file
+	ncatted -a "$att_dsc" $input_file -O -o $output_file
 fi

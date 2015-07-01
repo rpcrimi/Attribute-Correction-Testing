@@ -98,7 +98,7 @@ def best_estimates(wrongAttr):
 # Return validation of correct attribute
 # or corrected attribute from Known fixes collection
 # or return the top 3 matches from CFVars collection
-def identify_attribute(var, attr, logFile, fileName, fixFlag):
+def identify_attribute(var, attr, logFile, fileName, stgDir, fixFlag):
 	# Check if (var, attr) is valid CF Standard Name pair
 	cursor = db.CFVars.find_one({ '$and': [{"CF Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 	# Log notification of correct attribute
@@ -115,7 +115,11 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag):
 		cursor = db.VarNameFixes.find_one({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': attr}}]})
 		if (cursor):
 			if fixFlag:
-				ncrename.run(var, cursor["Known Fix"], fileName)
+				# Create copy of folder structure in staging directory
+				stgDir = stgDir+os.path.dirname(fileName)
+				if not os.path.exists(stgDir):
+					os.makedirs(stgDir)
+				ncrename.run(var, cursor["Known Fix"], fileName, (stgDir+"/"+ntpath.basename(fileName)))
 
 			# Log the fix
 			text = var + "," + cursor["Known Fix"] + "," + attr
@@ -135,12 +139,17 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag):
 	else:
 		# Set all characters to lowercase
 		attr = attr.lower()
-		# Check if KnownFixes has seen this error before
-		cursor = db.StandardNameFixes.find_one({ '$and': [{"Incorrect Var": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
+		# Check if (var, attr) piar is in StandardNameFixesclear
+
+		cursor = db.StandardNameFixes.find_one({ '$and': [{"Incorrect Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 		# If attr exists in StandardNameFixes collection
 		if (cursor):
 			if fixFlag:
-				ncatted.run("standard_name", var, "o", "c", cursor["Known Fix"], "-h", fileName)
+				# Create copy of folder structure in staging directory
+				stgDir = stgDir+os.path.dirname(fileName)
+				if not os.path.exists(stgDir):
+					os.makedirs(stgDir)
+				ncatted.run("standard_name", var, "o", "c", cursor["Known Fix"], "-h", fileName, (stgDir+"/"+ntpath.basename(fileName)))
 
 			# Log the fix
 			text = var + "," + attr + "," + cursor["Known Fix"]
@@ -160,9 +169,9 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag):
 
 	return
 
-def fix_files(inputFolder, outputFolder, logFile, fixFlag):
+def fix_files(srcDir, stgDir, dstDir, logFile, fixFlag):
 	# (filename, standard_name) list of all files in ncFolder
-	standardNames = grabmetadata.get_standard_names(inputFolder, outputFolder)
+	standardNames = grabmetadata.run(srcDir, stgDir, dstDir)
 	if standardNames:
 		# Number of files for use in progress bar
 		totalFiles = len(standardNames)
@@ -184,7 +193,7 @@ def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 			else:
 				for attr in standNames:
 					splitAttr = attr.split(":")
-					flag = identify_attribute(splitAttr[0], splitAttr[1], logFile, fileName, fixFlag)
+					flag = identify_attribute(splitAttr[0], splitAttr[1], logFile, fileName, stgDir, fixFlag)
 					# Check if something in file was changed
 					if flag == False:
 						fileFlag = False
@@ -192,12 +201,12 @@ def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 			if fileFlag:
 				if fixFlag:
 					# New path for copying file
-					dstdir = outputFolder+os.path.dirname(fileName)
+					dstdir = (dstDir+os.path.dirname(fileName)).replace(stgDir, "")
 					# If path does not exist ==> create directory structure
 					if not os.path.exists(dstdir):
 						os.makedirs(dstdir)
 					# Copy original file to dstdir
-					shutil.copy(fileName, dstdir)
+					shutil.move(fileName, dstdir)
 				# Log the confirmed file
 				log(logFile, fileName, "", 'File Confirmed')
 			# Reset fileFlag
@@ -209,13 +218,14 @@ def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 
 def main():
 	parser = argparse.ArgumentParser(description='Metadata Correction Algorithm')
-	parser.add_argument("-o", "--op", "--operation", dest="operation",  help = "Operation to run (initDB, resetDB, updateCollection, fixFiles)",        default="fixFiles")
-	parser.add_argument("-c", "--collection",        dest="collection", help = "Collection to update")
-	parser.add_argument("-u", "--updates",           dest="updates",    help = "JSON file containing updates")
-	parser.add_argument("-s", "--srcDir",            dest="srcDir",     help = "Folder of nc or nc4 files to handle")
-	parser.add_argument("-d", "--dstDir",            dest="dstDir",     help = "Folder to copy fixed files to")
-	parser.add_argument("-l", "--logFile",           dest="logFile",    help = "File to log metadata changes to")
-	parser.add_argument("-f", "--fixFlag",           dest="fixFlag",    help = "Flag to fix files or only report possible changes", action='store_true', default=False)
+	parser.add_argument("-o", "--op", "--operation",   dest="operation",  help = "Operation to run (initDB, resetDB, updateCollection, fixFiles)",        default="fixFiles")
+	parser.add_argument("-c", "--collection",          dest="collection", help = "Collection to update")
+	parser.add_argument("-u", "--updates",             dest="updates",    help = "JSON file containing updates")
+	parser.add_argument("-s", "--srcDir",              dest="srcDir",     help = "Folder of nc or nc4 files to handle")
+	parser.add_argument("-e", "--editDir", "--stgDir", dest="stgDir",     help = "Folder to store edited files in")
+	parser.add_argument("-d", "--dstDir",              dest="dstDir",     help = "Folder to copy fixed files to")
+	parser.add_argument("-l", "--logFile",             dest="logFile",    help = "File to log metadata changes to")
+	parser.add_argument("-f", "--fixFlag",             dest="fixFlag",    help = "Flag to fix files or only report possible changes", action='store_true', default=False)
 	args = parser.parse_args()
 
 	if(len(sys.argv) == 1):
@@ -232,10 +242,10 @@ def main():
 			else:
 				parser.error("updateCollection requres collection and updates file")
 		elif args.operation == "fixFiles":
-			if (args.srcDir and args.dstDir and args.logFile):
-				fix_files(args.srcDir, args.dstDir, args.logFile, args.fixFlag)
+			if (args.srcDir and args.stgDir and args.dstDir and args.logFile):
+				fix_files(args.srcDir, args.stgDir, args.dstDir, args.logFile, args.fixFlag)
 			else:
-				parser.error("fixFiles requires srcDirectory, dstDirectory, and logFile")
+				parser.error("fixFiles requires srcDirectory, editDirectory, dstDirectory, and logFile")
 
 if __name__ == "__main__":
 	main()
