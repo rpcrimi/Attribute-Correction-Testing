@@ -10,7 +10,7 @@ import fnmatch
 # Return formated output of grep call
 def format_output(out):
 	# Remove tabs and newlines and split on " ;"
-	out = out.replace("\t", "").replace("\n", "").split(" ;")
+	out = out.replace("\t", "").replace("\n", "").replace("standard_name = ", "").replace("\"", "").split(" ;")
 	# Return list without empty elements
 	return filter(None, out)
 

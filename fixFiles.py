@@ -1,5 +1,4 @@
 import pymongo
-from bson.objectid import ObjectId
 from difflib import SequenceMatcher
 import logging
 import os
@@ -10,6 +9,9 @@ from progressbar import *
 import grabmetadata
 import ncatted
 import ncrename
+import dropDB
+import mongoInit
+import updateCollection
 
 connection        = pymongo.MongoClient()
 db                = connection["Attribute_Correction"]
@@ -50,9 +52,8 @@ def log(logFile, fileName, text, logType):
 		splitText    = text.split(",")
 		var          = splitText[0]
 		wrongAttr    = splitText[1]
-		numEstimates = splitText[2]
-		estimates    = splitText[3]
-		logging.debug("Standard Name [%s:%s] best %s estimates: %s", var, wrongAttr, numEstimates, estimates)
+		estimates    = splitText[2]
+		logging.debug("Standard Name [%s:%s] best 3 estimates: %s", var, wrongAttr, estimates)
 
 	elif logType == 'No Standard Names':
 		logging.debug("[%s]: no standard names defined", fileName)
@@ -77,10 +78,10 @@ def get_CF_Standard_Names():
 def similar(a,b):
 	a = a.lower()
 	b = b.lower()
-	return SequenceMatcher(None, a, b).ratio()
+	return SequenceMatcher(None, a, b).ratio()*100
 
 # Return the "N" # of CF Standard Vars with the most similarity to "wrongAttr"
-def best_estimates(wrongAttr, N):
+def best_estimates(wrongAttr):
 	# Grab CF Standard Names
 	CFStandards = get_CF_Standard_Names()
 	similarities = []
@@ -91,22 +92,17 @@ def best_estimates(wrongAttr, N):
 		similarities.append((attr, percentOff))
 	# Sort similarities list by second element in tuple
 	similarities.sort(key=lambda x: x[1])
-	# If N is less than size of similarities return last N elements
-	if len(similarities) >= N:
-		# Reverse order so top match is first in list
-		return list(reversed(similarities[-N:]))
-	# Else return full list
-	else:
-		return list(reversed(similarities))
+
+	return list(reversed(similarities[-3:]))
 
 # Return validation of correct attribute
 # or corrected attribute from Known fixes collection
-# or return the top "N" matches from CFVars collection
-def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
+# or return the top 3 matches from CFVars collection
+def identify_attribute(var, attr, logFile, fileName, fixFlag):
 	# Check if (var, attr) is valid CF Standard Name pair
-	cursor = db.CFVars.find({ '$and': [{"CF Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
+	cursor = db.CFVars.find_one({ '$and': [{"CF Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 	# Log notification of correct attribute
-	if (cursor.count() != 0):
+	if (cursor):
 		text = var + ":" + attr
 		log(logFile, fileName, text, "Variable Confirmed")
 		# Return true for confirming file
@@ -116,21 +112,21 @@ def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 	cursor = db.CFVars.find({"CF Standard Name": { '$eq': attr}})
 	if (cursor.count() != 0):
 		# Check if (var, attr) pair is in VarNameFixes collection
-		cursor = db.VarNameFixes.find({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': attr}}]})
-		if (cursor.count() != 0):
+		cursor = db.VarNameFixes.find_one({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': attr}}]})
+		if (cursor):
 			# Grab id, times seen of known fix document
-			_id       = cursor[0]["_id"]
-			timesSeen = cursor[0]["Times Seen"]
+			_id       = cursor["_id"]
+			timesSeen = cursor["Times Seen"]
 			# Update the times seen value by adding 1
 			db.VarNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
 
 			# TODO: INSERT FLAG FOR FIXING FILE
 			# TODO: IF FLAG TRUE ==> FIX FILE
 			if fixFlag:
-				ncrename.run(var, cursor[0]["Known Fix"], fileName)
+				ncrename.run(var, cursor["Known Fix"], fileName)
 
 			# Log the fix
-			text = var + "," + cursor[0]["Known Fix"] + "," + attr
+			text = var + "," + cursor["Known Fix"] + "," + attr
 			log(logFile, fileName, text, 'Switched Variable')
 			# Return true for confirming file
 			return False
@@ -148,12 +144,12 @@ def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 		# Set all characters to lowercase
 		attr = attr.lower()
 		# Check if KnownFixes has seen this error before
-		cursor = db.StandardNameFixes.find({ '$and': [{"Incorrect Var": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
+		cursor = db.StandardNameFixes.find_one({ '$and': [{"Incorrect Var": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 		# If attr exists in StandardNameFixes collection
-		if (cursor.count() != 0):
+		if (cursor):
 			# Grab id, times seen, and var name of known fix document
-			_id       = cursor[0]["_id"]
-			timesSeen = cursor[0]["Times Seen"]
+			_id       = cursor["_id"]
+			timesSeen = cursor["Times Seen"]
 
 			# Update the times seen value by adding 1
 			db.StandardNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
@@ -161,20 +157,20 @@ def identify_attribute(var, attr, N, logFile, fileName, fixFlag):
 			# TODO: INSERT FLAG FOR FIXING FILE
 			# TODO: IF FLAG TRUE ==> FIX FILE
 			if fixFlag:
-				ncatted.run("standard_name", var, "o", "c", cursor[0]["Known Fix"], "-h", fileName)
+				ncatted.run("standard_name", var, "o", "c", cursor["Known Fix"], "-h", fileName)
 
 			# Log the fix
-			text = var + "," + attr + "," + cursor[0]["Known Fix"]
+			text = var + "," + attr + "," + cursor["Known Fix"]
 			log(logFile, fileName, text, 'Switched Attribute')
 			# Return true for confirming file
 			return True
 		# Get best N best estimates for "attr"
 		else:
-			bestEstimatesList = best_estimates(attr, N)
+			bestEstimatesList = best_estimates(attr)
 			bestEstimates = ""
 			for e in bestEstimatesList:
 				bestEstimates += str(e[0]) + " " + str(e[1]) + " | "
-			text = var + "," + attr + "," + str(N) + "," + bestEstimates
+			text = var + "," + attr + "," + bestEstimates
 			log(logFile, fileName, text, 'Estimated')
 			# Return false for confirming file
 			return False
@@ -188,7 +184,7 @@ def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 		# Number of files for use in progress bar
 		totalFiles = len(standardNames)
 		i = 1
-		widgets = ['Percent Done: ', Percentage(), ' ', Bar(marker=RotatingMarker()), ' ', ETA()]
+		widgets = ['Percent Done: ', Percentage(), ' ', AnimatedMarker(), ' ', ETA()]
 		bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
 		# Flag for confirming file
 		fileFlag = True
@@ -204,32 +200,59 @@ def fix_files(inputFolder, outputFolder, logFile, fixFlag):
 			# For each attribute in standard_name list, format and identify attribute
 			else:
 				for attr in standNames:
-					splitAttr = attr.replace("standard_name = ", "").replace("\"", "").split(":")
-					flag = identify_attribute(splitAttr[0], splitAttr[1], 3, logFile, fileName, fixFlag)
+					splitAttr = attr.split(":")
+					flag = identify_attribute(splitAttr[0], splitAttr[1], logFile, fileName, fixFlag)
 					# Check if something in file was changed
 					if flag == False:
 						fileFlag = False
 			# If file had no errors or KnownFix occured ==> Confirm file
 			if fileFlag:
 				if fixFlag:
+					# New path for copying file
 					dstdir = outputFolder+os.path.dirname(fileName)
+					# If path does not exist ==> create directory structure
 					if not os.path.exists(dstdir):
 						os.makedirs(dstdir)
-					srcfile = ntpath.basename(fileName)
+					# Copy original file to dstdir
 					shutil.copy(fileName, dstdir)
-					
+				# Log the confirmed file
 				log(logFile, fileName, "", 'File Confirmed')
+			# Reset fileFlag
 			fileFlag = True
+			# Update progress bar
 			bar.update(i)
 			i = i + 1
 		bar.finish()
 
+def main():
+	parser = argparse.ArgumentParser(description='Metadata Correction Algorithm')
+	parser.add_argument("-o", "--op", "--operation", dest="operation",  help = "Operation to run (initDB, resetDB, updateCollection, fixFiles)",        default="fixFiles")
+	parser.add_argument("-c", "--collection",        dest="collection", help = "Collection to update")
+	parser.add_argument("-u", "--updates",           dest="updates",    help = "JSON file containing updates")
+	parser.add_argument("-s", "--srcDir",            dest="srcDir",     help = "Folder of nc or nc4 files to handle")
+	parser.add_argument("-d", "--dstDir",            dest="dstDir",     help = "Folder to copy fixed files to")
+	parser.add_argument("-l", "--logFile",           dest="logFile",    help = "File to log metadata changes to")
+	parser.add_argument("-f", "--fixFlag",           dest="fixFlag",    help = "Flag to fix files or only report possible changes", action='store_true', default=False)
+	args = parser.parse_args()
 
-parser = argparse.ArgumentParser(description='Metadata Correction Algorithm')
-parser.add_argument("-i", "--inputFolder",  dest="inputFolder",  required=True,  help = "Folder of nc or nc4 files to handle")
-parser.add_argument("-o", "--outputFolder", dest="outputFolder", required=True,  help = "Folder to copy fixed files to")
-parser.add_argument("-l", "--logFile",      dest="logFile",      required=True,  help = "File to log metadata changes to")
-parser.add_argument("-f", "--fixFlag",      dest="fixFlag",      required=False, help = "Flag to fix files or only report possible changes", action='store_true', default=False, )
-args = parser.parse_args()
-fix_files(args.inputFolder, args.outputFolder, args.logFile, args.fixFlag)
+	if(len(sys.argv) == 1):
+		parser.print_help()
+	else:
+		if args.operation == "initDB":
+			mongoInit.run()
+		elif args.operation == "resetDB":
+			dropDB.run()
+			mongoInit.run()
+		elif args.operation == "updateCollection":
+			if (args.collection and args.updates):
+				updateCollection.run(args.collection, args.updates)
+			else:
+				parser.error("updateCollection requres collection and updates file")
+		elif args.operation == "fixFiles":
+			if (args.srcDir and args.dstDir and args.logFile):
+				fix_files(args.srcDir, args.dstDir, args.logFile, args.fixFlag)
+			else:
+				parser.error("fixFiles requires srcDirectory, dstDirectory, and logFile")
 
+if __name__ == "__main__":
+	main()
