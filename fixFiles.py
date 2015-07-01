@@ -114,14 +114,6 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag):
 		# Check if (var, attr) pair is in VarNameFixes collection
 		cursor = db.VarNameFixes.find_one({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': attr}}]})
 		if (cursor):
-			# Grab id, times seen of known fix document
-			_id       = cursor["_id"]
-			timesSeen = cursor["Times Seen"]
-			# Update the times seen value by adding 1
-			db.VarNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
-
-			# TODO: INSERT FLAG FOR FIXING FILE
-			# TODO: IF FLAG TRUE ==> FIX FILE
 			if fixFlag:
 				ncrename.run(var, cursor["Known Fix"], fileName)
 
@@ -147,15 +139,6 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag):
 		cursor = db.StandardNameFixes.find_one({ '$and': [{"Incorrect Var": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 		# If attr exists in StandardNameFixes collection
 		if (cursor):
-			# Grab id, times seen, and var name of known fix document
-			_id       = cursor["_id"]
-			timesSeen = cursor["Times Seen"]
-
-			# Update the times seen value by adding 1
-			db.StandardNameFixes.update({"_id": _id}, {"$set": {"Times Seen": timesSeen + 1}})
-
-			# TODO: INSERT FLAG FOR FIXING FILE
-			# TODO: IF FLAG TRUE ==> FIX FILE
 			if fixFlag:
 				ncatted.run("standard_name", var, "o", "c", cursor["Known Fix"], "-h", fileName)
 
