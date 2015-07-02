@@ -1,63 +1,96 @@
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]:
-INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]:
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
-INFO     Confirmed file: [netCDF/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/test/uv300.nc]:
-DEBUG    [netCDF/test/uv300.nc]: no standard names defined
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]:
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]:
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [pr:precipitation_flux] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [zh:height] confirmed
+INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]

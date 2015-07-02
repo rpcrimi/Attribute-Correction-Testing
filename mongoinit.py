@@ -53,6 +53,7 @@ def run():
 	CFVars.insert({"Variable": "Longitude",                                     "Var Name": "lon",      "CF Standard Name": "longitude",                                       "Units": "degree_east"})
 	CFVars.insert({"Variable": "Time",                                          "Var Name": "time",     "CF Standard Name": "time",                                            "Units": "s"})
 	CFVars.insert({"Variable": "Height",                                        "Var Name": "zh",       "CF Standard Name": "height",                                          "Units": "m"})
+	CFVars.insert({"Variable": "Precipitation Flux",                            "Var Name": "pr",       "CF Standard Name": "precipitation_flux",                              "Units": "kg m-2 s-1"})
 
 
 

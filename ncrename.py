@@ -5,8 +5,8 @@ import os
 # Split command line arguments
 import shlex
 
-def run(oldName, newName, inputFile, outputFile=""):
-	call = "./ncrename.sh %s %s %s %s" % (oldName, newName, inputFile, outputFile)
-	p = subprocess.Popen(shlex.split(call), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+def run(oldName, newName, inputFile, hist, outputFile=""):
+	call = "./ncrename.sh %s %s %s %s %s" % (oldName, newName, hist, inputFile, outputFile)
+	p = subprocess.Popen(shlex.split(call))
 	out, err = p.communicate()
 	if err: print err
