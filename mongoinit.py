@@ -53,8 +53,10 @@ def run():
 	CFVars.insert({"Variable": "Time",                                          "Var Name": "time",     "CF Standard Name": "time",                                            "Units": "s"})
 	CFVars.insert({"Variable": "Height",                                        "Var Name": "zh",       "CF Standard Name": "height",                                          "Units": "m"})
 	CFVars.insert({"Variable": "Precipitation Flux",                            "Var Name": "pr",       "CF Standard Name": "precipitation_flux",                              "Units": "kg m-2 s-1"})
+	# FOUND IN DATA 
 	# Var Name might not be lev
 	CFVars.insert({"Variable": "Depth",                                         "Var Name": "lev",       "CF Standard Name": "depth",                                          "Units": "m"})
+	CFVars.insert({"Variable": "Sea-ice area fraction",                         "Var Name": "sic",       "CF Standard Name": "sea_ice_area_fraction",                          "Units": "1"})
 
 
 	CFVars.insert({"Variable": "Large scale precipitation",                     "Var Name": "precl",    "CF Standard Name": "large_scale_precipitation XXXXXXX",               "Units": "XXXXXXX"})

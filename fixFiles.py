@@ -18,7 +18,6 @@ db                = connection["Attribute_Correction"]
 CFVars            = db["CFVars"]
 StandardNameFixes = db["StandardNameFixes"]
 VarNameFixes      = db["VarNameFixes"]
-	
 
 # Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
@@ -162,9 +161,9 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag, histFlag):
 
 	return
 
-def fix_files(inputFolder, outputFolder, logFile, fixFlag, histFlag):
+def fix_files(srcDir, dstDir, logFile, fixFlag, histFlag):
 	# (filename, standard_name) list of all files in ncFolder
-	standardNames = grabmetadata.get_standard_names(inputFolder, outputFolder)
+	standardNames = grabmetadata.get_standard_names(srcDir, dstDir)
 	if standardNames:
 		# Number of files for use in progress bar
 		totalFiles = len(standardNames)
@@ -194,7 +193,7 @@ def fix_files(inputFolder, outputFolder, logFile, fixFlag, histFlag):
 			if fileFlag:
 				if fixFlag:
 					# New path for copying file
-					dstdir = outputFolder+os.path.dirname(fileName)
+					dstdir = dstDir+os.path.dirname(fileName)
 					# If path does not exist ==> create directory structure
 					if not os.path.exists(dstdir):
 						os.makedirs(dstdir)
