@@ -1,4 +1,8 @@
 data/
 ncFiles/
 ncFiles2/
+NOAA-GFDL/
+UM-RSMAS/
 netCDF/
+stagingFolder/
+finished/
