@@ -45,7 +45,6 @@ def run():
 	# Aliased name is volume_fraction_of_water_in_soil
 	CFVars.insert({"Variable": "Total soil moisture",                           "Var Name": "mrsov",    "CF Standard Name": "volume_fraction_of_condensed_water_in_soil",      "Units": "1"})
 	CFVars.insert({"Variable": "Surface stress (x)",                            "Var Name": "stx",      "CF Standard Name": "surface_zonal_stress_positive_to_the_west",       "Units": "Pa"})
-	# PHASE II says positive_to_the_west
 	CFVars.insert({"Variable": "Surface stress (y)",                            "Var Name": "sty",      "CF Standard Name": "surface_meridional_stress_positive_to_the_north", "Units": "Pa"})
 	CFVars.insert({"Variable": "Precipitable water",                            "Var Name": "tqm",      "CF Standard Name": "total_column_vertically_integrated_water",        "Units": "kg m-2"})
 	CFVars.insert({"Variable": "2m dewpoint temperature",                       "Var Name": "tdps",     "CF Standard Name": "dew_point_temperature",                           "Units": "K"})
@@ -54,7 +53,8 @@ def run():
 	CFVars.insert({"Variable": "Time",                                          "Var Name": "time",     "CF Standard Name": "time",                                            "Units": "s"})
 	CFVars.insert({"Variable": "Height",                                        "Var Name": "zh",       "CF Standard Name": "height",                                          "Units": "m"})
 	CFVars.insert({"Variable": "Precipitation Flux",                            "Var Name": "pr",       "CF Standard Name": "precipitation_flux",                              "Units": "kg m-2 s-1"})
-
+	# Var Name might not be lev
+	CFVars.insert({"Variable": "Depth",                                         "Var Name": "lev",       "CF Standard Name": "depth",                                          "Units": "m"})
 
 
 	CFVars.insert({"Variable": "Large scale precipitation",                     "Var Name": "precl",    "CF Standard Name": "large_scale_precipitation XXXXXXX",               "Units": "XXXXXXX"})

@@ -1,96 +1,576 @@
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]:
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [pr:precipitation_flux] confirmed
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
+DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
 INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [zh:height] confirmed
-INFO     Confirmed file: [netCDF/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
+INFO     Standard Name [so:sea_water_salinity] confirmed
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [uo:sea_water_x_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
+INFO     Standard Name [lev:depth] confirmed
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [vo:sea_water_y_velocity] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
+DEBUG    [zos:sea_surface_height_above_geoid] recommended Variable Names: zoh | 
+INFO     Standard Name [time:time] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
+DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
+DEBUG    Standard Name [sic:sea_ice_area_fraction] best 3 estimates: cloud_area_fraction 75.0 | sea_ice_extent 62.8571428571 | stream_function_200_hpa 50.0 | 
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [lat:latitude] confirmed
