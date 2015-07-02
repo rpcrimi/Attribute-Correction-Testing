@@ -88,5 +88,9 @@ def run():
 	VarNameFixes.insert({"Incorrect Var Name": "LON",    "CF Standard Name": "longitude",        "Known Fix": "lon"})
 	VarNameFixes.insert({"Incorrect Var Name": "G",      "CF Standard Name": "geopotential",     "Known Fix": "g"})
 	VarNameFixes.insert({"Incorrect Var Name": "t",      "CF Standard Name": "air_temperature",  "Known Fix": "ta"})
+	VarNameFixes.insert({"Incorrect Var Name": "hlat",   "CF Standard Name": "latitude",         "Known Fix": "lat"})
+	VarNameFixes.insert({"Incorrect Var Name": "hlon",   "CF Standard Name": "longitude",        "Known Fix": "lon"})
+
+
 
 

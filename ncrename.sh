@@ -5,4 +5,4 @@ new=$2
 inputFile=$3
 outputFile=$4
 
-ncrename -v $original,$new -d .$original,$new -h $inputFile -o $outputFile
+ncrename -v $original,$new -d .$original,$new -h $inputFile -O $outputFile

@@ -30,6 +30,12 @@ def log(logFile, fileName, text, logType):
 	elif logType == 'File Confirmed':
 		logging.info("Confirmed file: [%s]", fileName)
 
+	elif logType == 'File Moved':
+		logging.info("Moved file from [%s] to [%s]", fileName, text)
+
+	elif logType == 'File Copied':
+		logging.info("Copied file from [%s] to [%s]", fileName, text)
+
 	elif logType == 'Variable Confirmed':
 		logging.info("Standard Name [%s] confirmed", text)
 
@@ -98,13 +104,13 @@ def best_estimates(wrongAttr):
 # Return validation of correct attribute
 # or corrected attribute from Known fixes collection
 # or return the top 3 matches from CFVars collection
-def identify_attribute(var, attr, logFile, fileName, stgDir, fixFlag):
+def identify_attribute(var, attr, logFile, fileInfo, stgDir, fixFlag):
 	# Check if (var, attr) is valid CF Standard Name pair
 	cursor = db.CFVars.find_one({ '$and': [{"CF Standard Name": { '$eq': attr}}, {"Var Name": {'$eq': var}}]})
 	# Log notification of correct attribute
 	if (cursor):
 		text = var + ":" + attr
-		log(logFile, fileName, text, "Variable Confirmed")
+		log(logFile, fileInfo["fullPath"], text, "Variable Confirmed")
 		# Return true for confirming file
 		return True
 
@@ -115,15 +121,19 @@ def identify_attribute(var, attr, logFile, fileName, stgDir, fixFlag):
 		cursor = db.VarNameFixes.find_one({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': attr}}]})
 		if (cursor):
 			if fixFlag:
-				# Create copy of folder structure in staging directory
-				stgDir = stgDir+os.path.dirname(fileName)
-				if not os.path.exists(stgDir):
-					os.makedirs(stgDir)
-				ncrename.run(var, cursor["Known Fix"], fileName, (stgDir+"/"+ntpath.basename(fileName)))
+				# File is not in staging directory
+				if fileInfo["folder"] != stgDir:
+					# Create copy of folder structure in staging directory
+					stgDir = stgDir+os.path.dirname(fileInfo["fullPath"])
+					if not os.path.exists(stgDir):
+						os.makedirs(stgDir)
+					ncrename.run(var, cursor["Known Fix"], fileInfo["fullPath"], (stgDir+"/"+ntpath.basename(fileInfo["fullPath"])))
+				else:
+					ncrename.run(var, cursor["Known Fix"], fileInfo["fullPath"])
 
 			# Log the fix
 			text = var + "," + cursor["Known Fix"] + "," + attr
-			log(logFile, fileName, text, 'Switched Variable')
+			log(logFile, fileInfo["fullPath"], text, 'Switched Variable')
 			# Return true for confirming file
 			return False
 		else:
@@ -131,7 +141,7 @@ def identify_attribute(var, attr, logFile, fileName, stgDir, fixFlag):
 			recommendations = var + ":" + attr + ","
 			for var in cursor:
 				recommendations += var["Var Name"] + " | "
-			log(logFile, fileName, recommendations, 'No Matching Var Name')
+			log(logFile, fileInfo["fullPath"], recommendations, 'No Matching Var Name')
 			# Return false for confirming file
 			return False
 
@@ -145,15 +155,19 @@ def identify_attribute(var, attr, logFile, fileName, stgDir, fixFlag):
 		# If attr exists in StandardNameFixes collection
 		if (cursor):
 			if fixFlag:
-				# Create copy of folder structure in staging directory
-				stgDir = stgDir+os.path.dirname(fileName)
-				if not os.path.exists(stgDir):
-					os.makedirs(stgDir)
-				ncatted.run("standard_name", var, "o", "c", cursor["Known Fix"], "-h", fileName, (stgDir+"/"+ntpath.basename(fileName)))
+				# File is not in staging directory
+				if fileInfo["folder"] != stgDir:
+					# Create copy of folder structure in staging directory
+					stgDir = stgDir+os.path.dirname(fileInfo["fullPath"])
+					if not os.path.exists(stgDir):
+						os.makedirs(stgDir)
+					ncatted.run("standard_name", var, "o", "c", cursor["Known Fix"], "-h", fileInfo["fullPath"], (stgDir+"/"+ntpath.basename(fileInfo["fullPath"])))
+				else:
+					ncatted.run("standard_name", var, "o", "c", cursor["Known Fix"], "-h", fileInfo["fullPath"])
 
 			# Log the fix
 			text = var + "," + attr + "," + cursor["Known Fix"]
-			log(logFile, fileName, text, 'Switched Attribute')
+			log(logFile, fileInfo["fullPath"], text, 'Switched Attribute')
 			# Return true for confirming file
 			return True
 		# Get best N best estimates for "attr"
@@ -163,11 +177,24 @@ def identify_attribute(var, attr, logFile, fileName, stgDir, fixFlag):
 			for e in bestEstimatesList:
 				bestEstimates += str(e[0]) + " " + str(e[1]) + " | "
 			text = var + "," + attr + "," + bestEstimates
-			log(logFile, fileName, text, 'Estimated')
+			log(logFile, fileInfo["fullPath"], text, 'Estimated')
 			# Return false for confirming file
 			return False
 
 	return
+
+def get_file_info(f):
+	fileName   = f[0]
+	standNames = f[1]
+
+	info = {}
+	info["standNames"] = standNames
+	info["fileName"]   = ntpath.basename(fileName)
+	info["folder"]     = fileName.split("/")[0]+"/"
+	info["path"]       = os.path.dirname(fileName)
+	info["fullPath"]   = fileName
+
+	return info
 
 def fix_files(srcDir, stgDir, dstDir, logFile, fixFlag):
 	# (filename, standard_name) list of all files in ncFolder
@@ -182,33 +209,39 @@ def fix_files(srcDir, stgDir, dstDir, logFile, fixFlag):
 		fileFlag = True
 		# For each file in the list, log the file has started
 		for f in standardNames:
-			fileName = f[0]
-			standNames = f[1]
-			log(logFile, fileName, "", 'File Started')
+			fileInfo = get_file_info(f)
+
+			log(logFile, fileInfo["fullPath"], "", 'File Started')
 			# If the file has no standard names, log the issue
-			if not standNames:
-				log(logFile, fileName, "", 'No Standard Names')
+			if not fileInfo["standNames"]:
+				log(logFile, fileInfo["fullPath"], "", 'No Standard Names')
 				fileFlag = False
 			# For each attribute in standard_name list, format and identify attribute
 			else:
-				for attr in standNames:
+				for attr in fileInfo["standNames"]:
 					splitAttr = attr.split(":")
-					flag = identify_attribute(splitAttr[0], splitAttr[1], logFile, fileName, stgDir, fixFlag)
+					flag = identify_attribute(splitAttr[0], splitAttr[1], logFile, fileInfo, stgDir, fixFlag)
 					# Check if something in file was changed
 					if flag == False:
 						fileFlag = False
 			# If file had no errors or KnownFix occured ==> Confirm file
 			if fileFlag:
+				# Log the confirmed file
+				log(logFile, fileInfo["fullPath"], "", 'File Confirmed')
+				
 				if fixFlag:
 					# New path for copying file
-					dstdir = (dstDir+os.path.dirname(fileName)).replace(stgDir, "")
+					dstDirectory = dstDir + os.path.dirname(fileInfo["fullPath"]).replace(stgDir, "")
 					# If path does not exist ==> create directory structure
-					if not os.path.exists(dstdir):
-						os.makedirs(dstdir)
+					if not os.path.exists(dstDirectory):
+						os.makedirs(dstDirectory)
 					# Copy original file to dstdir
-					shutil.move(fileName, dstdir)
-				# Log the confirmed file
-				log(logFile, fileName, "", 'File Confirmed')
+					if fileInfo["folder"] == stgDir:
+						log(logFile, fileInfo["fullPath"], dstDirectory, 'File Moved')
+						shutil.move(fileInfo["fullPath"], dstDirectory)
+					else:
+						log(logFile, fileInfo["fullPath"], dstDirectory, 'File Copied')
+						shutil.copy(fileInfo["fullPath"], dstDirectory)
 			# Reset fileFlag
 			fileFlag = True
 			# Update progress bar

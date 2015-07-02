@@ -7,6 +7,6 @@ import shlex
 
 def run(oldName, newName, inputFile, outputFile=""):
 	call = "./ncrename.sh %s %s %s %s" % (oldName, newName, inputFile, outputFile)
-	p = subprocess.Popen(shlex.split(call), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	p = subprocess.Popen(shlex.split(call))
 	out, err = p.communicate()
 	if err: print err
