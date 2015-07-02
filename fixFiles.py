@@ -18,7 +18,19 @@ db                = connection["Attribute_Correction"]
 CFVars            = db["CFVars"]
 StandardNameFixes = db["StandardNameFixes"]
 VarNameFixes      = db["VarNameFixes"]
-	
+
+def get_file_info(f):
+	fileName   = f[0]
+	standNames = f[1]
+
+	info = {}
+	info["standNames"] = standNames
+	info["fileName"]   = ntpath.basename(fileName)
+	info["folder"]     = fileName.split("/")[0]+"/"
+	info["path"]       = os.path.dirname(fileName)
+	info["fullPath"]   = fileName
+
+	return info	
 
 # Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
@@ -169,7 +181,7 @@ def identify_attribute(var, attr, logFile, fileInfo, stgDir, fixFlag):
 			text = var + "," + attr + "," + cursor["Known Fix"]
 			log(logFile, fileInfo["fullPath"], text, 'Switched Attribute')
 			# Return true for confirming file
-			return True
+			return False
 		# Get best N best estimates for "attr"
 		else:
 			bestEstimatesList = best_estimates(attr)
@@ -183,18 +195,7 @@ def identify_attribute(var, attr, logFile, fileInfo, stgDir, fixFlag):
 
 	return
 
-def get_file_info(f):
-	fileName   = f[0]
-	standNames = f[1]
 
-	info = {}
-	info["standNames"] = standNames
-	info["fileName"]   = ntpath.basename(fileName)
-	info["folder"]     = fileName.split("/")[0]+"/"
-	info["path"]       = os.path.dirname(fileName)
-	info["fullPath"]   = fileName
-
-	return info
 
 def fix_files(srcDir, stgDir, dstDir, logFile, fixFlag):
 	# (filename, standard_name) list of all files in ncFolder
@@ -224,6 +225,7 @@ def fix_files(srcDir, stgDir, dstDir, logFile, fixFlag):
 					# Check if something in file was changed
 					if flag == False:
 						fileFlag = False
+						break
 			# If file had no errors or KnownFix occured ==> Confirm file
 			if fileFlag:
 				# Log the confirmed file
