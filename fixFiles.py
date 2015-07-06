@@ -218,6 +218,7 @@ def main():
 	parser.add_argument("-l", "--logFile",           dest="logFile",    help = "File to log metadata changes to")
 	parser.add_argument("-f", "--fixFlag",           dest="fixFlag",    help = "Flag to fix files or only report possible changes (-f = Fix Files)",  action='store_true', default=False)
 	parser.add_argument("--hist", "--histFlag",      dest="histFlag",   help = "Flag to append changes to history metadata (-h = append to history)", action='store_true', default=False)
+	
 	args = parser.parse_args()
 
 	if(len(sys.argv) == 1):
