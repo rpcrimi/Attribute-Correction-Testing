@@ -53,14 +53,10 @@ def log(logFile, fileName, text, logType):
 
 def get_model_initdate_freq_var(fullPath, srcDir):
 	splitFileName = fullPath.split("/")
-	if srcDir == 'NOAA-GFDL/':
+	if srcDir == ('NOAA-GFDL/' or 'CCCMA/'):
 		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[6])
-	elif srcDir == 'UM-RSMAS/':
+	elif srcDir == ('UM-RSMAS/' or 'NASA-GMAO/'):
 		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[5])
-	elif srcDir == 'NASA-GMAO/':
-		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[5])
-	elif srcDir == 'CCCMA/':
-		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[6])
 
 # Return a list of all netCDF files in "direrctory"
 def get_nc_files(directory):
@@ -111,20 +107,25 @@ def fix_filenames(fullPath, srcDir, logFile, fixFlag):
 
 	# Create End Date and File Extension
 	# TODO: FIX FOR NON-YEAR MODELS
-	endDate   = initDate[0:4]+"1231"
-	extension = fileName.split(".")[-1]
+	splitFileName = fileName.split(".")
+	extension     = splitFileName[-1]
+	rootFileName  = ".".join(splitFileName[0:-1])
+	if "r1p1" not in rootFileName.split("_")[-1]:
+		endDate  = initDate[0:4]+rootFileName[-4:]
+		startEnd = initDate + "-" + endDate
+	else:
+		startEnd = ""
 
-	newFileName = var+"_"+freq+"_"+model+"_"+initDate+"_"+realization+"_"+initDate+"-"+endDate+"."+extension
+	newFileName = var+"_"+freq+"_"+model+"_"+initDate+"_"+realization+"_"+startEnd+"."+extension
 
 	if fileName != newFileName:
 		text = fileName + "," + newFileName
 		log(logFile, fileName, text, 'File Name Error')
 		if fixFlag:
-			if flag:
-				newFullPath = os.path.dirname(fullPath)+"/"+newFileName
-				#os.rename(fullPath, newFullPath)
-				log(logFile, fileName, newFileName, 'Renamed File Name')
-				flag = False
+			newFullPath = os.path.dirname(fullPath)+"/"+newFileName
+			#os.rename(fullPath, newFullPath)
+			log(logFile, fileName, newFileName, 'Renamed File Name')
+			flag = False
 		else:
 			flag = False
 	return flag
