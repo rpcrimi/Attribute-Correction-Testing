@@ -1,0 +1,192 @@
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r10i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r10i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r11i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r11i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r12i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r12i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r1i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r1i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r2i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r2i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r3i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r3i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r4i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r4i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r5i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r5i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r6i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r6i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r7i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r7i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r8i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r8i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc] does not match created File Name [pr_day_FLORB-01_19800101_r9i1p1_19800101-19801231.nc]
+DEBUG    File Name [pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc] renamed to [pr_day_FLORB-01_19800101_r9i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r10i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r10i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r11i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r11i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r12i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r12i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r1i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r1i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r2i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r2i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r3i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r3i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r4i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r4i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r5i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r5i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r6i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r6i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r7i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r7i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r8i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r8i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc] does not match created File Name [tas_day_FLORB-01_19800101_r9i1p1_19800101-19801231.nc]
+DEBUG    File Name [tas_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc] renamed to [tas_day_FLORB-01_19800101_r9i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r10i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r10i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r11i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r11i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r12i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r12i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r1i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r1i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r2i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r2i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r3i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r3i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r4i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r4i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r5i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r5i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r6i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r6i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r7i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r7i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r8i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r8i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc] does not match created File Name [tasmax_day_FLORB-01_19800101_r9i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmax_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc] renamed to [tasmax_day_FLORB-01_19800101_r9i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r10i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r10i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r11i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r11i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r12i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r12i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r1i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r1i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r2i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r2i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r3i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r3i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r4i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r4i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r5i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r5i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r6i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r6i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r7i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r7i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r8i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r8i1p1_19800101-19801231.nc]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc] does not match created File Name [tasmin_day_FLORB-01_19800101_r9i1p1_19800101-19801231.nc]
+DEBUG    File Name [tasmin_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_19800101-19801231.nc] renamed to [tasmin_day_FLORB-01_19800101_r9i1p1_19800101-19801231.nc]
