@@ -21,7 +21,7 @@ def log(logFile, fileName, text, logType):
 	logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=logFile, filemode='w')
 	if logType == 'File Started':
 		logging.info("--------------------------------------------------------------------------------------------------------------------------------------")
-		logging.debug("Starting in file: [%s]", fileName)
+		logging.debug("Starting file name: [%s]", fileName)
 
 	elif logType == 'File Confirmed':
 		logging.debug("Confirmed file name: [%s]", fileName)
@@ -51,12 +51,16 @@ def log(logFile, fileName, text, logType):
 	elif logType == 'Renamed File Name':
 		logging.debug("File Name [%s] renamed to [%s]", fileName, text)
 
-def get_model_initdate_freq_var(fullPath, model):
+def get_model_initdate_freq_var(fullPath, srcDir):
 	splitFileName = fullPath.split("/")
-	if model == 'FLORB-01':
+	if srcDir == 'NOAA-GFDL/':
 		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[6])
-	if model == 'CCSM4':
+	elif srcDir == 'UM-RSMAS/':
 		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[5])
+	elif srcDir == 'NASA-GMAO/':
+		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[5])
+	elif srcDir == 'CCCMA/':
+		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[6])
 
 # Return a list of all netCDF files in "direrctory"
 def get_nc_files(directory):
@@ -70,11 +74,19 @@ def get_nc_files(directory):
 					matches.append(filename)
 	return matches
 
-def fix_filenames(fullPath, modelName, logFile, fixFlag):
+def get_realization(fullPath):
+	p  = subprocess.Popen(['./ncdump.sh', fullPath], stdout=subprocess.PIPE)
+	p2 = subprocess.Popen(shlex.split('grep :realization'), stdin=p.stdout, stdout=subprocess.PIPE)
+	p.stdout.close()
+	out, err = p2.communicate()
+	p2.stdout.close()
+	realization = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
+	return "r"+realization+"i1p1"	
+
+def fix_filenames(fullPath, srcDir, logFile, fixFlag):
 	flag          = True
 	fileName      = ntpath.basename(fullPath)
-	model, initDate, freq, var = get_model_initdate_freq_var(fullPath, modelName)
-
+	model, initDate, freq, var = get_model_initdate_freq_var(fullPath, srcDir)
 	splitFileName = fileName.split("_")
 
 	# Validate Variable
@@ -89,20 +101,9 @@ def fix_filenames(fullPath, modelName, logFile, fixFlag):
 		log(logFile, fileName, freq, 'Freq Error')
 		flag = False
 
-	# Validate Model
-	if model != modelName:
-		log(logFile, fileName, splitFileName[2], 'Model Error')
-		flag = False
-
 	# Validate realization number
-	fileNameRealization   = [match for match in splitFileName if re.match(realizationRegex, match)][0]
-	p  = subprocess.Popen(['./ncdump.sh', fullPath], stdout=subprocess.PIPE)
-	p2 = subprocess.Popen(shlex.split('grep :realization'), stdin=p.stdout, stdout=subprocess.PIPE)
-	p.stdout.close()
-	out, err = p2.communicate()
-	p2.stdout.close()
-	realization = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
-	realization = "r"+realization+"i1p1"
+	fileNameRealization = [match for match in splitFileName if re.match(realizationRegex, match)][0]
+	realization         = get_realization(fullPath) 
 	if realization != fileNameRealization:
 		text = realization + "," + fileNameRealization
 		log(logFile, fileName, text, 'Realization Error')
@@ -144,14 +145,15 @@ def main():
 		files = get_nc_files(args.srcDir)
 		for f in files:
 			log(args.logFile, ntpath.basename(f), "", 'File Started')
-			flag = fix_filenames(f, args.model, args.logFile, args.fixFlag)
+			flag = fix_filenames(f, args.srcDir, args.logFile, args.fixFlag)
 			if flag:
 				log(args.logFile, ntpath.basename(f), "", "File Confirmed")
 
 	elif args.fileName:
-		flag = fix_filenames(args.fileName, args.model, args.logFile, args.fixFlag)
+		log(args.logFile, ntpath.basename(args.fileName), "", 'File Started')
+		flag = fix_filenames(args.fileName, args.srcDir, args.logFile, args.fixFlag)
 		if flag:
-			log(args.logFile, args.fileName, "", "File Confirmed")
+			log(args.logFile, ntpath.basename(args.fileName), "", "File Confirmed")
 
 
 if __name__ == "__main__":

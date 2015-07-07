@@ -1,588 +1,745 @@
 INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/mlotst/mlotst_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
-DEBUG    Standard Name [mlotst:ocean_mixed_layer_thickness_defined_by_sigma_t] best 3 estimates: ocean_mixed_layer_thickness 73.9726027397 | sea_ice_thickness 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.3636363636 | 
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
-INFO     Standard Name [so:sea_water_salinity] confirmed
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/so/so_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [thetao:sea_water_potential_temperature] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/thetao/thetao_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [uo:sea_water_x_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/uo/uo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
-INFO     Standard Name [lev:depth] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [vo:sea_water_y_velocity] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/ocean/v20140710/vo/vo_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/ocean/v20140710/zos/zos_Omon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
-INFO     Switched variable name from [zos:sea_surface_height_above_geoid] to [zoh:sea_surface_height_above_geoid]
-INFO     Standard Name [time:time] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/ext/ext_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
-DEBUG    Standard Name [ext:sea_ice_extent_cell_descriptor] best 3 estimates: sea_ice_extent 63.6363636364 | sea_water_potential_temperature 52.4590163934 | sea_ice_thickness 51.0638297872 | 
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r11i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r12i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r1i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r2i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r3i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r4i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r5i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r6i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r7i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r8i1p1_198001-198012.nc]
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
-DEBUG    Starting in file [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]:
-INFO     Standard Name [sic:sea_ice_area_fraction] confirmed
-INFO     Standard Name [time:time] confirmed
-INFO     Standard Name [lon:longitude] confirmed
-INFO     Standard Name [lat:latitude] confirmed
-INFO     Confirmed file: [NOAA-GFDL/mon/seaIce/v20140710/sic/sic_OImon_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r9i1p1_198001-198012.nc]
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature 39.3442622951 | geopotential 38.0952380952 | volume_fraction_of_condensed_water_in_soil 36.1111111111 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX 76.1904761905 | convective_precipitation_rate 67.7966101695 | precipitation_flux 54.1666666667 | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     --------------------------------------------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
