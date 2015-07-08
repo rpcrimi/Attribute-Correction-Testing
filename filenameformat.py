@@ -1,5 +1,4 @@
 import pymongo
-import ntpath
 import subprocess
 import shlex
 import re
@@ -7,6 +6,7 @@ import argparse
 import os
 import logging
 import sys
+import ncatted
 
 connection        = pymongo.MongoClient()
 db                = connection["Attribute_Correction"]
@@ -37,25 +37,28 @@ def log(logFile, fileName, text, logType):
 		logging.debug("Model [%s] not recognized", text)	
 
 	elif logType == 'Realization Error':
-		splitText           = text.split(",")
-		realization         = splitText[0]
-		fileNameRealization = splitText[1]
-		logging.debug("Metadata Realization [%s] does not match File Name Realization [%s]", realization, fileNameRealization)
+		logging.debug("Metadata Realization [%s] does not match File Name Realization [%s]", text[0], text[1])
 
 	elif logType == 'File Name Error':
-		splitText   = text.split(",")
-		fileName    = splitText[0]
-		newFileName = splitText[1]
-		logging.debug("File Name [%s] does not match created File Name [%s]", fileName, newFileName)
+		logging.debug("File Name [%s] does not match created File Name [%s]", text[0], text[1])
 
 	elif logType == 'Renamed File Name':
 		logging.debug("File Name [%s] renamed to [%s]", fileName, text)
 
+	elif logType == 'Realization Fix':
+		logging.debug("Metadata Realization changed from [%s] to [%s]", text[0], text[1])
+
+	elif logType == 'Var Name Fix':
+		logging.debug("Variable [%s] changed to [%s]", text[0], text[1])
+
+	elif logType == 'Renamed Var Folder':
+		logging.debug("Folder [%s] renamed to [%s]", text[0], text[1])
+
 def get_model_initdate_freq_var(fullPath, srcDir):
 	splitFileName = fullPath.split("/")
-	if srcDir == ('NOAA-GFDL/' or 'CCCMA/'):
+	if srcDir == 'NOAA-GFDL/' or srcDir == 'CCCMA/':
 		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[6])
-	elif srcDir == ('UM-RSMAS/' or 'NASA-GMAO/'):
+	elif srcDir == 'UM-RSMAS/' or srcDir == 'NASA-GMAO/':
 		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[5])
 
 # Return a list of all netCDF files in "direrctory"
@@ -70,39 +73,58 @@ def get_nc_files(directory):
 					matches.append(filename)
 	return matches
 
-def get_realization(fullPath):
+def get_metadata(fullPath, attr):
+	grep = 'grep :'+attr
 	p  = subprocess.Popen(['./ncdump.sh', fullPath], stdout=subprocess.PIPE)
-	p2 = subprocess.Popen(shlex.split('grep :realization'), stdin=p.stdout, stdout=subprocess.PIPE)
+	p2 = subprocess.Popen(shlex.split(grep), stdin=p.stdout, stdout=subprocess.PIPE)
 	p.stdout.close()
 	out, err = p2.communicate()
 	p2.stdout.close()
 	realization = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
 	return "r"+realization+"i1p1"	
 
-def fix_filenames(fullPath, srcDir, logFile, fixFlag):
+def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
 	flag          = True
-	fileName      = ntpath.basename(fullPath)
+	fileName      = os.path.basename(fullPath)
 	model, initDate, freq, var = get_model_initdate_freq_var(fullPath, srcDir)
 	splitFileName = fileName.split("_")
 
 	# Validate Variable
-	cursor = db.CFVars.find_one({"Var Name": var})
-	if not cursor:
+	if not db.CFVars.find_one({"Var Name": var}):
+		# Try to fix the variable name
+		if db.CFVars.find_one({"Var Name": var.lower()}):
+			if fixFlag:
+				var = var.lower()
+			log(logFile, fileName, [var.upper(), var.lower()], 'Var Name Fix')
+
+			oldDir      = os.path.dirname(fullPath)
+			parDirIndex = oldDir.rfind('/')
+			parDir      = oldDir[parDirIndex+1:]
+			if parDir.isupper():
+				parDir = parDir.lower()
+				newDir = oldDir[:parDirIndex+1]+parDir
+				if fixFlag:
+					os.rename(oldDir, newDir)
+				log(logFile, fileName, [oldDir, newDir], 'Renamed Var Folder')
+
 		log(logFile, fileName, var, 'Var Error')
+				
 		flag = False
 
 	# Validate Frequency
-	cursor = db.ValidFreq.find_one({"Frequency": freq})
-	if not cursor:
+	if not db.ValidFreq.find_one({"Frequency": freq}):
 		log(logFile, fileName, freq, 'Freq Error')
 		flag = False
 
 	# Validate realization number
-	fileNameRealization = [match for match in splitFileName if re.match(realizationRegex, match)][0]
-	realization         = get_realization(fullPath) 
+	fileNameRealization = [match for match in splitFileName if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
+	realization         = get_metadata(fullPath, "realization") 
 	if realization != fileNameRealization:
-		text = realization + "," + fileNameRealization
-		log(logFile, fileName, text, 'Realization Error')
+		log(logFile, fileName, [realization, fileNameRealization], 'Realization Error')
+		if fixFlag:
+			realizationNum = map(int, re.findall(r'\d+', fileNameRealization))[0]
+			ncatted.run("realization", "global", "o", "i", realizationNum, fullPath, ("" if histFlag else "-h"))
+			log(logFile, fileName, [realization, fileNameRealization], 'Realization Fix')
 		flag = False
 
 	# Create End Date and File Extension
@@ -110,20 +132,18 @@ def fix_filenames(fullPath, srcDir, logFile, fixFlag):
 	splitFileName = fileName.split(".")
 	extension     = splitFileName[-1]
 	rootFileName  = ".".join(splitFileName[0:-1])
-	if "r1p1" not in rootFileName.split("_")[-1]:
-		endDate  = initDate[0:4]+rootFileName[-4:]
+	if not re.match(realizationRegex, rootFileName.split("_")[-1]):
+		endDate  = rootFileName[-8:]
 		startEnd = initDate + "-" + endDate
 	else:
 		startEnd = ""
 
-	newFileName = var+"_"+freq+"_"+model+"_"+initDate+"_"+realization+"_"+startEnd+"."+extension
-
+	newFileName = var+"_"+freq+"_"+model+"_"+initDate+"_"+fileNameRealization+("_" if startEnd else "")+startEnd+"."+extension
 	if fileName != newFileName:
-		text = fileName + "," + newFileName
-		log(logFile, fileName, text, 'File Name Error')
+		log(logFile, fileName, [fileName, newFileName], 'File Name Error')
 		if fixFlag:
 			newFullPath = os.path.dirname(fullPath)+"/"+newFileName
-			#os.rename(fullPath, newFullPath)
+			os.rename(fullPath, newFullPath)
 			log(logFile, fileName, newFileName, 'Renamed File Name')
 			flag = False
 		else:
@@ -137,6 +157,7 @@ def main():
 	parser.add_argument("-m", "--model",           dest="model",    help = "Name of model (ex: NOAA-GFDL, CCSM4)")
 	parser.add_argument("-l", "--logFile",         dest="logFile",  help = "File to log metadata changes to")
 	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",  help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true', default=False)
+	parser.add_argument("--hist", "--histFlag",    dest="histFlag", help = "Flag to append changes to history metadata (-h = append to history)",           action='store_true', default=False)
 
 	args = parser.parse_args()
 
@@ -145,16 +166,16 @@ def main():
 	if args.srcDir:
 		files = get_nc_files(args.srcDir)
 		for f in files:
-			log(args.logFile, ntpath.basename(f), "", 'File Started')
-			flag = fix_filenames(f, args.srcDir, args.logFile, args.fixFlag)
-			if flag:
-				log(args.logFile, ntpath.basename(f), "", "File Confirmed")
+			log(args.logFile, os.path.basename(f), "", 'File Started')
+
+			if fix_filename(f, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
+				log(args.logFile, os.path.basename(f), "", "File Confirmed")
 
 	elif args.fileName:
-		log(args.logFile, ntpath.basename(args.fileName), "", 'File Started')
-		flag = fix_filenames(args.fileName, args.srcDir, args.logFile, args.fixFlag)
-		if flag:
-			log(args.logFile, ntpath.basename(args.fileName), "", "File Confirmed")
+		log(args.logFile, os.path.basename(args.fileName), "", 'File Started')
+
+		if fix_filename(args.fileName, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
+			log(args.logFile, os.path.basename(args.fileName), "", "File Confirmed")
 
 
 if __name__ == "__main__":

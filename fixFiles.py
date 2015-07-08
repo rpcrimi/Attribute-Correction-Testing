@@ -3,7 +3,6 @@ from difflib import SequenceMatcher
 import logging
 import os
 import shutil
-import ntpath
 import argparse
 from progressbar import *
 import grabmetadata
