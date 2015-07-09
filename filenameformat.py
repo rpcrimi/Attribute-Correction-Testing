@@ -54,6 +54,7 @@ def log(logFile, fileName, text, logType):
 	elif logType == 'Renamed Var Folder':
 		logging.debug("Folder [%s] renamed to [%s]", text[0], text[1])
 
+# Get model, initialization date, frequency, and variable from the full path of the given file
 def get_model_initdate_freq_var(fullPath, srcDir):
 	splitFileName = fullPath.split("/")
 	if srcDir == 'NOAA-GFDL/' or srcDir == 'CCCMA/':
@@ -61,6 +62,7 @@ def get_model_initdate_freq_var(fullPath, srcDir):
 	elif srcDir == 'UM-RSMAS/' or srcDir == 'NASA-GMAO/':
 		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[5])
 
+# Create dictionary of given info from command line
 def create_dict_given_info(model=None, initDate=None, freq=None, var=None):
 	dictionary = {}
 	if model:
@@ -85,16 +87,26 @@ def get_nc_files(directory):
 					matches.append(filename)
 	return matches
 
+# Grab the attribute = attr from the file = fullPath
+# This should only be used for global attributes
 def get_metadata(fullPath, attr):
+	# Create the grep string
 	grep = 'grep :'+attr
+	# Dump metadata and grep for attribute
 	p  = subprocess.Popen(['./ncdump.sh', fullPath], stdout=subprocess.PIPE)
 	p2 = subprocess.Popen(shlex.split(grep), stdin=p.stdout, stdout=subprocess.PIPE)
 	p.stdout.close()
 	out, err = p2.communicate()
 	p2.stdout.close()
+	# Format metadata by removing tabs, newlines, and semicolons and grabbing the value
+	# lstrip("0") for realization numbers of the form r01i1p1
 	metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
 	return metadata
 
+# Fix the file = fullPath
+# scrDir is required for pulling correct data from path
+# Changes will occur if fixFlag == True
+# Changes will appear in history if histFlag == False
 def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
 	flag          = True
 	fileName      = os.path.basename(fullPath)
@@ -102,65 +114,88 @@ def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
 	splitFileName = fileName.split("_")
 
 	# Validate Variable
+	#------------------
 	if not db.CFVars.find_one({"Var Name": var}):
-		# Try to fix the variable name
+		# Try to fix the variable name by making characters lowercase
+		#------------------------------------------------------------
 		if db.CFVars.find_one({"Var Name": var.lower()}):
 			if fixFlag:
 				var = var.lower()
 			log(logFile, fileName, [var.upper(), var.lower()], 'Var Name Fix')
 
+			# Fix the folder that is named after the variable
+			#------------------------------------------------
 			oldDir      = os.path.dirname(fullPath)
+			# Get the name of the variable folder
 			parDirIndex = oldDir.rfind('/')
 			parDir      = oldDir[parDirIndex+1:]
+			# If folder is uppercase ==> make lowercase and rename folder
 			if parDir.isupper():
 				parDir = parDir.lower()
 				newDir = oldDir[:parDirIndex+1]+parDir
 				if fixFlag:
 					os.rename(oldDir, newDir)
 				log(logFile, fileName, [oldDir, newDir], 'Renamed Var Folder')
-
-		log(logFile, fileName, var, 'Var Error')
-				
+		else:
+			log(logFile, fileName, var, 'Var Error')
+		# Error seen	
 		flag = False
 
 	# Validate Frequency
+	#-------------------
 	if not db.ValidFreq.find_one({"Frequency": freq}):
 		log(logFile, fileName, freq, 'Freq Error')
+		# Error seen
 		flag = False
 
 	# Validate realization number
+	#----------------------------
+	# Grab realization number from fileName
 	fileNameRealization = [match for match in splitFileName if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
+	# Grab realization number from metadata
 	realization         = get_metadata(fullPath, "realization")
-	realization         = "r"+realization+"i1p1" 
+	realization         = "r"+realization+"i1p1"
+	# If the two values differ ==> fix the value in metadata to reflect filename
 	if realization != fileNameRealization:
 		log(logFile, fileName, [realization, fileNameRealization], 'Realization Error')
 		if fixFlag:
+			# Find the number after "r" in fileNameRealization value
 			realizationNum = map(int, re.findall(r'\d+', fileNameRealization))[0]
+			# Overwrite realization value in metadata
 			ncatted.run("realization", "global", "o", "i", realizationNum, fullPath, ("-h" if histFlag else ""))
 			log(logFile, fileName, [realization, fileNameRealization], 'Realization Fix')
+		# Error seen
 		flag = False
 
 	# Create End Date and File Extension
-	# TODO: FIX FOR NON-YEAR MODELS
+	#-----------------------------------
 	splitFileName = fileName.split(".")
 	extension     = splitFileName[-1]
 	rootFileName  = ".".join(splitFileName[0:-1])
+	# If end of filename is not a realization number ==> it contains a start-end date
 	if not re.match(realizationRegex, rootFileName.split("_")[-1]):
+		# Grab the enddate from the file
+		# TODO: FIX FOR NON 8 CHARACTER DATES
 		endDate  = rootFileName[-8:]
 		startEnd = initDate + "-" + endDate
+	# Do not append start-end date if none is provided
 	else:
 		startEnd = ""
 
+	# Create filename based on pulled information
+	#--------------------------------------------
 	newFileName = var+"_"+freq+"_"+model+"_"+initDate+"_"+fileNameRealization+("_" if startEnd else "")+startEnd+"."+extension
+	# If filename differs from created filename ==> rename file to created filename
 	if fileName != newFileName:
 		log(logFile, fileName, [fileName, newFileName], 'File Name Error')
 		if fixFlag:
 			newFullPath = os.path.dirname(fullPath)+"/"+newFileName
 			os.rename(fullPath, newFullPath)
 			log(logFile, fileName, newFileName, 'Renamed File Name')
-			flag = False
-		else:
-			flag = False
+		# Error seen
+		flag = False
+
+	# Return boolean value if error found
 	return flag
 
 def main():
