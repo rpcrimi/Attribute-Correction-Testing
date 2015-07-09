@@ -80,8 +80,8 @@ def get_metadata(fullPath, attr):
 	p.stdout.close()
 	out, err = p2.communicate()
 	p2.stdout.close()
-	realization = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
-	return "r"+realization+"i1p1"	
+	metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
+	return metadata
 
 def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
 	flag          = True
@@ -118,7 +118,8 @@ def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
 
 	# Validate realization number
 	fileNameRealization = [match for match in splitFileName if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
-	realization         = get_metadata(fullPath, "realization") 
+	realization         = get_metadata(fullPath, "realization")
+	realization         = "r"+realization+"i1p1" 
 	if realization != fileNameRealization:
 		log(logFile, fileName, [realization, fileNameRealization], 'Realization Error')
 		if fixFlag:
@@ -178,5 +179,7 @@ def main():
 			log(args.logFile, os.path.basename(args.fileName), "", "File Confirmed")
 
 
-if __name__ == "__main__":
-	main()
+#if __name__ == "__main__":
+#	main()
+
+print get_metadata("NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r10i1p1.nc", "frequency")

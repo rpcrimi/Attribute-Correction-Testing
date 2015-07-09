@@ -32,35 +32,19 @@ def log(logFile, fileName, text, logType):
 		logging.info("Standard Name [%s] confirmed", text)
 
 	elif logType == 'Switched Attribute':
-		splitText = text.split(",")
-		attr      = splitText[0]
-		oldName   = splitText[1]
-		newName   = splitText[2]
-		logging.info("Switched [%s] standard_name from [%s] to [%s]", attr, oldName, newName)
+		logging.info("Switched [%s] standard_name from [%s] to [%s]", text[0], text[1], text[2])
 
 	elif logType == 'Switched Variable':
-		splitText = text.split(",")
-		oldName   = splitText[0]
-		newName   = splitText[1]
-		attr      = splitText[2]
-		logging.info("Switched variable name from [%s:%s] to [%s:%s]", oldName, attr, newName, attr)
-
+		logging.info("Switched variable name from [%s:%s] to [%s:%s]", text[0], text[2], text[1], text[2])
 
 	elif logType == 'Estimated':
-		splitText    = text.split(",")
-		var          = splitText[0]
-		wrongAttr    = splitText[1]
-		estimates    = splitText[2]
-		logging.debug("Standard Name [%s:%s] best 3 estimates: %s", var, wrongAttr, estimates)
+		logging.debug("Standard Name [%s:%s] best 3 estimates: %s", text[0], text[1], text[2])
 
 	elif logType == 'No Standard Names':
 		logging.debug("[%s]: no standard names defined", fileName)
 
 	elif logType == 'No Matching Var Name':
-		splitText = text.split(",")
-		attr = splitText[0]
-		recommendations = splitText[1]
-		logging.debug("[%s] recommended Variable Names: %s", attr, recommendations)
+		logging.debug("[%s] recommended Variable Names: %s", text[0], text[1])
 
 # Return list of CF Standard Names from CFVars Collection
 def get_CF_Standard_Names():
@@ -117,16 +101,15 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag, histFlag):
 				ncrename.run(var, cursor["Known Fix"], fileName, histFlag)
 
 			# Log the fix
-			text = var + "," + cursor["Known Fix"] + "," + attr
-			log(logFile, fileName, text, 'Switched Variable')
+			log(logFile, fileName, [var, cursor["Known Fix"], attr], 'Switched Variable')
 			# Return true for confirming file
 			return False
 		else:
 			cursor = db.CFVars.find({"CF Standard Name": { '$eq': attr}})
-			recommendations = var + ":" + attr + ","
+			recommendations = ""
 			for var in cursor:
 				recommendations += var["Var Name"] + " | "
-			log(logFile, fileName, recommendations, 'No Matching Var Name')
+			log(logFile, fileName, [var+":"+attr, recommendations], 'No Matching Var Name')
 			# Return false for confirming file
 			return False
 
@@ -143,8 +126,7 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag, histFlag):
 				ncatted.run("standard_name", var, "o", "c", cursor["Known Fix"], fileName, histFlag)
 
 			# Log the fix
-			text = var + "," + attr + "," + cursor["Known Fix"]
-			log(logFile, fileName, text, 'Switched Attribute')
+			log(logFile, fileName, [var, attr, cursor["Known Fix"]], 'Switched Attribute')
 			# Return true for confirming file
 			return False
 		# Get best N best estimates for "attr"
@@ -153,8 +135,7 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag, histFlag):
 			bestEstimates = ""
 			for e in bestEstimatesList:
 				bestEstimates += str(e[0]) + " " + str(e[1]) + " | "
-			text = var + "," + attr + "," + bestEstimates
-			log(logFile, fileName, text, 'Estimated')
+			log(logFile, fileName, [var, attr, bestEstimates], 'Estimated')
 			# Return false for confirming file
 			return False
 
