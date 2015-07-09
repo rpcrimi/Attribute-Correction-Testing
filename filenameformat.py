@@ -61,6 +61,18 @@ def get_model_initdate_freq_var(fullPath, srcDir):
 	elif srcDir == 'UM-RSMAS/' or srcDir == 'NASA-GMAO/':
 		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[5])
 
+def create_dict_given_info(model=None, initDate=None, freq=None, var=None):
+	dictionary = {}
+	if model:
+		dictionary["model"]    = model
+	if initDate:
+		dictionary["initDate"] = initDate
+	if freq:
+		dictionary["freq"]     = freq
+	if var:
+		dictionary["var"]      = var
+	return dictionary
+
 # Return a list of all netCDF files in "direrctory"
 def get_nc_files(directory):
 	matches = []
@@ -124,7 +136,7 @@ def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
 		log(logFile, fileName, [realization, fileNameRealization], 'Realization Error')
 		if fixFlag:
 			realizationNum = map(int, re.findall(r'\d+', fileNameRealization))[0]
-			ncatted.run("realization", "global", "o", "i", realizationNum, fullPath, ("" if histFlag else "-h"))
+			ncatted.run("realization", "global", "o", "i", realizationNum, fullPath, ("-h" if histFlag else ""))
 			log(logFile, fileName, [realization, fileNameRealization], 'Realization Fix')
 		flag = False
 
@@ -155,31 +167,32 @@ def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
 	parser.add_argument("-s", "--src", "--srcDir", dest="srcDir",   help = "Source Directory")
 	parser.add_argument("-f", "--fileName",        dest="fileName", help = "File Name for single file fix")
-	parser.add_argument("-m", "--model",           dest="model",    help = "Name of model (ex: NOAA-GFDL, CCSM4)")
+	parser.add_argument("-m", "--model",           dest="model",    help = "Name of model (ex: NOAA-GFDL, CCSM4). This argument will overwrite any found model in metadata, path, or filename")
+	parser.add_argument("-i", "--initDate",        dest="initDate", help = "Initialization date (ex: 20090101). This argument will overwrite any found initDate in metadata, path, or filename")
+	parser.add_argument("--freq", "--frequency",   dest="freq",     help = "Frequency (ex: day, mon, Omon). This argument will overwrite any found frequency in metadata, path, or filename")
+	parser.add_argument("-v", "--var",             dest="var",      help = "Variable name (ex: pr, tasmax, hus). This argument will overwrite any found variable in metadata, path, or filename")
 	parser.add_argument("-l", "--logFile",         dest="logFile",  help = "File to log metadata changes to")
 	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",  help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true', default=False)
-	parser.add_argument("--hist", "--histFlag",    dest="histFlag", help = "Flag to append changes to history metadata (-h = append to history)",           action='store_true', default=False)
+	parser.add_argument("--hist", "--histFlag",    dest="histFlag", help = "Flag to append changes to history metadata (-h = do not append to history)",           action='store_true', default=False)
 
 	args = parser.parse_args()
-
 	if(len(sys.argv) == 1):
 		parser.print_help()
-	if args.srcDir:
-		files = get_nc_files(args.srcDir)
-		for f in files:
-			log(args.logFile, os.path.basename(f), "", 'File Started')
 
-			if fix_filename(f, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
-				log(args.logFile, os.path.basename(f), "", "File Confirmed")
+	else:
+		givenArgs = create_dict_given_info(args.model, args.initDate, args.freq, args.var)
+		if args.srcDir:
+			files = get_nc_files(args.srcDir)
+			for f in files:
+				log(args.logFile, os.path.basename(f), "", 'File Started')
+				if fix_filename(f, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
+					log(args.logFile, os.path.basename(f), "", "File Confirmed")
 
-	elif args.fileName:
-		log(args.logFile, os.path.basename(args.fileName), "", 'File Started')
+		elif args.fileName:
+			log(args.logFile, os.path.basename(args.fileName), "", 'File Started')
+			if fix_filename(args.fileName, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
+				log(args.logFile, os.path.basename(args.fileName), "", "File Confirmed")
 
-		if fix_filename(args.fileName, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
-			log(args.logFile, os.path.basename(args.fileName), "", "File Confirmed")
 
-
-#if __name__ == "__main__":
-#	main()
-
-print get_metadata("NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r10i1p1.nc", "frequency")
+if __name__ == "__main__":
+	main()

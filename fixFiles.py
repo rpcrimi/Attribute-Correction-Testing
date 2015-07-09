@@ -197,7 +197,7 @@ def main():
 	parser.add_argument("-d", "--dstDir",            dest="dstDir",     help = "Folder to copy fixed files to")
 	parser.add_argument("-l", "--logFile",           dest="logFile",    help = "File to log metadata changes to")
 	parser.add_argument("-f", "--fixFlag",           dest="fixFlag",    help = "Flag to fix files or only report possible changes (-f = Fix Files)",  action='store_true', default=False)
-	parser.add_argument("--hist", "--histFlag",      dest="histFlag",   help = "Flag to append changes to history metadata (-h = append to history)", action='store_true', default=False)
+	parser.add_argument("--hist", "--histFlag",      dest="histFlag",   help = "Flag to append changes to history metadata (-h = do not append to history)", action='store_true', default=False)
 
 	args = parser.parse_args()
 
@@ -216,10 +216,7 @@ def main():
 				parser.error("updateCollection requres collection and updates file")
 		elif args.operation == "fixFiles":
 			if (args.srcDir and args.dstDir and args.logFile):
-				if args.histFlag:
-					fix_files(args.srcDir, args.dstDir, args.logFile, args.fixFlag, "-h")
-				else:
-					fix_files(args.srcDir, args.dstDir, args.logFile, args.fixFlag, "")
+				fix_files(args.srcDir, args.dstDir, args.logFile, args.fixFlag, ("-h" if args.histFlag else ""))
 			else:
 				parser.error("fixFiles requires srcDirectory, dstDirectory, and logFile")
 
