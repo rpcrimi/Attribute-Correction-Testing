@@ -1,5 +1,4 @@
 import pymongo
-from bson.objectid import ObjectId
 
 def run():
 	connection = pymongo.MongoClient()

@@ -4,8 +4,6 @@ import subprocess
 import os
 # Split command line arguments
 import shlex
-# Match filenames
-import fnmatch
 
 # Return formated output of grep call
 def format_output(out):

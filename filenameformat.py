@@ -226,6 +226,5 @@ def main():
 			if fix_filename(args.fileName, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
 				log(args.logFile, os.path.basename(args.fileName), "", "File Confirmed")
 
-
 if __name__ == "__main__":
 	main()

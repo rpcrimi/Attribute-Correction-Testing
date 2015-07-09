@@ -1,7 +1,5 @@
 # Open shell process
 import subprocess
-# Get current working directory
-import os
 # Split command line arguments
 import shlex
 
