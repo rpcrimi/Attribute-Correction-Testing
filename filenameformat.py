@@ -13,8 +13,6 @@ db                = connection["Attribute_Correction"]
 CFVars            = db["CFVars"]
 ValidFreq         = db["ValidFreq"]
 realizationRegex  = re.compile('r[0-9]+i[0-9]+p[0-9]+')
-NOAA = "NOAA-GFDL/day/atmos/v20140710/pr/pr_day_GFDL-FLORB01_FLORB01-P1-ECDA-v3.1-011980_r10i1p1_19800101-19801231.nc"
-CCSM4 = "UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc"
 
 # Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
