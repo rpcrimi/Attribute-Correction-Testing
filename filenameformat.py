@@ -6,6 +6,7 @@ import argparse
 import os
 import logging
 import sys
+import datetime
 import ncatted
 
 connection        = pymongo.MongoClient()
@@ -53,12 +54,20 @@ def log(logFile, fileName, text, logType):
 		logging.debug("Folder [%s] renamed to [%s]", text[0], text[1])
 
 # Get model, initialization date, frequency, and variable from the full path of the given file
-def get_model_initdate_freq_var(fullPath, srcDir):
+def get_model_initdate_freq_var(fullPath):
+	dictionary = {}
 	splitFileName = fullPath.split("/")
-	if srcDir == 'NOAA-GFDL/' or srcDir == 'CCCMA/':
-		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[6])
-	elif srcDir == 'UM-RSMAS/' or srcDir == 'NASA-GMAO/':
-		return (splitFileName[1], splitFileName[2], splitFileName[3], splitFileName[5])
+	if splitFileName[0] == 'NOAA-GFDL' or splitFileName[0] == 'CCCMA':
+		dictionary["model"]    = splitFileName[1]
+		dictionary["initDate"] = splitFileName[2]
+		dictionary["freq"]     = splitFileName[3]
+		dictionary["var"]      = splitFileName[6]
+	elif splitFileName[0] == 'UM-RSMAS' or splitFileName[0] == 'NASA-GMAO':
+		dictionary["model"]    = splitFileName[1]
+		dictionary["initDate"] = splitFileName[2]
+		dictionary["freq"]     = splitFileName[3]
+		dictionary["var"]      = splitFileName[5]
+	return dictionary
 
 # Create dictionary of given info from command line
 def create_dict_given_info(model=None, initDate=None, freq=None, var=None):
@@ -101,25 +110,27 @@ def get_metadata(fullPath, attr):
 	metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
 	return metadata
 
+def get_datetime():
+	return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
+
 # Fix the file = fullPath
-# scrDir is required for pulling correct data from path
+# pathDict contains info from file path
 # Changes will occur if fixFlag == True
 # Changes will appear in history if histFlag == False
-def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
+def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 	flag          = True
 	fileName      = os.path.basename(fullPath)
-	model, initDate, freq, var = get_model_initdate_freq_var(fullPath, srcDir)
 	splitFileName = fileName.split("_")
 
 	# Validate Variable
 	#------------------
-	if not db.CFVars.find_one({"Var Name": var}):
+	if not db.CFVars.find_one({"Var Name": pathDict["var"]}):
 		# Try to fix the variable name by making characters lowercase
 		#------------------------------------------------------------
-		if db.CFVars.find_one({"Var Name": var.lower()}):
+		if db.CFVars.find_one({"Var Name": pathDict["var"].lower()}):
 			if fixFlag:
-				var = var.lower()
-			log(logFile, fileName, [var.upper(), var.lower()], 'Var Name Fix')
+				pathDict["var"] = pathDict["var"].lower()
+			log(logFile, fileName, [pathDict["var"].upper(), pathDict["var"].lower()], 'Var Name Fix')
 
 			# Fix the folder that is named after the variable
 			#------------------------------------------------
@@ -135,14 +146,14 @@ def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
 					os.rename(oldDir, newDir)
 				log(logFile, fileName, [oldDir, newDir], 'Renamed Var Folder')
 		else:
-			log(logFile, fileName, var, 'Var Error')
+			log(logFile, fileName, pathDict["var"], 'Var Error')
 		# Error seen	
 		flag = False
 
 	# Validate Frequency
 	#-------------------
-	if not db.ValidFreq.find_one({"Frequency": freq}):
-		log(logFile, fileName, freq, 'Freq Error')
+	if not db.ValidFreq.find_one({"Frequency": pathDict["freq"]}):
+		log(logFile, fileName, pathDict["freq"], 'Freq Error')
 		# Error seen
 		flag = False
 
@@ -175,14 +186,14 @@ def fix_filename(fullPath, srcDir, logFile, fixFlag, histFlag):
 		# Grab the enddate from the file
 		# TODO: FIX FOR NON 8 CHARACTER DATES
 		endDate  = rootFileName[-8:]
-		startEnd = initDate + "-" + endDate
+		startEnd = pathDict["initDate"] + "-" + endDate
 	# Do not append start-end date if none is provided
 	else:
 		startEnd = ""
 
 	# Create filename based on pulled information
 	#--------------------------------------------
-	newFileName = var+"_"+freq+"_"+model+"_"+initDate+"_"+fileNameRealization+("_" if startEnd else "")+startEnd+"."+extension
+	newFileName = pathDict["var"]+"_"+pathDict["freq"]+"_"+pathDict["model"]+"_"+pathDict["initDate"]+"_"+fileNameRealization+(("_"+startEnd) if startEnd else "")+"."+extension
 	# If filename differs from created filename ==> rename file to created filename
 	if fileName != newFileName:
 		log(logFile, fileName, [fileName, newFileName], 'File Name Error')
@@ -217,14 +228,18 @@ def main():
 		if args.srcDir:
 			files = get_nc_files(args.srcDir)
 			for f in files:
-				log(args.logFile, os.path.basename(f), "", 'File Started')
-				if fix_filename(f, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
-					log(args.logFile, os.path.basename(f), "", "File Confirmed")
+				pathDict = get_model_initdate_freq_var(f)
+				logFile  = (pathDict["model"]+"_"+pathDict["initDate"]+"_"+get_datetime()+".log" if not args.logFile else args.logFile)
+ 				log(logFile, os.path.basename(f), "", 'File Started')
+				if fix_filename(f, pathDict, logFile, args.fixFlag, args.histFlag):
+					log(logFile, os.path.basename(f), "", "File Confirmed")
 
 		elif args.fileName:
-			log(args.logFile, os.path.basename(args.fileName), "", 'File Started')
-			if fix_filename(args.fileName, args.srcDir, args.logFile, args.fixFlag, args.histFlag):
-				log(args.logFile, os.path.basename(args.fileName), "", "File Confirmed")
+			pathDict = get_model_initdate_freq_var(args.fileName)
+			logFile  = (pathDict["model"]+"_"+pathDict["initDate"]+"_"+get_datetime()+".log" if not args.logFile else args.logFile)
+			log(logFile, os.path.basename(args.fileName), "", 'File Started')
+			if fix_filename(args.fileName, pathDict, logFile, args.fixFlag, args.histFlag):
+				log(logFile, os.path.basename(args.fileName), "", "File Confirmed")
 
 if __name__ == "__main__":
 	main()
