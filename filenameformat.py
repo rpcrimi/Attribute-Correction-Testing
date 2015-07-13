@@ -65,21 +65,26 @@ def log(logFile, fileName, text, logType):
 		logging.debug("Metadata Frequency changed from [%s] to [%s]", text[0], text[1])
 
 	elif logType == 'Model Fix':
-		logging.debug("Metadata Model changed form [%s] to [%s]", text[0], text[1])
+		logging.debug("Metadata Model changed from [%s] to [%s]", text[0], text[1])
+
+	elif logType == 'Realm Fix':
+		logging.debug("Metadata Realm changed from [%s] to [%s]", text[0], text[1])
 
 # Get model, initialization date, frequency, and variable from the full path of the given file
-def get_model_initdate_freq_var(fullPath):
+def get_path_info(fullPath):
 	dictionary = {}
 	splitFileName = fullPath.split("/")
 	if splitFileName[0] == 'NOAA-GFDL' or splitFileName[0] == 'CCCMA':
 		dictionary["model"]    = splitFileName[1]
 		dictionary["initDate"] = splitFileName[2]
 		dictionary["freq"]     = splitFileName[3]
+		dictionary["realm"]    = splitFileName[5]
 		dictionary["var"]      = splitFileName[6]
 	elif splitFileName[0] == 'UM-RSMAS' or splitFileName[0] == 'NASA-GMAO':
 		dictionary["model"]    = splitFileName[1]
 		dictionary["initDate"] = splitFileName[2]
 		dictionary["freq"]     = splitFileName[3]
+		dictionary["realm"]    = splitFileName[4]
 		dictionary["var"]      = splitFileName[5]
 	return dictionary
 
@@ -210,8 +215,18 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 	#---------------
 	metadataModel = get_metadata(fullPath, "model_id")
 	if metadataModel != pathDict["model"]:
-		ncatted.run("model_id", "global", "o", "c", pathDict["model"], fullPath, ("-h" if histFlag else ""))
+		if fixFlag:
+			ncatted.run("model_id", "global", "o", "c", pathDict["model"], fullPath, ("-h" if histFlag else ""))
 		log(logFile, fileName, [metadataModel, pathDict["model"]], 'Model Fix')
+		flag = False
+
+	# Validate Realm
+	#---------------
+	metadataRealm = get_metadata(fullPath, "modeling_realm")
+	if metadataRealm != pathDict["realm"]:
+		if fixFlag:
+			ncatted.run("modeling_realm", "global", "o", "c", pathDict["realm"], fullPath, ("-h" if histFlag else ""))
+		log(logFile, fileName, [metadataRealm, pathDict["realm"]], "Realm Fix")
 		flag = False
 
 	# Create End Date and File Extension
@@ -266,7 +281,7 @@ def main():
 		if args.srcDir:
 			files = get_nc_files(args.srcDir)
 			for f in files:
-				pathDict = get_model_initdate_freq_var(f)
+				pathDict = get_path_info(f)
 				logFile  = get_logfile(pathDict, args.logFile)
 				print logFile
  				log(logFile, os.path.basename(f), "", 'File Started')
@@ -274,7 +289,7 @@ def main():
 					log(logFile, os.path.basename(f), "", "File Confirmed")
 
 		elif args.fileName:
-			pathDict = get_model_initdate_freq_var(args.fileName)
+			pathDict = get_path_info(args.fileName)
 			logFile  = get_logfile(pathDict, args.logFile)
 			log(logFile, os.path.basename(args.fileName), "", 'File Started')
 			if fix_filename(args.fileName, pathDict, logFile, args.fixFlag, args.histFlag):
