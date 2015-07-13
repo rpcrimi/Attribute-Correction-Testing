@@ -58,11 +58,14 @@ def log(logFile, fileName, text, logType):
 	elif logType == 'Renamed Var Folder':
 		logging.debug("Folder [%s] renamed to [%s]", text[0], text[1])
 
-	elif logType == 'Freq Fix Folder':
+	elif logType == 'Renamed Freq Folder':
 		logging.debug("Renamed Frequency folder name [%s] to [%s]", text[0], text[1])
 
-	elif logType == 'Freq Fix Metadata':
-		logging.debug("Renamed Metadata Frequency [%s] to [%s]", text[0], text[1])
+	elif logType == 'Freq Fix':
+		logging.debug("Metadata Frequency changed from [%s] to [%s]", text[0], text[1])
+
+	elif logType == 'Model Fix':
+		logging.debug("Metadata Model changed form [%s] to [%s]", text[0], text[1])
 
 # Get model, initialization date, frequency, and variable from the full path of the given file
 def get_model_initdate_freq_var(fullPath):
@@ -169,7 +172,7 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 			oldDir = fullPath.split(pathDict["freq"])[0]+pathDict["freq"]+"/"
 			newDir = fullPath.split(pathDict["freq"])[0]+cursor["Known Fix"]+"/"
 			os.rename(oldDir, newDir)
-			log(logFile, fileName, [pathDict["freq"], cursor["Known Fix"]], 'Freq Fix Folder')
+			log(logFile, fileName, [pathDict["freq"], cursor["Known Fix"]], 'Renamed Freq Folder')
 			fullPath = fullPath.replace(pathDict["freq"], cursor["Known Fix"])
 			pathDict["freq"] = cursor["Known Fix"]
 
@@ -182,7 +185,7 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 	metadataFreq = get_metadata(fullPath, "frequency")
 	if metadataFreq != pathDict["freq"]:
 		ncatted.run("frequency", "global", "o", "c", pathDict["freq"], fullPath, ("-h" if histFlag else ""))
-		log(logFile, fileName, [metadataFreq, pathDict["freq"]], 'Freq Fix Metadata')
+		log(logFile, fileName, [metadataFreq, pathDict["freq"]], 'Freq Fix')
 		flag = False
 
 	# Validate realization number
@@ -201,6 +204,14 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 			ncatted.run("realization", "global", "o", "i", realizationNum, fullPath, ("-h" if histFlag else ""))
 			log(logFile, fileName, [realization, fileNameRealization], 'Realization Fix')
 		# Error seen
+		flag = False
+
+	# Validate Model
+	#---------------
+	metadataModel = get_metadata(fullPath, "model_id")
+	if metadataModel != pathDict["model"]:
+		ncatted.run("model_id", "global", "o", "c", pathDict["model"], fullPath, ("-h" if histFlag else ""))
+		log(logFile, fileName, [metadataModel, pathDict["model"]], 'Model Fix')
 		flag = False
 
 	# Create End Date and File Extension
