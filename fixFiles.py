@@ -4,6 +4,7 @@ import logging
 import os
 import shutil
 import argparse
+import datetime
 from progressbar import *
 import grabmetadata
 import ncatted
@@ -17,6 +18,26 @@ db                = connection["Attribute_Correction"]
 CFVars            = db["CFVars"]
 StandardNameFixes = db["StandardNameFixes"]
 VarNameFixes      = db["VarNameFixes"]
+
+def get_datetime(): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
+
+def get_logfile(pathDict, argLogFile): return (pathDict["model"]+"_"+pathDict["initDate"]+"_"+get_datetime()+".log" if not argLogFile else argLogFile)
+
+# Get model, initialization date, frequency, and variable from the full path of the given file
+def get_model_initdate_freq_var(fullPath):
+	dictionary = {}
+	splitFileName = fullPath.split("/")
+	if splitFileName[0] == 'NOAA-GFDL' or splitFileName[0] == 'CCCMA':
+		dictionary["model"]    = splitFileName[1]
+		dictionary["initDate"] = splitFileName[2]
+		dictionary["freq"]     = splitFileName[3]
+		dictionary["var"]      = splitFileName[6]
+	elif splitFileName[0] == 'UM-RSMAS' or splitFileName[0] == 'NASA-GMAO':
+		dictionary["model"]    = splitFileName[1]
+		dictionary["initDate"] = splitFileName[2]
+		dictionary["freq"]     = splitFileName[3]
+		dictionary["var"]      = splitFileName[5]
+	return dictionary
 
 # Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
@@ -141,7 +162,7 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag, histFlag):
 
 	return
 
-def fix_files(srcDir, dstDir, logFile, fixFlag, histFlag):
+def fix_files(srcDir, dstDir, argLogFile, fixFlag, histFlag):
 	# (filename, standard_name) list of all files in ncFolder
 	standardNames = grabmetadata.get_standard_names(srcDir, dstDir)
 	if standardNames:
@@ -154,8 +175,10 @@ def fix_files(srcDir, dstDir, logFile, fixFlag, histFlag):
 		fileFlag = True
 		# For each file in the list, log the file has started
 		for f in standardNames:
-			fileName = f[0]
+			fileName   = f[0]
 			standNames = f[1]
+			pathDict   = get_model_initdate_freq_var(fileName)
+			logFile    = get_logfile(pathDict, argLogFile)
 			log(logFile, fileName, "", 'File Started')
 			# If the file has no standard names, log the issue
 			if not standNames:
@@ -215,10 +238,10 @@ def main():
 			else:
 				parser.error("updateCollection requres collection and updates file")
 		elif args.operation == "fixFiles":
-			if (args.srcDir and args.dstDir and args.logFile):
+			if (args.srcDir and args.dstDir):
 				fix_files(args.srcDir, args.dstDir, args.logFile, args.fixFlag, ("-h" if args.histFlag else ""))
 			else:
-				parser.error("fixFiles requires srcDirectory, dstDirectory, and logFile")
+				parser.error("fixFiles requires srcDirectory, and dstDirectory")
 
 if __name__ == "__main__":
 	main()

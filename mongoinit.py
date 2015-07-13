@@ -8,6 +8,7 @@ def run():
 	ValidFreq         = db["ValidFreq"]
 	StandardNameFixes = db["StandardNameFixes"]
 	VarNameFixes      = db["VarNameFixes"]
+	FreqFixes         = db["FreqFixes"]
 
 	# CF VARIABLES TABLE
 	#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -68,6 +69,7 @@ def run():
 	CFVars.insert({"Variable": "Stream function 850 hPa",                       "Var Name": "XXXX",     "CF Standard Name": "stream_function_850_hpa",                         "Units": "m2 s-1"})
 	CFVars.insert({"Variable": "Stream function 200 hPa",                       "Var Name": "XXXX",     "CF Standard Name": "stream_function_200_hpa",                         "Units": "m2 s-1"})
 	CFVars.insert({"Variable": "Fresh water flux",                              "Var Name": "fwf",      "CF Standard Name": "fresh_water_flux",                                "Units": "XXXXXX"})
+	#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 	# VALID FREQUENCIES TABLE
@@ -76,7 +78,7 @@ def run():
 	ValidFreq.insert({"Frequency": "day"})
 	ValidFreq.insert({"Frequency": "mon"})
 	ValidFreq.insert({"Frequency": "Omon"})
-
+	#----------------------------------------------------------------------------------------------------------
 
 
 
@@ -98,7 +100,7 @@ def run():
 	StandardNameFixes.insert({"Incorrect Var": "total runoff (qover + qdrai + qrgwl)",        "Var Name": "TOTRUNOFF", "Known Fix": "total_runoff"})
 	StandardNameFixes.insert({"Incorrect Var": "zonal surface stress",                        "Var Name": "STX",       "Known Fix": "surface_zonal_stress_positive_to_the_west"})
 	StandardNameFixes.insert({"Incorrect Var": "meridional surface stress",                   "Var Name": "STY",       "Known Fix": "surface_meridional_stress_positive_to_the_north"})
-
+	#-----------------------------------------------------------------------------------------------------------
 
 
 
@@ -122,12 +124,13 @@ def run():
 	VarNameFixes.insert({"Incorrect Var Name": "STX",    "CF Standard Name": "surface_zonal_stress_positive_to_the_west",       "Known Fix": "stx"})
 	VarNameFixes.insert({"Incorrect Var Name": "STY",    "CF Standard Name": "surface_meridional_stress_positive_to_the_north", "Known Fix": "sty"})
 	VarNameFixes.insert({"Incorrect Var Name": "zos",    "CF Standard Name": "sea_surface_height_above_geoid",                  "Known Fix": "zoh"})
+	#-----------------------------------------------------------------------------------------------------------
 
 
 
-
-
-
+	# FREQUENCIES KNOWN FIXES TABLE
+	#-----------------------------------------------------------------------------------------------------------
+	FreqFixes.insert({"Incorrect Freq": "men", "Known Fix": "mon"})
 
 
 

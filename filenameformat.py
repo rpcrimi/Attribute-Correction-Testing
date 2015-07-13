@@ -13,7 +13,12 @@ connection        = pymongo.MongoClient()
 db                = connection["Attribute_Correction"]
 CFVars            = db["CFVars"]
 ValidFreq         = db["ValidFreq"]
+FreqFixes         = db["FreqFixess"]
 realizationRegex  = re.compile('r[0-9]+i[0-9]+p[0-9]+')
+
+def get_datetime(): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
+
+def get_logfile(pathDict, argLogFile): return (pathDict["model"]+"_"+pathDict["initDate"]+"_"+get_datetime()+".log" if not argLogFile else argLogFile)
 
 # Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
@@ -52,6 +57,12 @@ def log(logFile, fileName, text, logType):
 
 	elif logType == 'Renamed Var Folder':
 		logging.debug("Folder [%s] renamed to [%s]", text[0], text[1])
+
+	elif logType == 'Freq Fix Folder':
+		logging.debug("Renamed Frequency folder name [%s] to [%s]", text[0], text[1])
+
+	elif logType == 'Freq Fix Metadata':
+		logging.debug("Renamed Metadata Frequency [%s] to [%s]", text[0], text[1])
 
 # Get model, initialization date, frequency, and variable from the full path of the given file
 def get_model_initdate_freq_var(fullPath):
@@ -110,9 +121,6 @@ def get_metadata(fullPath, attr):
 	metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
 	return metadata
 
-def get_datetime():
-	return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
-
 # Fix the file = fullPath
 # pathDict contains info from file path
 # Changes will occur if fixFlag == True
@@ -152,9 +160,29 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 
 	# Validate Frequency
 	#-------------------
+	# Check if frequency folder is valid
 	if not db.ValidFreq.find_one({"Frequency": pathDict["freq"]}):
-		log(logFile, fileName, pathDict["freq"], 'Freq Error')
+		
+		cursor = db.FreqFixes.find_one({"Incorrect Freq": pathDict["freq"]})
+		if cursor:
+			# Rename Frequency folder
+			oldDir = fullPath.split(pathDict["freq"])[0]+pathDict["freq"]+"/"
+			newDir = fullPath.split(pathDict["freq"])[0]+cursor["Known Fix"]+"/"
+			os.rename(oldDir, newDir)
+			log(logFile, fileName, [pathDict["freq"], cursor["Known Fix"]], 'Freq Fix Folder')
+			fullPath = fullPath.replace(pathDict["freq"], cursor["Known Fix"])
+			pathDict["freq"] = cursor["Known Fix"]
+
+		else:
+			log(logFile, fileName, pathDict["freq"], 'Freq Error')
 		# Error seen
+		flag = False
+
+	# Check if metadata frequency is correct
+	metadataFreq = get_metadata(fullPath, "frequency")
+	if metadataFreq != pathDict["freq"]:
+		ncatted.run("frequency", "global", "o", "c", pathDict["freq"], fullPath, ("-h" if histFlag else ""))
+		log(logFile, fileName, [metadataFreq, pathDict["freq"]], 'Freq Fix Metadata')
 		flag = False
 
 	# Validate realization number
@@ -162,8 +190,7 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 	# Grab realization number from fileName
 	fileNameRealization = [match for match in splitFileName if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
 	# Grab realization number from metadata
-	realization         = get_metadata(fullPath, "realization")
-	realization         = "r"+realization+"i1p1"
+	realization         = "r"+get_metadata(fullPath, "realization")+"i1p1"
 	# If the two values differ ==> fix the value in metadata to reflect filename
 	if realization != fileNameRealization:
 		log(logFile, fileName, [realization, fileNameRealization], 'Realization Error')
@@ -217,7 +244,7 @@ def main():
 	parser.add_argument("-v", "--var",             dest="var",      help = "Variable name (ex: pr, tasmax, hus). This argument will overwrite any found variable in metadata, path, or filename")
 	parser.add_argument("-l", "--logFile",         dest="logFile",  help = "File to log metadata changes to")
 	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",  help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true', default=False)
-	parser.add_argument("--hist", "--histFlag",    dest="histFlag", help = "Flag to append changes to history metadata (-h = do not append to history)",           action='store_true', default=False)
+	parser.add_argument("--hist", "--histFlag",    dest="histFlag", help = "Flag to append changes to history metadata (-h = do not append to history)",           action='store_true', default=True)
 
 	args = parser.parse_args()
 	if(len(sys.argv) == 1):
@@ -229,14 +256,15 @@ def main():
 			files = get_nc_files(args.srcDir)
 			for f in files:
 				pathDict = get_model_initdate_freq_var(f)
-				logFile  = (pathDict["model"]+"_"+pathDict["initDate"]+"_"+get_datetime()+".log" if not args.logFile else args.logFile)
+				logFile  = get_logfile(pathDict, args.logFile)
+				print logFile
  				log(logFile, os.path.basename(f), "", 'File Started')
 				if fix_filename(f, pathDict, logFile, args.fixFlag, args.histFlag):
 					log(logFile, os.path.basename(f), "", "File Confirmed")
 
 		elif args.fileName:
 			pathDict = get_model_initdate_freq_var(args.fileName)
-			logFile  = (pathDict["model"]+"_"+pathDict["initDate"]+"_"+get_datetime()+".log" if not args.logFile else args.logFile)
+			logFile  = get_logfile(pathDict, args.logFile)
 			log(logFile, os.path.basename(args.fileName), "", 'File Started')
 			if fix_filename(args.fileName, pathDict, logFile, args.fixFlag, args.histFlag):
 				log(logFile, os.path.basename(args.fileName), "", "File Confirmed")
