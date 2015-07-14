@@ -213,7 +213,7 @@ def main():
 	parser.add_argument("-u", "--updates",           dest="updates",        help = "JSON file containing updates")
 	parser.add_argument("-s", "--srcDir",            dest="srcDir",         help = "Folder of nc or nc4 files to handle")
 	parser.add_argument("-d", "--dstDir",            dest="dstDir",         help = "Folder to copy fixed files to")
-	parser.add_argument("-m", "--metadata",          dest="metadataFolder", help = "Folder to dump original metadata to", required=True)
+	parser.add_argument("-m", "--metadata",          dest="metadataFolder", help = "Folder to dump original metadata to")
 	parser.add_argument("-l", "--logFile",           dest="logFile",        help = "File to log metadata changes to")
 	parser.add_argument("-f", "--fixFlag",           dest="fixFlag",        help = "Flag to fix files or only report possible changes (-f = Fix Files)",  action='store_true', default=False)
 	parser.add_argument("--hist", "--histFlag",      dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)", action='store_true', default=False)

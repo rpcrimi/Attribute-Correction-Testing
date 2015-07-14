@@ -1,0 +1,1720 @@
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/clt/clt_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [clt:cloud_area_fraction] confirmed
+INFO     Confirmed file: [CCCMA/clt/clt_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/g/g_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Confirmed file: [CCCMA/g/g_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hflsd/hflsd_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hfssd:surface_downward_sensible_heat_flux] confirmed
+INFO     Confirmed file: [CCCMA/hfssd/hfssd_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/hus/hus_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [hus:specific_humidity] confirmed
+INFO     Confirmed file: [CCCMA/hus/hus_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/prlr/prlr_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [prlr:lwe_precipitation_rate] confirmed
+INFO     Confirmed file: [CCCMA/prlr/prlr_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/psl/psl_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Confirmed file: [CCCMA/psl/psl_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlds/rlds_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlds:surface_downwelling_longwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rlds/rlds_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rls/rls_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rls/rls_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rlt/rlt_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rlt/rlt_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rsds/rsds_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rsds:surface_downwelling_shortwave_flux_in_air] confirmed
+INFO     Confirmed file: [CCCMA/rsds/rsds_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rss/rss_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rss/rss_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/rst/rst_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+INFO     Confirmed file: [CCCMA/rst/rst_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/stx/stx_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+INFO     Confirmed file: [CCCMA/stx/stx_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/sty/sty_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Standard Name [sty:surface_meridional_stress_positive_to_the_south] best 3 estimates: surface_meridional_stress_positive_to_the_north | surface_zonal_stress_positive_to_the_west | surface_downward_sensible_heat_flux | 
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ta/ta_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ta:air_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ta/ta_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tas/tas_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tas:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmax/tasmax_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmax:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/tasmin/tasmin_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [tasmin:air_temperature] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ts/ts_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ts:surface_temperature] confirmed
+INFO     Confirmed file: [CCCMA/ts/ts_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/ua/ua_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [ua:eastward_wind] confirmed
+INFO     Confirmed file: [CCCMA/ua/ua_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/uas/uas_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [uas:eastward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/va/va_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [plev:air_pressure] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Standard Name [va:northward_wind] confirmed
+INFO     Confirmed file: [CCCMA/va/va_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r10i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r1i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r2i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r3i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r4i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r5i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r6i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r7i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r8i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [CCCMA/vas/vas_day_CanCM3_198101_r9i1p1_19810101-19811231.nc4]
+INFO     Standard Name [time:time] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Switched variable name from [height:height] to [zh:height]
+INFO     Standard Name [vas:northward_wind] confirmed

@@ -58,6 +58,7 @@ def run():
 	CFVars.insert({"Variable": "Depth",                                         "Var Name": "lev",       "CF Standard Name": "depth",                                          "Units": "m"})
 	CFVars.insert({"Variable": "Sea-ice area fraction",                         "Var Name": "sic",       "CF Standard Name": "sea_ice_area_fraction",                          "Units": "1"})
 	CFVars.insert({"Variable": "Air pressure",                                  "Var Name": "plev",      "CF Standard Name": "air_pressure",                                   "Units": "Pa"})
+	CFVars.insert({"Variable": "Total Precipitation",                           "Var Name": "prlr",      "CF Standard Name": "lwe_precipitation_rate",                         "Units": "m s-1"})
 
 
 	CFVars.insert({"Variable": "Large scale precipitation",                     "Var Name": "precl",    "CF Standard Name": "large_scale_precipitation XXXXXXX",               "Units": "XXXXXXX"})
