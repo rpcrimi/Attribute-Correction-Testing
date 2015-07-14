@@ -133,7 +133,7 @@ def run():
 
 	# FREQUENCIES KNOWN FIXES TABLE
 	#-----------------------------------------------------------------------------------------------------------
-	FreqFixes.insert({"Incorrect Freq": "men", "Known Fix": "mon"})
+	FreqFixes.insert({"Incorrect Freq": "month", "Known Fix": "mon"})
 
 
 

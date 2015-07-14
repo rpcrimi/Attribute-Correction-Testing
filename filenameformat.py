@@ -63,31 +63,25 @@ def log(logFile, fileName, text, logType):
 	elif logType == 'Renamed Freq Folder':
 		logging.debug("Renamed Frequency folder name [%s] to [%s]", text[0], text[1])
 
-	elif logType == 'Freq Fix':
-		logging.debug("Metadata Frequency changed from [%s] to [%s]", text[0], text[1])
-
-	elif logType == 'Model Fix':
-		logging.debug("Metadata Model changed from [%s] to [%s]", text[0], text[1])
-
-	elif logType == 'Realm Fix':
-		logging.debug("Metadata Realm changed from [%s] to [%s]", text[0], text[1])
+	elif logType == 'Metadata Fix':
+		logging.debug("[%s] in metadata changed from [%s] to [%s]", text[0], text[1], text[2])
 
 # Get model, initialization date, frequency, and variable from the full path of the given file
 def get_path_info(fullPath):
 	dictionary = {}
 	splitFileName = fullPath.split("/")
 	if splitFileName[0] == 'NOAA-GFDL' or splitFileName[0] == 'CCCMA':
-		dictionary["model"]    = splitFileName[1]
+		dictionary["model_id"]    = splitFileName[1]
 		dictionary["initDate"] = splitFileName[2]
-		dictionary["freq"]     = splitFileName[3]
-		dictionary["realm"]    = splitFileName[5]
-		dictionary["var"]      = splitFileName[6]
+		dictionary["frequency"]     = splitFileName[3]
+		dictionary["modeling_realm"]    = splitFileName[5]
+		dictionary["variable"]      = splitFileName[6]
 	elif splitFileName[0] == 'UM-RSMAS' or splitFileName[0] == 'NASA-GMAO':
-		dictionary["model"]    = splitFileName[1]
+		dictionary["model_id"]    = splitFileName[1]
 		dictionary["initDate"] = splitFileName[2]
-		dictionary["freq"]     = splitFileName[3]
-		dictionary["realm"]    = splitFileName[4]
-		dictionary["var"]      = splitFileName[5]
+		dictionary["frequency"]     = splitFileName[3]
+		dictionary["modeling_realm"]    = splitFileName[4]
+		dictionary["variable"]      = splitFileName[5]
 	return dictionary
 
 # Create dictionary of given info from command line
@@ -153,13 +147,13 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 
 	# Validate Variable
 	#------------------
-	if not db.CFVars.find_one({"Var Name": pathDict["var"]}):
+	if not db.CFVars.find_one({"Var Name": pathDict["variable"]}):
 		# Try to fix the variable name by making characters lowercase
 		#------------------------------------------------------------
-		if db.CFVars.find_one({"Var Name": pathDict["var"].lower()}):
+		if db.CFVars.find_one({"Var Name": pathDict["variable"].lower()}):
 			if fixFlag:
-				pathDict["var"] = pathDict["var"].lower()
-			log(logFile, fileName, [pathDict["var"].upper(), pathDict["var"].lower()], 'Var Name Fix')
+				pathDict["variable"] = pathDict["variable"].lower()
+			log(logFile, fileName, [pathDict["variable"].upper(), pathDict["variable"].lower()], 'Var Name Fix')
 
 			# Fix the folder that is named after the variable
 			#------------------------------------------------
@@ -175,38 +169,31 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 					os.rename(oldDir, newDir)
 				log(logFile, fileName, [oldDir, newDir], 'Renamed Var Folder')
 		else:
-			log(logFile, fileName, pathDict["var"], 'Var Error')
+			log(logFile, fileName, pathDict["variable"], 'Var Error')
 		# Error seen	
 		flag = False
 
 	# Validate Frequency
 	#-------------------
 	# Check if frequency folder is valid
-	if not db.ValidFreq.find_one({"Frequency": pathDict["freq"]}):
+	if not db.ValidFreq.find_one({"Frequency": pathDict["frequency"]}):
 		
-		cursor = db.FreqFixes.find_one({"Incorrect Freq": pathDict["freq"]})
+		cursor = db.FreqFixes.find_one({"Incorrect Freq": pathDict["frequency"]})
 		if cursor:
 			# Rename Frequency folder
-			oldDir = fullPath.split(pathDict["freq"])[0]+pathDict["freq"]+"/"
-			newDir = fullPath.split(pathDict["freq"])[0]+cursor["Known Fix"]+"/"
+			oldDir = fullPath.split(pathDict["frequency"])[0]+pathDict["frequency"]+"/"
+			newDir = fullPath.split(pathDict["frequency"])[0]+cursor["Known Fix"]+"/"
 			if fixFlag:
 				os.rename(oldDir, newDir)
-			log(logFile, fileName, [pathDict["freq"], cursor["Known Fix"]], 'Renamed Freq Folder')
-			fullPath = fullPath.replace(pathDict["freq"], cursor["Known Fix"])
-			pathDict["freq"] = cursor["Known Fix"]
+			log(logFile, fileName, [pathDict["frequency"], cursor["Known Fix"]], 'Renamed Freq Folder')
+			fullPath = fullPath.replace(pathDict["frequency"], cursor["Known Fix"])
+			pathDict["frequency"] = cursor["Known Fix"]
 
 		else:
-			log(logFile, fileName, pathDict["freq"], 'Freq Error')
+			log(logFile, fileName, pathDict["frequency"], 'Freq Error')
 		# Error seen
 		flag = False
 
-	# Check if metadata frequency is correct
-	metadataFreq = get_metadata(fullPath, "frequency")
-	if metadataFreq != pathDict["freq"]:
-		if fixFlag:
-			ncatted.run("frequency", "global", "o", "c", pathDict["freq"], fullPath, ("-h" if histFlag else ""))
-		log(logFile, fileName, [metadataFreq, pathDict["freq"]], 'Freq Fix')
-		flag = False
 
 	# Validate realization number
 	#----------------------------
@@ -227,23 +214,15 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 		# Error seen
 		flag = False
 
-	# Validate Model
-	#---------------
-	metadataModel = get_metadata(fullPath, "model_id")
-	if metadataModel != pathDict["model"]:
-		if fixFlag:
-			ncatted.run("model_id", "global", "o", "c", pathDict["model"], fullPath, ("-h" if histFlag else ""))
-		log(logFile, fileName, [metadataModel, pathDict["model"]], 'Model Fix')
-		flag = False
-
-	# Validate Realm
-	#---------------
-	metadataRealm = get_metadata(fullPath, "modeling_realm")
-	if metadataRealm != pathDict["realm"]:
-		if fixFlag:
-			ncatted.run("modeling_realm", "global", "o", "c", pathDict["realm"], fullPath, ("-h" if histFlag else ""))
-		log(logFile, fileName, [metadataRealm, pathDict["realm"]], "Realm Fix")
-		flag = False
+	# Validate Metadata
+	#------------------
+	for meta in ["frequency", "model_id", "modeling_realm"]:
+		metadataFreq = get_metadata(fullPath, meta)
+		if metadataFreq != pathDict[meta]:
+			if fixFlag:
+				ncatted.run(meta, "global", "o", "c", pathDict[meta], fullPath, ("-h" if histFlag else ""))
+			log(logFile, fileName, [meta, metadataFreq, pathDict[meta]], 'Metadata Fix')
+			flag = False	
 
 	# Create End Date and File Extension
 	#-----------------------------------
@@ -262,7 +241,7 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 
 	# Create filename based on pulled information
 	#--------------------------------------------
-	newFileName = pathDict["var"]+"_"+pathDict["freq"]+"_"+pathDict["model"]+"_"+pathDict["initDate"]+"_"+fileNameRealization+(("_"+startEnd) if startEnd else "")+"."+extension
+	newFileName = pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["initDate"]+"_"+fileNameRealization+(("_"+startEnd) if startEnd else "")+"."+extension
 	# If filename differs from created filename ==> rename file to created filename
 	if fileName != newFileName:
 		log(logFile, fileName, [fileName, newFileName], 'File Name Error')
