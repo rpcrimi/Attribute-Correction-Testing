@@ -57,6 +57,7 @@ def run():
 	# Var Name might not be lev
 	CFVars.insert({"Variable": "Depth",                                         "Var Name": "lev",       "CF Standard Name": "depth",                                          "Units": "m"})
 	CFVars.insert({"Variable": "Sea-ice area fraction",                         "Var Name": "sic",       "CF Standard Name": "sea_ice_area_fraction",                          "Units": "1"})
+	CFVars.insert({"Variable": "Air pressure",                                  "Var Name": "plev",      "CF Standard Name": "air_pressure",                                   "Units": "Pa"})
 
 
 	CFVars.insert({"Variable": "Large scale precipitation",                     "Var Name": "precl",    "CF Standard Name": "large_scale_precipitation XXXXXXX",               "Units": "XXXXXXX"})
@@ -124,6 +125,7 @@ def run():
 	VarNameFixes.insert({"Incorrect Var Name": "STX",    "CF Standard Name": "surface_zonal_stress_positive_to_the_west",       "Known Fix": "stx"})
 	VarNameFixes.insert({"Incorrect Var Name": "STY",    "CF Standard Name": "surface_meridional_stress_positive_to_the_north", "Known Fix": "sty"})
 	VarNameFixes.insert({"Incorrect Var Name": "zos",    "CF Standard Name": "sea_surface_height_above_geoid",                  "Known Fix": "zoh"})
+	VarNameFixes.insert({"Incorrect Var Name": "lev",    "CF Standard Name": "air_pressure",                                    "Known Fix": "plev"})
 	#-----------------------------------------------------------------------------------------------------------
 
 

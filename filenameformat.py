@@ -8,17 +8,19 @@ import logging
 import sys
 import datetime
 import ncatted
+import ncdump
+import ast
 
 connection        = pymongo.MongoClient()
 db                = connection["Attribute_Correction"]
 CFVars            = db["CFVars"]
 ValidFreq         = db["ValidFreq"]
-FreqFixes         = db["FreqFixess"]
+FreqFixes         = db["FreqFixes"]
 realizationRegex  = re.compile('r[0-9]+i[0-9]+p[0-9]+')
 
 def get_datetime(): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
 
-def get_logfile(pathDict, argLogFile): return (pathDict["model"]+"_"+pathDict["initDate"]+"_"+get_datetime()+".log" if not argLogFile else argLogFile)
+def get_logfile(src): return (src+"_"+get_datetime()+".log")
 
 # Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
@@ -176,7 +178,8 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 			# Rename Frequency folder
 			oldDir = fullPath.split(pathDict["freq"])[0]+pathDict["freq"]+"/"
 			newDir = fullPath.split(pathDict["freq"])[0]+cursor["Known Fix"]+"/"
-			os.rename(oldDir, newDir)
+			if fixFlag:
+				os.rename(oldDir, newDir)
 			log(logFile, fileName, [pathDict["freq"], cursor["Known Fix"]], 'Renamed Freq Folder')
 			fullPath = fullPath.replace(pathDict["freq"], cursor["Known Fix"])
 			pathDict["freq"] = cursor["Known Fix"]
@@ -189,7 +192,8 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 	# Check if metadata frequency is correct
 	metadataFreq = get_metadata(fullPath, "frequency")
 	if metadataFreq != pathDict["freq"]:
-		ncatted.run("frequency", "global", "o", "c", pathDict["freq"], fullPath, ("-h" if histFlag else ""))
+		if fixFlag:
+			ncatted.run("frequency", "global", "o", "c", pathDict["freq"], fullPath, ("-h" if histFlag else ""))
 		log(logFile, fileName, [metadataFreq, pathDict["freq"]], 'Freq Fix')
 		flag = False
 
@@ -198,7 +202,7 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 	# Grab realization number from fileName
 	fileNameRealization = [match for match in splitFileName if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
 	# Grab realization number from metadata
-	realization         = "r"+get_metadata(fullPath, "realization")+"i1p1"
+	realization = "r"+get_metadata(fullPath, "realization")+"i1p1"
 	# If the two values differ ==> fix the value in metadata to reflect filename
 	if realization != fileNameRealization:
 		log(logFile, fileName, [realization, fileNameRealization], 'Realization Error')
@@ -206,7 +210,8 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 			# Find the number after "r" in fileNameRealization value
 			realizationNum = map(int, re.findall(r'\d+', fileNameRealization))[0]
 			# Overwrite realization value in metadata
-			ncatted.run("realization", "global", "o", "i", realizationNum, fullPath, ("-h" if histFlag else ""))
+			if fixFlag:
+				ncatted.run("realization", "global", "o", "i", realizationNum, fullPath, ("-h" if histFlag else ""))
 			log(logFile, fileName, [realization, fileNameRealization], 'Realization Fix')
 		# Error seen
 		flag = False
@@ -273,27 +278,29 @@ def main():
 	parser.add_argument("--hist", "--histFlag",    dest="histFlag", help = "Flag to append changes to history metadata (-h = do not append to history)",           action='store_true', default=True)
 
 	args = parser.parse_args()
+	#out = ncdump.run(args.fileName)
+	#print ast.literal_eval("{"+(out).split("{")[1])
+
 	if(len(sys.argv) == 1):
 		parser.print_help()
 
 	else:
+		logFile  = get_logfile(args.logFile if args.logFile else (args.srcDir.replace("/","") if args.srcDir else args.fileName))
 		givenArgs = create_dict_given_info(args.model, args.initDate, args.freq, args.var)
 		if args.srcDir:
 			files = get_nc_files(args.srcDir)
 			for f in files:
 				pathDict = get_path_info(f)
-				logFile  = get_logfile(pathDict, args.logFile)
-				print logFile
  				log(logFile, os.path.basename(f), "", 'File Started')
 				if fix_filename(f, pathDict, logFile, args.fixFlag, args.histFlag):
 					log(logFile, os.path.basename(f), "", "File Confirmed")
 
 		elif args.fileName:
 			pathDict = get_path_info(args.fileName)
-			logFile  = get_logfile(pathDict, args.logFile)
 			log(logFile, os.path.basename(args.fileName), "", 'File Started')
 			if fix_filename(args.fileName, pathDict, logFile, args.fixFlag, args.histFlag):
 				log(logFile, os.path.basename(args.fileName), "", "File Confirmed")
 
 if __name__ == "__main__":
 	main()
+
