@@ -26,12 +26,12 @@ def get_logfile(src): return (src+"_"+get_datetime()+".log")
 def log(logFile, fileName, text, logType):
 	logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=logFile, filemode='w')
 	if logType == 'File Started':
-		logging.info("--------------------------------------------------------------------------------------------------------------------------------------")
+		logging.info("-" * 100)
 		logging.debug("Starting file name: [%s]", fileName)
 
 	elif logType == 'File Confirmed':
 		logging.debug("Confirmed file name: [%s]", fileName)
-		logging.info("--------------------------------------------------------------------------------------------------------------------------------------")
+		logging.info("-" * 100)
 
 	elif logType == 'Var Error':
 		logging.debug("Variable [%s] not recognized", text)
@@ -130,6 +130,17 @@ def get_metadata(fullPath, attr):
 	# lstrip("0") for realization numbers of the form r01i1p1
 	metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
 	return metadata
+
+def dump_metadata(fileName, metadataFolder):
+	out = ncdump.run(fileName)
+	dstDir = metadataFolder+os.path.dirname(fileName)
+	# If path does not exist ==> create directory structure
+	if not os.path.exists(dstDir):
+		os.makedirs(dstDir)
+
+	fileName = metadataFolder+fileName.replace(".nc", "").rstrip("4")+".txt"
+	with open(fileName, "w") as text_file:
+		text_file.write(out)
 
 # Fix the file = fullPath
 # pathDict contains info from file path
@@ -267,20 +278,18 @@ def fix_filename(fullPath, pathDict, logFile, fixFlag, histFlag):
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
-	parser.add_argument("-s", "--src", "--srcDir", dest="srcDir",   help = "Source Directory")
-	parser.add_argument("-f", "--fileName",        dest="fileName", help = "File Name for single file fix")
-	parser.add_argument("-m", "--model",           dest="model",    help = "Name of model (ex: NOAA-GFDL, CCSM4). This argument will overwrite any found model in metadata, path, or filename")
-	parser.add_argument("-i", "--initDate",        dest="initDate", help = "Initialization date (ex: 20090101). This argument will overwrite any found initDate in metadata, path, or filename")
-	parser.add_argument("--freq", "--frequency",   dest="freq",     help = "Frequency (ex: day, mon, Omon). This argument will overwrite any found frequency in metadata, path, or filename")
-	parser.add_argument("-v", "--var",             dest="var",      help = "Variable name (ex: pr, tasmax, hus). This argument will overwrite any found variable in metadata, path, or filename")
-	parser.add_argument("-l", "--logFile",         dest="logFile",  help = "File to log metadata changes to")
-	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",  help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true', default=False)
-	parser.add_argument("--hist", "--histFlag",    dest="histFlag", help = "Flag to append changes to history metadata (-h = do not append to history)",           action='store_true', default=True)
+	parser.add_argument("-s", "--src", "--srcDir", dest="srcDir",         help = "Source Directory")
+	parser.add_argument("-f", "--fileName",        dest="fileName",       help = "File Name for single file fix")
+	parser.add_argument("--metadata",              dest="metadataFolder", help = "Folder to dump original metadata to", required=True)
+	parser.add_argument("-m", "--model",           dest="model",          help = "Name of model (ex: NOAA-GFDL, CCSM4). This argument will overwrite any found model in metadata, path, or filename")
+	parser.add_argument("-i", "--initDate",        dest="initDate",       help = "Initialization date (ex: 20090101). This argument will overwrite any found initDate in metadata, path, or filename")
+	parser.add_argument("--freq", "--frequency",   dest="freq",           help = "Frequency (ex: day, mon, Omon). This argument will overwrite any found frequency in metadata, path, or filename")
+	parser.add_argument("-v", "--var",             dest="var",            help = "Variable name (ex: pr, tasmax, hus). This argument will overwrite any found variable in metadata, path, or filename")
+	parser.add_argument("-l", "--logFile",         dest="logFile",        help = "File to log metadata changes to")
+	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",        help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true', default=False)
+	parser.add_argument("--hist", "--histFlag",    dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)",           action='store_true', default=True)
 
 	args = parser.parse_args()
-	#out = ncdump.run(args.fileName)
-	#print ast.literal_eval("{"+(out).split("{")[1])
-
 	if(len(sys.argv) == 1):
 		parser.print_help()
 
@@ -290,12 +299,14 @@ def main():
 		if args.srcDir:
 			files = get_nc_files(args.srcDir)
 			for f in files:
+				dump_metadata(f, args.metadataFolder)
 				pathDict = get_path_info(f)
  				log(logFile, os.path.basename(f), "", 'File Started')
 				if fix_filename(f, pathDict, logFile, args.fixFlag, args.histFlag):
 					log(logFile, os.path.basename(f), "", "File Confirmed")
 
 		elif args.fileName:
+			dump_metadata(args.fileName, args.metadataFolder)
 			pathDict = get_path_info(args.fileName)
 			log(logFile, os.path.basename(args.fileName), "", 'File Started')
 			if fix_filename(args.fileName, pathDict, logFile, args.fixFlag, args.histFlag):

@@ -9,6 +9,7 @@ from progressbar import *
 import grabmetadata
 import ncatted
 import ncrename
+import ncdump
 import dropDB
 import mongoinit
 import updateCollection
@@ -23,27 +24,11 @@ def get_datetime(): return str(datetime.datetime.now()).split(".")[0].replace(" 
 
 def get_logfile(srcDir): return (srcDir.replace("/", "")+"_"+get_datetime()+".log")
 
-# Get model, initialization date, frequency, and variable from the full path of the given file
-def get_path_info(fullPath):
-	dictionary = {}
-	splitFileName = fullPath.split("/")
-	if splitFileName[0] == 'NOAA-GFDL' or splitFileName[0] == 'CCCMA':
-		dictionary["model"]    = splitFileName[1]
-		dictionary["initDate"] = splitFileName[2]
-		dictionary["freq"]     = splitFileName[3]
-		dictionary["var"]      = splitFileName[6]
-	elif splitFileName[0] == 'UM-RSMAS' or splitFileName[0] == 'NASA-GMAO':
-		dictionary["model"]    = splitFileName[1]
-		dictionary["initDate"] = splitFileName[2]
-		dictionary["freq"]     = splitFileName[3]
-		dictionary["var"]      = splitFileName[5]
-	return dictionary
-
 # Log info in "logFile" for file "fileName"
 def log(logFile, fileName, text, logType):
 	logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=logFile, filemode='w')
 	if logType == 'File Started':
-		logging.info("--------------------------------------------------------------------------------------------------------------------------------------")
+		logging.info("-" * 100)
 		logging.debug("Starting in file: [%s]", fileName)
 
 	elif logType == 'File Confirmed':
@@ -97,6 +82,17 @@ def best_estimates(wrongAttr):
 	similarities.sort(key=lambda x: x[1])
 
 	return list(reversed(similarities[-3:]))
+
+def dump_metadata(fileName, metadataFolder):
+	out = ncdump.run(fileName)
+	dstDir = metadataFolder+os.path.dirname(fileName)
+	# If path does not exist ==> create directory structure
+	if not os.path.exists(dstDir):
+		os.makedirs(dstDir)
+
+	fileName = metadataFolder+fileName.replace(".nc", "").rstrip("4")+".txt"
+	with open(fileName, "w") as text_file:
+		text_file.write(out)
 
 # Return validation of correct attribute
 # or corrected attribute from Known fixes collection
@@ -162,7 +158,7 @@ def identify_attribute(var, attr, logFile, fileName, fixFlag, histFlag):
 
 	return
 
-def fix_files(srcDir, dstDir, logFile, fixFlag, histFlag):
+def fix_files(srcDir, dstDir, logFile, metadataFolder, fixFlag, histFlag):
 	# (filename, standard_name) list of all files in ncFolder
 	standardNames = grabmetadata.get_standard_names(srcDir, dstDir)
 	if standardNames:
@@ -177,6 +173,7 @@ def fix_files(srcDir, dstDir, logFile, fixFlag, histFlag):
 		for f in standardNames:
 			fileName   = f[0]
 			standNames = f[1]
+			dump_metadata(fileName, metadataFolder)
 			log(logFile, fileName, "", 'File Started')
 			# If the file has no standard names, log the issue
 			if not standNames:
@@ -211,14 +208,15 @@ def fix_files(srcDir, dstDir, logFile, fixFlag, histFlag):
 
 def main():
 	parser = argparse.ArgumentParser(description='Metadata Correction Algorithm')
-	parser.add_argument("-o", "--op", "--operation", dest="operation",  help = "Operation to run (initDB, resetDB, updateCollection, fixFiles)", default="fixFiles")
-	parser.add_argument("-c", "--collection",        dest="collection", help = "Collection to update")
-	parser.add_argument("-u", "--updates",           dest="updates",    help = "JSON file containing updates")
-	parser.add_argument("-s", "--srcDir",            dest="srcDir",     help = "Folder of nc or nc4 files to handle")
-	parser.add_argument("-d", "--dstDir",            dest="dstDir",     help = "Folder to copy fixed files to")
-	parser.add_argument("-l", "--logFile",           dest="logFile",    help = "File to log metadata changes to")
-	parser.add_argument("-f", "--fixFlag",           dest="fixFlag",    help = "Flag to fix files or only report possible changes (-f = Fix Files)",  action='store_true', default=False)
-	parser.add_argument("--hist", "--histFlag",      dest="histFlag",   help = "Flag to append changes to history metadata (-h = do not append to history)", action='store_true', default=False)
+	parser.add_argument("-o", "--op", "--operation", dest="operation",      help = "Operation to run (initDB, resetDB, updateCollection, fixFiles)", default="fixFiles")
+	parser.add_argument("-c", "--collection",        dest="collection",     help = "Collection to update")
+	parser.add_argument("-u", "--updates",           dest="updates",        help = "JSON file containing updates")
+	parser.add_argument("-s", "--srcDir",            dest="srcDir",         help = "Folder of nc or nc4 files to handle")
+	parser.add_argument("-d", "--dstDir",            dest="dstDir",         help = "Folder to copy fixed files to")
+	parser.add_argument("-m", "--metadata",          dest="metadataFolder", help = "Folder to dump original metadata to", required=True)
+	parser.add_argument("-l", "--logFile",           dest="logFile",        help = "File to log metadata changes to")
+	parser.add_argument("-f", "--fixFlag",           dest="fixFlag",        help = "Flag to fix files or only report possible changes (-f = Fix Files)",  action='store_true', default=False)
+	parser.add_argument("--hist", "--histFlag",      dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)", action='store_true', default=False)
 
 	args = parser.parse_args()
 
@@ -236,11 +234,11 @@ def main():
 			else:
 				parser.error("updateCollection requres collection and updates file")
 		elif args.operation == "fixFiles":
-			if (args.srcDir and args.dstDir):
+			if (args.srcDir and args.dstDir and args.metadataFolder):
 				logFile = args.logFile if args.logFile else get_logfile(args.srcDir)
-				fix_files(args.srcDir, args.dstDir, logFile, args.fixFlag, ("-h" if args.histFlag else ""))
+				fix_files(args.srcDir, args.dstDir, logFile, args.metadataFolder, args.fixFlag, ("-h" if args.histFlag else ""))
 			else:
-				parser.error("fixFiles requires srcDirectory, and dstDirectory")
+				parser.error("fixFiles requires srcDirectory, dstDirectory, and metadataFolder")
 
 if __name__ == "__main__":
 	main()

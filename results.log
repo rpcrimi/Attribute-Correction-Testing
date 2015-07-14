@@ -1,358 +1,358 @@
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r10i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r10i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r1i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r1i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r2i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r2i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r3i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r3i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r4i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r4i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r5i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r5i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r6i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r6i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r7i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r7i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r8i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r8i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r9i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r9i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [SO:salinity] best 3 estimates: sea_water_salinity | longitude | sea_ice_extent | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r10i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r10i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r1i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r1i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r2i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r2i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r3i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r3i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r4i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r4i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r5i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r5i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r6i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r6i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r7i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r7i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r8i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r8i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r9i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r9i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [TO:temperature] best 3 estimates: air_temperature | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r10i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r10i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r1i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r1i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r2i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r2i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r3i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r3i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r4i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r4i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r5i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r5i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r6i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r6i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r7i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r7i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r8i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r8i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r9i1p1.nc]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
 INFO     Switched variable name from [lev:air_pressure] to [plev:air_pressure]
 DEBUG    Standard Name [UO:zonal_speed] best 3 estimates: surface_zonal_stress_positive_to_the_west | air_temperature | air_temperature | 
-INFO     --------------------------------------------------------------------------------------------------------------------------------------
+INFO     ----------------------------------------------------------------------------------------------------
 DEBUG    Starting in file: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r9i1p1.nc4]
 INFO     Standard Name [lat:latitude] confirmed
 INFO     Standard Name [lon:longitude] confirmed
