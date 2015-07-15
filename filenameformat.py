@@ -175,6 +175,7 @@ class FileNameValidator:
 			return metadata
 		else:
 			return "No Metadata"
+			
 	def get_new_filename(self, pathDict):
 		return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["initDate"]+"_"+pathDict["fileNameRealization"]+pathDict["startEnd"]+"."+pathDict["extension"]
 
