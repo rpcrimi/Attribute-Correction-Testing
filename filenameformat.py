@@ -172,8 +172,8 @@ class FileNameValidator:
 			#------------------------------------------------------------
 			cursor = db.VarNameFixes.find_one({"Incorrect Var Name": pathDict["variable"]})
 			if cursor:
-				pathDict["variable"] = cursor["Known Fix"]
 				self.logger.log(pathDict["fileName"], [pathDict["variable"], cursor["Known Fix"]], 'Var Name Fix')
+				pathDict["variable"] = cursor["Known Fix"]
 
 				# Fix the folder that is named after the variable
 				#------------------------------------------------
@@ -256,7 +256,7 @@ class FileNameValidator:
 			if self.fixFlag:
 				newFullPath = pathDict["dirName"]+"/"+newFileName
 				os.rename(pathDict["fullPath"], newFullPath)
-			self.logger.log(pathDict["fileName"], newFileName, 'Renamed File Name')
+				self.logger.log(pathDict["fileName"], newFileName, 'Renamed File Name')
 			# Error seen
 			return False
 		else:
@@ -278,9 +278,9 @@ class FileNameValidator:
 		for f in files:
 			self.get_path_info(f)
 			self.dump_metadata(f)
- 			self.logger.log(self.pathDicts[f]["fileName"], "", 'File Started')
+ 			self.logger.log(self.pathDicts[f]["fullPath"], "", 'File Started')
 			if self.fix_filename(f):
-				self.logger.log(self.pathDicts[f]["fileName"], "", "File Confirmed")	
+				self.logger.log(self.pathDicts[f]["fullPath"], "", "File Confirmed")	
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
