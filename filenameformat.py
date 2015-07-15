@@ -308,10 +308,6 @@ def main():
 	parser.add_argument("-s", "--src", "--srcDir", dest="srcDir",         help = "Source Directory")
 	parser.add_argument("-f", "--fileName",        dest="fileName",       help = "File Name for single file fix")
 	parser.add_argument("--metadata",              dest="metadataFolder", help = "Folder to dump original metadata to", required = True)
-	parser.add_argument("-m", "--model",           dest="model",          help = "Name of model (ex: NOAA-GFDL, CCSM4). This argument will overwrite any found model in metadata, path, or filename")
-	parser.add_argument("-i", "--initDate",        dest="initDate",       help = "Initialization date (ex: 20090101). This argument will overwrite any found initDate in metadata, path, or filename")
-	parser.add_argument("--freq", "--frequency",   dest="freq",           help = "Frequency (ex: day, mon, Omon). This argument will overwrite any found frequency in metadata, path, or filename")
-	parser.add_argument("-v", "--var",             dest="var",            help = "Variable name (ex: pr, tasmax, hus). This argument will overwrite any found variable in metadata, path, or filename")
 	parser.add_argument("-l", "--logFile",         dest="logFile",        help = "File to log metadata changes to")
 	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",        help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true',  default=False)
 	parser.add_argument("--hist", "--histFlag",    dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)",    action='store_false', default=True)
@@ -321,7 +317,6 @@ def main():
 		parser.print_help()
 
 	else:
-		#givenArgs = create_dict_given_info(args.model, args.initDate, args.freq, args.var)
 		l = Logger(args.logFile)
 		if not args.logFile:
 			l.set_logfile(args.srcDir or args.fileName)
