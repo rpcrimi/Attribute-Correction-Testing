@@ -76,20 +76,27 @@ def get_path_info(fullPath):
 		dictionary["frequency"]         = splitFileName[3]
 		dictionary["modeling_realm"]    = splitFileName[5]
 		dictionary["variable"]          = splitFileName[6]
-		dictionary["fileName"]          = os.path.basename(fullPath)
-		dictionary["fullPath"]          = fullPath
-		dictionary["splitFileName _"]   = fullPath.split("_")
-		dictionary["splitFileName ."]   = fullPath.split(".")
+
 	elif splitFileName[0] == 'UM-RSMAS' or splitFileName[0] == 'NASA-GMAO':
 		dictionary["model_id"]          = splitFileName[1]
 		dictionary["initDate"]          = splitFileName[2]
 		dictionary["frequency"]         = splitFileName[3]
 		dictionary["modeling_realm"]    = splitFileName[4]
 		dictionary["variable"]          = splitFileName[5]
-		dictionary["fileName"]          = os.path.basename(fullPath)
-		dictionary["fullPath"]          = fullPath
-		dictionary["splitFileName _"]   = fullPath.split("_")
-		dictionary["splitFileName ."]   = fullPath.split(".")
+		
+	dictionary["fileName"]              = os.path.basename(fullPath)
+	dictionary["fullPath"]              = fullPath
+	dictionary["splitFileName _"]       = fullPath.split("_")
+	dictionary["splitFileName ."]       = fullPath.split(".")
+	dictionary["extension"]             = dictionary["splitFileName ."][-1]
+	dictionary["rootFileName"]          = ".".join(dictionary["splitFileName ."][0:-1])
+	
+	if not re.match(realizationRegex, dictionary["rootFileName"].split("_")[-1]):
+		dictionary["endDate"]           = dictionary["rootFileName"][-8:]
+		dictionary["startEnd"]          = "_"+dictionary["initDate"] + "-" + dictionary["endDate"]
+	else:
+		dictionary["startEnd"]          = ""
+
 	return dictionary
 
 # Create dictionary of given info from command line
@@ -225,37 +232,11 @@ def validate_metadata(pathDict, logFile, fixFlag):
 			flag = False
 	return flag
 
-# Fix the file = fullPath
-# pathDict contains info from file path
-# Changes will occur if fixFlag == True
-# Changes will appear in history if histFlag == False
-def fix_filename(pathDict, logFile, fixFlag, histFlag):
-	flag          = True
+def get_new_filename(pathDict):
+	return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["initDate"]+"_"+pathDict["fileNameRealization"]+pathDict["startEnd"]+"."+pathDict["extension"]
 
-	varFlag         = validate_variable(pathDict, logFile, fixFlag)
-	freqFlag        = validate_frequency(pathDict, logFile, fixFlag)
-	realizationFlag = validate_realization(pathDict, logFile, fixFlag)
-	metadataFlag    = validate_metadata(pathDict, logFile, fixFlag)
-	if not (varFlag and freqFlag and realizationFlag and metadataFlag):
-		flag = False
-
-	# Create End Date and File Extension
-	#-----------------------------------
-	extension     = pathDict["splitFileName ."][-1]
-	rootFileName  = ".".join(pathDict["splitFileName ."][0:-1])
-	# If end of filename is not a realization number ==> it contains a start-end date
-	if not re.match(realizationRegex, rootFileName.split("_")[-1]):
-		# Grab the enddate from the file
-		# TODO: FIX FOR NON 8 CHARACTER DATES
-		endDate  = rootFileName[-8:]
-		startEnd = pathDict["initDate"] + "-" + endDate
-	# Do not append start-end date if none is provided
-	else:
-		startEnd = ""
-
-	# Create filename based on pulled information
-	#--------------------------------------------
-	newFileName = pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["initDate"]+"_"+pathDict["fileNameRealization"]+(("_"+startEnd) if startEnd else "")+"."+extension
+def validate_filename(pathDict, logFile, fixFlag):
+	newFileName = get_new_filename(pathDict)
 	# If filename differs from created filename ==> rename file to created filename
 	if pathDict["fileName"] != newFileName:
 		log(logFile, pathDict["fileName"], [pathDict["fileName"], newFileName], 'File Name Error')
@@ -264,10 +245,23 @@ def fix_filename(pathDict, logFile, fixFlag, histFlag):
 			os.rename(pathDict["fullPath"], newFullPath)
 			log(logFile, pathDict["fileName"], newFileName, 'Renamed File Name')
 		# Error seen
-		flag = False
-
-	# Return boolean value if error found
-	return flag
+		return False
+	else:
+		return True
+# Fix the file = fullPath
+# pathDict contains info from file path
+# Changes will occur if fixFlag == True
+# Changes will appear in history if histFlag == False
+def fix_filename(pathDict, logFile, fixFlag, histFlag):
+	varFlag         = validate_variable(pathDict, logFile, fixFlag)
+	freqFlag        = validate_frequency(pathDict, logFile, fixFlag)
+	realizationFlag = validate_realization(pathDict, logFile, fixFlag)
+	metadataFlag    = validate_metadata(pathDict, logFile, fixFlag)
+	fileFlag        = validate_filename(pathDict, logFile, fixFlag)
+	if not (varFlag and freqFlag and realizationFlag and metadataFlag and fileFlag):
+		return False
+	else:
+		return True
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
