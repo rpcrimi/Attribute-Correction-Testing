@@ -20,6 +20,21 @@ CFVars            = db["CFVars"]
 StandardNameFixes = db["StandardNameFixes"]
 VarNameFixes      = db["VarNameFixes"]
 
+def StandardNameValidator:
+	def __init__(self, srcDir, fileName, dstDir, metadataFolder, logger, fixFlag, histFlag):
+		if srcDir: 
+			self.srcDir          = srcDir
+			self.fileName        = None
+		else:
+			self.srcDir          = None      
+			self.fileName        = fileName
+		self.dstDir              = dstDir
+		self.metadataFolder      = metadataFolder
+		self.logger              = logger
+		self.fixFlag             = fixFlag
+		self.histFlag            = histFlag
+		self.pathDicts           = {}
+
 def get_datetime(): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
 
 def get_logfile(srcDir): return (srcDir.replace("/", "")+"_"+get_datetime()+".log")
@@ -216,7 +231,7 @@ def main():
 	parser.add_argument("-m", "--metadata",          dest="metadataFolder", help = "Folder to dump original metadata to")
 	parser.add_argument("-l", "--logFile",           dest="logFile",        help = "File to log metadata changes to")
 	parser.add_argument("-f", "--fixFlag",           dest="fixFlag",        help = "Flag to fix files or only report possible changes (-f = Fix Files)",  action='store_true', default=False)
-	parser.add_argument("--hist", "--histFlag",      dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)", action='store_true', default=False)
+	parser.add_argument("--hist", "--histFlag",      dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)", action='store_false', default=True)
 
 	args = parser.parse_args()
 

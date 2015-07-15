@@ -8,8 +8,6 @@ import logging
 import sys
 import datetime
 from progressbar import *
-import ncatted
-import ncdump
 import pprint
 
 connection        = pymongo.MongoClient()
@@ -74,6 +72,61 @@ class Logger:
 		elif logType == 'Metadata Fix':
 			logging.debug("[%s] in metadata changed from [%s] to [%s]", text[0], text[1], text[2])
 
+class MetadataController:
+	def __init__(self, metadataFolder):
+		self.metadataFolder = metadataFolder
+	# Grab the attribute = attr from the file = fullPath
+	# This should only be used for global attributes
+	def get_metadata(self, pathDict, attr):
+		# Create the grep string
+		grep = 'grep :'+attr
+		dump = './ncdump.sh ' + pathDict["fullPath"]
+		# Dump metadata and grep for attribute
+		p  = subprocess.Popen(shlex.split(dump), stdout=subprocess.PIPE)
+		p2 = subprocess.Popen(shlex.split(grep), stdin=p.stdout, stdout=subprocess.PIPE)
+		p.stdout.close()
+		out, err = p2.communicate()
+		p2.stdout.close()
+		# Format metadata by removing tabs, newlines, and semicolons and grabbing the value
+		# lstrip("0") for realization numbers of the form r01i1p1
+		if out:
+			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
+			return metadata
+		else:
+			return "No Metadata"
+
+	def ncdump(self, fullPath):
+		call = "./ncdump.sh %s" % (fullPath)
+		p = subprocess.Popen(shlex.split(call), stdout=subprocess.PIPE)
+		out, err = p.communicate()
+		p.stdout.close()
+		if err: print(err)
+		else: return out
+
+	def ncatted(self, att_nm, var_nm, mode, att_type, att_val, inputFile, histFlag, outputFile=""):
+		call = "./ncatted.sh %s %s %s %s %s %s %s %s" % (att_nm, var_nm, mode, att_type, att_val, inputFile, outputFile, ("-h" if histFlag else ""))
+		p = subprocess.Popen(shlex.split(call))
+		out, err = p.communicate()
+		if err: print(err)
+
+	def ncrename(self, oldName, newName, inputFile, histFlag, outputFile=""):
+		call = "./ncrename.sh %s %s %s %s %s" % (oldName, newName, ("-h" if histFlag else ""), inputFile, outputFile)
+		p = subprocess.Popen(shlex.split(call))
+		out, err = p.communicate()
+		if err: print err
+
+	def dump_metadata(self, pathDict):
+		out = self.ncdump(pathDict["fullPath"])
+		dstDir = self.metadataFolder+pathDict["dirName"]
+		# If path does not exist ==> create directory structure
+		if not os.path.exists(dstDir):
+			os.makedirs(dstDir)
+
+		fileName = self.metadataFolder+pathDict["fullPath"].replace(".nc", "").rstrip("4")+".txt"
+		with open(fileName, "w") as text_file:
+			text_file.write(out)
+
+
 class FileNameValidator:
 	def __init__(self, srcDir, fileName, metadataFolder, logger, fixFlag, histFlag):
 		if srcDir: 
@@ -82,7 +135,7 @@ class FileNameValidator:
 		else:
 			self.srcDir   = None      
 			self.fileName = fileName
-		self.metadataFolder      = metadataFolder
+		self.metadatacontroller  = MetadataController(metadataFolder)
 		self.logger              = logger
 		self.fixFlag             = fixFlag
 		self.histFlag            = histFlag
@@ -145,37 +198,6 @@ class FileNameValidator:
 
 		self.pathDicts[fullPath] = dictionary
 
-	def dump_metadata(self, fileName):
-		out = ncdump.run(self.pathDicts[fileName]["fullPath"])
-		dstDir = self.metadataFolder+self.pathDicts[fileName]["dirName"]
-		# If path does not exist ==> create directory structure
-		if not os.path.exists(dstDir):
-			os.makedirs(dstDir)
-
-		fileName = self.metadataFolder+self.pathDicts[fileName]["fullPath"].replace(".nc", "").rstrip("4")+".txt"
-		with open(fileName, "w") as text_file:
-			text_file.write(out)
-
-	# Grab the attribute = attr from the file = fullPath
-	# This should only be used for global attributes
-	def get_metadata(self, pathDict, attr):
-		# Create the grep string
-		grep = 'grep :'+attr
-		dump = './ncdump.sh ' + pathDict["fullPath"]
-		# Dump metadata and grep for attribute
-		p  = subprocess.Popen(shlex.split(dump), stdout=subprocess.PIPE)
-		p2 = subprocess.Popen(shlex.split(grep), stdin=p.stdout, stdout=subprocess.PIPE)
-		p.stdout.close()
-		out, err = p2.communicate()
-		p2.stdout.close()
-		# Format metadata by removing tabs, newlines, and semicolons and grabbing the value
-		# lstrip("0") for realization numbers of the form r01i1p1
-		if out:
-			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
-			return metadata
-		else:
-			return "No Metadata"
-			
 	def get_new_filename(self, pathDict):
 		return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["initDate"]+"_"+pathDict["fileNameRealization"]+pathDict["startEnd"]+"."+pathDict["extension"]
 
@@ -234,7 +256,7 @@ class FileNameValidator:
 		self.pathDicts[fileName]["fileNameRealization"] = [match for match in self.pathDicts[fileName]["splitFileName _"] if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
 		pathDict = self.pathDicts[fileName]
 		# Grab realization number from metadata
-		realization = "r"+self.get_metadata(pathDict, "realization")+"i1p1"
+		realization = "r"+self.metadatacontroller.get_metadata(pathDict, "realization")+"i1p1"
 		# If the two values differ ==> fix the value in metadata to reflect filename
 		if realization != pathDict["fileNameRealization"]:
 			self.logger.log(pathDict["fileName"], [realization, pathDict["fileNameRealization"]], 'Realization Error')
@@ -242,7 +264,7 @@ class FileNameValidator:
 				# Find the number after "r" in fileNameRealization value
 				realizationNum = map(int, re.findall(r'\d+', pathDict["fileNameRealization"]))[0]
 				# Overwrite realization value in metadata
-				ncatted.run("realization", "global", "o", "i", realizationNum, pathDict["fullPath"], ("-h" if self.histFlag else ""))
+				self.metadatacontroller.ncatted("realization", "global", "o", "i", realizationNum, pathDict["fullPath"], ("-h" if self.histFlag else ""))
 				self.logger.log(pathDict["fileName"], [realization, pathDict["fileNameRealization"]], 'Realization Fix')
 			# Error seen
 			return False
@@ -253,10 +275,10 @@ class FileNameValidator:
 		pathDict = self.pathDicts[fileName]
 		flag = True
 		for meta in ["frequency", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "startday"]:
-			metadata = self.get_metadata(pathDict, meta)
+			metadata = self.metadatacontroller.get_metadata(pathDict, meta)
 			if metadata != pathDict[meta]:
 				if self.fixFlag:
-					ncatted.run(meta, "global", "o", "c", pathDict[meta], pathDict["fullPath"], ("-h" if self.histFlag else ""))
+					self.metadatacontroller.ncatted(meta, "global", "o", "c", pathDict[meta], pathDict["fullPath"], ("-h" if self.histFlag else ""))
 				self.logger.log(pathDict["fileName"], [meta, metadata, pathDict[meta]], 'Metadata Fix')
 				flag = False
 		return flag
@@ -296,7 +318,7 @@ class FileNameValidator:
 
 		for f in files:
 			self.get_path_info(f)
-			self.dump_metadata(f)
+			self.metadatacontroller.dump_metadata(self.pathDicts[f])
  			self.logger.log(self.pathDicts[f]["fullPath"], "", 'File Started')
 			if self.fix_filename(f):
 				self.logger.log(self.pathDicts[f]["fullPath"], "", "File Confirmed")
@@ -321,6 +343,7 @@ def main():
 		l = Logger(args.logFile)
 		if not args.logFile:
 			l.set_logfile(args.srcDir or args.fileName)
+
 		v = FileNameValidator(args.srcDir, args.fileName, args.metadataFolder, l, args.fixFlag, args.histFlag)
 		v.validate()
 
