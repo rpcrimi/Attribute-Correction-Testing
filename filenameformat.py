@@ -18,6 +18,150 @@ ValidFreq         = db["ValidFreq"]
 FreqFixes         = db["FreqFixes"]
 realizationRegex  = re.compile('r[0-9]+i[0-9]+p[0-9]+')
 
+class Logger:
+	def __init__(self, logFile):
+		self.logFile = logFile
+
+	@property
+	def logFile(self):
+	    return self._logFile
+
+	@logFile.setter
+	def logFile(self, logFile):
+		self.logFile = logFile
+
+	def log(self, fileName, text, logType):
+		logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=self.logFile, filemode='w')
+		if logType == 'File Started':
+			logging.info("-" * 100)
+			logging.debug("Starting file name: [%s]", fileName)
+
+		elif logType == 'File Confirmed':
+			logging.debug("Confirmed file name: [%s]", fileName)
+			logging.info("-" * 100)
+
+		elif logType == 'Var Error':
+			logging.debug("Variable [%s] not recognized", text)
+
+		elif logType == 'Freq Error':
+			logging.debug("Frequency [%s] not recognized", text)
+
+		elif logType == 'Model Error':
+			logging.debug("Model [%s] not recognized", text)	
+
+		elif logType == 'Realization Error':
+			logging.debug("Metadata Realization [%s] does not match File Name Realization [%s]", text[0], text[1])
+
+		elif logType == 'File Name Error':
+			logging.debug("File Name [%s] does not match created File Name [%s]", text[0], text[1])
+
+		elif logType == 'Renamed File Name':
+			logging.debug("File Name [%s] renamed to [%s]", fileName, text)
+
+		elif logType == 'Realization Fix':
+			logging.debug("Metadata Realization changed from [%s] to [%s]", text[0], text[1])
+
+		elif logType == 'Var Name Fix':
+			logging.debug("Variable [%s] changed to [%s]", text[0], text[1])
+
+		elif logType == 'Renamed Var Folder':
+			logging.debug("Folder [%s] renamed to [%s]", text[0], text[1])
+
+		elif logType == 'Renamed Freq Folder':
+			logging.debug("Renamed Frequency folder name [%s] to [%s]", text[0], text[1])
+
+		elif logType == 'Metadata Fix':
+			logging.debug("[%s] in metadata changed from [%s] to [%s]", text[0], text[1], text[2])
+
+class FileNameValidator:
+	def __init__(self, srcDir, fileName, metadataFolder, logger, fixFlag, histFlag):
+		if srcDir: self.srcDir   = srcDir
+		else:      self.fileName = fileName
+		self.metadataFolder      = metadataFolder
+		self.logger              = logger
+		self.fixFlag             = fixFlag
+		self.histFlag            = histFlag
+		self.pathDicts           = {}
+
+
+
+	def get_nc_files(self):
+		matches = []
+		# Do a walk through input directory
+		for root, dirnames, files in os.walk(self.srcDir):
+			# Find all filenames with .nc type
+			for filename in files:
+				filename = os.path.join(root, filename)
+				if filename.endswith(('.nc', '.nc4')):
+						matches.append(filename)
+		return matches
+
+	# Get model, initialization date, frequency, and variable from the full path of the given file
+	def get_path_info(self, fullPath):
+		dictionary = {}
+		splitFileName = fullPath.split("/")
+		if splitFileName[0] == 'NOAA-GFDL' or splitFileName[0] == 'CCCMA':
+			dictionary["model_id"]          = splitFileName[1]
+			dictionary["initDate"]          = splitFileName[2]
+			dictionary["frequency"]         = splitFileName[3]
+			dictionary["modeling_realm"]    = splitFileName[5]
+			dictionary["variable"]          = splitFileName[6]
+
+		elif splitFileName[0] == 'UM-RSMAS' or splitFileName[0] == 'NASA-GMAO':
+			dictionary["model_id"]          = splitFileName[1]
+			dictionary["initDate"]          = splitFileName[2]
+			dictionary["frequency"]         = splitFileName[3]
+			dictionary["modeling_realm"]    = splitFileName[4]
+			dictionary["variable"]          = splitFileName[5]
+			
+		dictionary["fileName"]              = os.path.basename(fullPath)
+		dictionary["dirName"]               = os.path.dirname(fullPath)
+		dictionary["fullPath"]              = fullPath
+		dictionary["splitFileName _"]       = fullPath.split("_")
+		dictionary["splitFileName ."]       = fullPath.split(".")
+		dictionary["extension"]             = dictionary["splitFileName ."][-1]
+		dictionary["rootFileName"]          = ".".join(dictionary["splitFileName ."][0:-1])
+	
+		if not re.match(realizationRegex, dictionary["rootFileName"].split("_")[-1]):
+			dictionary["endDate"]           = dictionary["rootFileName"][-8:]
+			dictionary["startEnd"]          = "_"+dictionary["initDate"] + "-" + dictionary["endDate"]
+		else:
+			dictionary["startEnd"]          = ""
+
+		self.pathDicts[fullPath] = dictionary
+
+	def dump_metadata(self, fileName):
+		out = ncdump.run(self.pathDicts[fileName]["fullPath"])
+		dstDir = self.metadataFolder+self.pathDicts[fileName]["dirName"]
+		print dstDir
+		# If path does not exist ==> create directory structure
+		if not os.path.exists(dstDir):
+			os.makedirs(dstDir)
+
+		fileName = self.metadataFolder+self.pathDicts[fileName]["fileName"].replace(".nc", "").rstrip("4")+".txt"
+		#with open(fileName, "w") as text_file:
+		#	text_file.write(out)
+
+	def fix_filename(self, fileName):
+		return True
+
+	def validate(self):
+		if self.srcDir:
+			files = self.get_nc_files()
+			for f in files:
+				self.get_path_info(f)
+				self.dump_metadata(f)
+ 				self.logger.log(self.pathDicts[f]["fileName"], "", 'File Started')
+				if self.fix_filename(f):
+					self.logger.log(self.pathDicts[f]["fileName"], "", "File Confirmed")
+
+		elif self.fileName:
+			self.pathDicts[self.fileName] = get_path_info(self.fileName)
+			dump_metadata(self.fileName)
+			self.logger.log(pathDicts[self.fileName]["fileName"], "", 'File Started')
+			if fix_filename(self.fileName):
+				self.logger.log(pathDicts[args.fileName]["fileName"], "", "File Confirmed")		
+
 def get_datetime(): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
 
 def get_logfile(src): return (src+"_"+get_datetime()+".log")
@@ -111,7 +255,7 @@ def create_dict_given_info(model=None, initDate=None, freq=None, var=None):
 	if var:
 		dictionary["var"]      = var
 	return dictionary
-
+'''
 # Return a list of all netCDF files in "direrctory"
 def get_nc_files(directory):
 	matches = []
@@ -123,7 +267,7 @@ def get_nc_files(directory):
 			if filename.endswith(('.nc', '.nc4')):
 					matches.append(filename)
 	return matches
-
+'''
 # Grab the attribute = attr from the file = fullPath
 # This should only be used for global attributes
 def get_metadata(pathDict, attr):
@@ -141,6 +285,7 @@ def get_metadata(pathDict, attr):
 	metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
 	return metadata
 
+'''
 def dump_metadata(pathDict, metadataFolder):
 	out = ncdump.run(pathDict["fullPath"])
 	dstDir = metadataFolder+os.path.dirname(pathDict["fileName"])
@@ -151,7 +296,7 @@ def dump_metadata(pathDict, metadataFolder):
 	fileName = metadataFolder+pathDict["fileName"].replace(".nc", "").rstrip("4")+".txt"
 	with open(fileName, "w") as text_file:
 		text_file.write(out)
-
+'''
 def validate_variable(pathDict, logFile, fixFlag):
 	if not db.CFVars.find_one({"Var Name": pathDict["variable"]}):
 		# Try to fix the variable name by making characters lowercase
@@ -267,14 +412,14 @@ def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
 	parser.add_argument("-s", "--src", "--srcDir", dest="srcDir",         help = "Source Directory")
 	parser.add_argument("-f", "--fileName",        dest="fileName",       help = "File Name for single file fix")
-	parser.add_argument("--metadata",              dest="metadataFolder", help = "Folder to dump original metadata to", required=True)
+	parser.add_argument("--metadata",              dest="metadataFolder", help = "Folder to dump original metadata to", required = True)
 	parser.add_argument("-m", "--model",           dest="model",          help = "Name of model (ex: NOAA-GFDL, CCSM4). This argument will overwrite any found model in metadata, path, or filename")
 	parser.add_argument("-i", "--initDate",        dest="initDate",       help = "Initialization date (ex: 20090101). This argument will overwrite any found initDate in metadata, path, or filename")
 	parser.add_argument("--freq", "--frequency",   dest="freq",           help = "Frequency (ex: day, mon, Omon). This argument will overwrite any found frequency in metadata, path, or filename")
 	parser.add_argument("-v", "--var",             dest="var",            help = "Variable name (ex: pr, tasmax, hus). This argument will overwrite any found variable in metadata, path, or filename")
 	parser.add_argument("-l", "--logFile",         dest="logFile",        help = "File to log metadata changes to")
-	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",        help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true', default=False)
-	parser.add_argument("--hist", "--histFlag",    dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)",           action='store_true', default=True)
+	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",        help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true',  default=False)
+	parser.add_argument("--hist", "--histFlag",    dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)",    action='store_false', default=True)
 
 	args = parser.parse_args()
 	if(len(sys.argv) == 1):
@@ -283,6 +428,12 @@ def main():
 	else:
 		logFile  = get_logfile(args.logFile if args.logFile else (args.srcDir.replace("/","") if args.srcDir else args.fileName))
 		givenArgs = create_dict_given_info(args.model, args.initDate, args.freq, args.var)
+
+		l = Logger(logFile)
+		v = FileNameValidator(args.srcDir, None, args.metadataFolder, l, args.fixFlag, args.histFlag)
+		v.validate()
+		return
+
 		if args.srcDir:
 			files = get_nc_files(args.srcDir)
 			for f in files:
@@ -301,4 +452,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
