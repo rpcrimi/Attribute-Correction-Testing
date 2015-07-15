@@ -124,7 +124,11 @@ class FileNameValidator:
 			dictionary["frequency"]         = splitFileName[3]
 			dictionary["modeling_realm"]    = splitFileName[4]
 			dictionary["variable"]          = splitFileName[5]
-			
+		
+		dictionary["startyear"]             = dictionary["initDate"][:4]
+		dictionary["startmonth"]            = dictionary["initDate"][4:6]
+		dictionary["startday"]              = dictionary["initDate"][6:8]
+
 		dictionary["fileName"]              = os.path.basename(fullPath)
 		dictionary["dirName"]               = os.path.dirname(fullPath)
 		dictionary["fullPath"]              = fullPath
@@ -247,7 +251,7 @@ class FileNameValidator:
 	def validate_metadata(self, fileName):
 		pathDict = self.pathDicts[fileName]
 		flag = True
-		for meta in ["frequency", "model_id", "modeling_realm", "institute_id"]:
+		for meta in ["frequency", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "startday"]:
 			metadata = self.get_metadata(pathDict, meta)
 			if metadata != pathDict[meta]:
 				if self.fixFlag:
