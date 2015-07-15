@@ -7,6 +7,7 @@ import os
 import logging
 import sys
 import datetime
+from progressbar import *
 import ncatted
 import ncdump
 import pprint
@@ -104,14 +105,20 @@ class FileNameValidator:
 	def get_path_info(self, fullPath):
 		dictionary = {}
 		splitFileName = fullPath.split("/")
-		if splitFileName[0] == 'NOAA-GFDL' or splitFileName[0] == 'CCCMA':
+		dictionary["institute_id"]        = splitFileName[0]
+		if dictionary["institute_id"] == 'NOAA-GFDL':
 			dictionary["model_id"]          = splitFileName[1]
 			dictionary["initDate"]          = splitFileName[2]
 			dictionary["frequency"]         = splitFileName[3]
 			dictionary["modeling_realm"]    = splitFileName[5]
 			dictionary["variable"]          = splitFileName[6]
-
-		elif splitFileName[0] == 'UM-RSMAS' or splitFileName[0] == 'NASA-GMAO':
+		elif dictionary["institute_id"] == 'CCCMA':
+			dictionary["model_id"]          = splitFileName[1]
+			dictionary["initDate"]          = splitFileName[2]
+			dictionary["frequency"]         = splitFileName[3]
+			dictionary["modeling_realm"]    = splitFileName[4]
+			dictionary["variable"]          = splitFileName[6]
+		elif dictionary["institute_id"] == 'UM-RSMAS' or dictionary["institute_id"] == 'NASA-GMAO':
 			dictionary["model_id"]          = splitFileName[1]
 			dictionary["initDate"]          = splitFileName[2]
 			dictionary["frequency"]         = splitFileName[3]
@@ -159,9 +166,11 @@ class FileNameValidator:
 		p2.stdout.close()
 		# Format metadata by removing tabs, newlines, and semicolons and grabbing the value
 		# lstrip("0") for realization numbers of the form r01i1p1
-		metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
-		return metadata
-
+		if out:
+			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
+			return metadata
+		else:
+			return "No Metadata"
 	def get_new_filename(self, pathDict):
 		return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["initDate"]+"_"+pathDict["fileNameRealization"]+pathDict["startEnd"]+"."+pathDict["extension"]
 
@@ -238,12 +247,12 @@ class FileNameValidator:
 	def validate_metadata(self, fileName):
 		pathDict = self.pathDicts[fileName]
 		flag = True
-		for meta in ["frequency", "model_id", "modeling_realm"]:
-			metadataFreq = self.get_metadata(pathDict, meta)
-			if metadataFreq != pathDict[meta]:
+		for meta in ["frequency", "model_id", "modeling_realm", "institute_id"]:
+			metadata = self.get_metadata(pathDict, meta)
+			if metadata != pathDict[meta]:
 				if self.fixFlag:
 					ncatted.run(meta, "global", "o", "c", pathDict[meta], pathDict["fullPath"], ("-h" if self.histFlag else ""))
-				self.logger.log(pathDict["fileName"], [meta, metadataFreq, pathDict[meta]], 'Metadata Fix')
+				self.logger.log(pathDict["fileName"], [meta, metadata, pathDict[meta]], 'Metadata Fix')
 				flag = False
 		return flag
 
@@ -275,12 +284,20 @@ class FileNameValidator:
 
 	def validate(self):
 		files = self.get_nc_files()
+		totalFiles = len(files)
+		i = 1
+		widgets = ['Percent Done: ', Percentage(), ' ', AnimatedMarker(), ' ', ETA()]
+		bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
+
 		for f in files:
 			self.get_path_info(f)
 			self.dump_metadata(f)
  			self.logger.log(self.pathDicts[f]["fullPath"], "", 'File Started')
 			if self.fix_filename(f):
-				self.logger.log(self.pathDicts[f]["fullPath"], "", "File Confirmed")	
+				self.logger.log(self.pathDicts[f]["fullPath"], "", "File Confirmed")
+			bar.update(i)
+			i = i + 1
+		bar.finish()	
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
