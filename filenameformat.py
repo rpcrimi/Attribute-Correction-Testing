@@ -124,8 +124,8 @@ class FileNameValidator:
 		dictionary["splitFileName _"]       = fullPath.split("_")
 		dictionary["splitFileName ."]       = fullPath.split(".")
 		dictionary["extension"]             = dictionary["splitFileName ."][-1]
+
 		dictionary["rootFileName"]          = ".".join(dictionary["splitFileName ."][0:-1])
-	
 		if not re.match(realizationRegex, dictionary["rootFileName"].split("_")[-1]):
 			dictionary["endDate"]           = dictionary["rootFileName"][-8:]
 			dictionary["startEnd"]          = "_"+dictionary["initDate"] + "-" + dictionary["endDate"]
@@ -170,10 +170,10 @@ class FileNameValidator:
 		if not db.CFVars.find_one({"Var Name": pathDict["variable"]}):
 			# Try to fix the variable name by making characters lowercase
 			#------------------------------------------------------------
-			if db.CFVars.find_one({"Var Name": pathDict["variable"].lower()}):
-				if self.fixFlag:
-					pathDict["variable"] = pathDict["variable"].lower()
-				self.logger.log(pathDict["fileName"], [pathDict["variable"].upper(), pathDict["variable"].lower()], 'Var Name Fix')
+			cursor = db.VarNameFixes.find_one({"Incorrect Var Name": pathDict["variable"]})
+			if cursor:
+				pathDict["variable"] = cursor["Known Fix"]
+				self.logger.log(pathDict["fileName"], [pathDict["variable"], cursor["Known Fix"]], 'Var Name Fix')
 
 				# Fix the folder that is named after the variable
 				#------------------------------------------------
@@ -182,12 +182,11 @@ class FileNameValidator:
 				parDirIndex = oldDir.rfind('/')
 				parDir      = oldDir[parDirIndex+1:]
 				# If folder is uppercase ==> make lowercase and rename folder
-				if parDir.isupper():
-					parDir = parDir.lower()
-					newDir = oldDir[:parDirIndex+1]+parDir
-					if self.fixFlag:
-						os.rename(oldDir, newDir)
-					self.logger.log(pathDict["fileName"], [oldDir, newDir], 'Renamed Var Folder')
+				parDir = cursor["Known Fix"]
+				newDir = oldDir[:parDirIndex+1]+parDir
+				if self.fixFlag:
+					os.rename(oldDir, newDir)
+				self.logger.log(pathDict["fileName"], [oldDir, newDir], 'Renamed Var Folder')
 			else:
 				self.logger.log(pathDict["fileName"], pathDict["variable"], 'Var Error')
 			# Error seen	
@@ -257,7 +256,7 @@ class FileNameValidator:
 			if self.fixFlag:
 				newFullPath = pathDict["dirName"]+"/"+newFileName
 				os.rename(pathDict["fullPath"], newFullPath)
-				self.logger.log(pathDict["fileName"], newFileName, 'Renamed File Name')
+			self.logger.log(pathDict["fileName"], newFileName, 'Renamed File Name')
 			# Error seen
 			return False
 		else:
@@ -282,7 +281,6 @@ class FileNameValidator:
  			self.logger.log(self.pathDicts[f]["fileName"], "", 'File Started')
 			if self.fix_filename(f):
 				self.logger.log(self.pathDicts[f]["fileName"], "", "File Confirmed")	
-
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
