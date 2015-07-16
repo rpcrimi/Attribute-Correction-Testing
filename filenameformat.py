@@ -148,7 +148,7 @@ class FileNameValidator:
 		else:
 			self.srcDir   = None      
 			self.fileName = fileName
-		self.metadatacontroller  = MetadataController(metadataFolder)
+		self.metadataController  = MetadataController(metadataFolder)
 		self.logger              = logger
 		self.fixFlag             = fixFlag
 		self.histFlag            = histFlag
@@ -280,11 +280,11 @@ class FileNameValidator:
 		flag = True
 		# For each desired value of metadata ==> Check against path information and update accordingly
 		for meta in ["frequency", "realization", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "experiment_id", "project_id"]:
-			metadata = self.metadatacontroller.get_metadata(pathDict, meta)
+			metadata = self.metadataController.get_metadata(pathDict, meta)
 			if metadata != pathDict[meta]:
 				if self.fixFlag:
 					# Update the metadata to path information
-					self.metadatacontroller.ncatted(meta, "global", "o", "c", pathDict[meta], pathDict["fullPath"], ("-h" if self.histFlag else ""))
+					self.metadataController.ncatted(meta, "global", "o", "c", pathDict[meta], pathDict["fullPath"], ("-h" if self.histFlag else ""))
 				self.logger.log(pathDict["fileName"], [meta, metadata, pathDict[meta]], 'Metadata Fix')
 				flag = False
 		return flag
@@ -330,7 +330,7 @@ class FileNameValidator:
 			# Set pathDicts[f] entry
 			self.get_path_info(f)
 			# Dump metadata to same folder structure
-			self.metadatacontroller.dump_metadata(self.pathDicts[f])
+			self.metadataController.dump_metadata(self.pathDicts[f])
  			self.logger.log(self.pathDicts[f]["fullPath"], "", 'File Started')
  			# fix_filename saw no errors ==> file is confirmed
 			if self.fix_filename(f):
