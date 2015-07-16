@@ -20,7 +20,7 @@ CFVars            = db["CFVars"]
 StandardNameFixes = db["StandardNameFixes"]
 VarNameFixes      = db["VarNameFixes"]
 
-def StandardNameValidator:
+class StandardNameValidator:
 	def __init__(self, srcDir, fileName, dstDir, metadataFolder, logger, fixFlag, histFlag):
 		if srcDir: 
 			self.srcDir          = srcDir
@@ -34,6 +34,54 @@ def StandardNameValidator:
 		self.fixFlag             = fixFlag
 		self.histFlag            = histFlag
 		self.pathDicts           = {}
+
+	def validate(self):
+		# (filename, standard_name) list of all files in ncFolder
+		standardNames = grabmetadata.get_standard_names(srcDir, dstDir)
+		if standardNames:
+			# Number of files for use in progress bar
+			totalFiles = len(standardNames)
+			i = 1
+			widgets = ['Percent Done: ', Percentage(), ' ', AnimatedMarker(), ' ', ETA()]
+			bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
+			# Flag for confirming file
+			fileFlag = True
+			# For each file in the list, log the file has started
+			for f in standardNames:
+				fileName   = f[0]
+				standNames = f[1]
+				dump_metadata(fileName, metadataFolder)
+				log(logFile, fileName, "", 'File Started')
+				# If the file has no standard names, log the issue
+				if not standNames:
+					log(logFile, fileName, "", 'No Standard Names')
+					fileFlag = False
+				# For each attribute in standard_name list, format and identify attribute
+				else:
+					for attr in standNames:
+						splitAttr = attr.split(":")
+						flag = identify_attribute(splitAttr[0], splitAttr[1], logFile, fileName, fixFlag, histFlag)
+						# Check if something in file was changed
+						if flag == False:
+							fileFlag = False
+				# If file had no errors or KnownFix occured ==> Confirm file
+				if fileFlag:
+					if fixFlag:
+						# New path for copying file
+						dstdir = dstDir+os.path.dirname(fileName)
+						# If path does not exist ==> create directory structure
+						if not os.path.exists(dstdir):
+							os.makedirs(dstdir)
+						# Copy original file to dstdir
+						shutil.move(fileName, dstdir)
+					# Log the confirmed file
+					log(logFile, fileName, "", 'File Confirmed')
+				# Reset fileFlag
+				fileFlag = True
+				# Update progress bar
+				bar.update(i)
+				i = i + 1
+			bar.finish()
 
 def get_datetime(): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
 
