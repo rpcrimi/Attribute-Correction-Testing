@@ -21,13 +21,16 @@ class Logger:
 	def __init__(self, logFile=None):
 		self.logFile = logFile
 
+	# Return formated date/time for logfile
 	def get_datetime(self): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
 
-	def set_logfile(self, src): 
-		if ".nc" in src:
-			self.logFile = os.path.basename(src).replace(".nc", "").rstrip("4") + self.get_datetime() + ".log"
-		else:
-			self.logFile = src.replace("/", "") + "_" + self.get_datetime() + ".log"
+
+	def set_logfile(self, src):
+		if self.logFile == None: 
+			if ".nc" in src:
+				self.logFile = os.path.basename(src).replace(".nc", "").rstrip("4") + self.get_datetime() + ".log"
+			else:
+				self.logFile = src.replace("/", "") + "_" + self.get_datetime() + ".log"
 
 	def log(self, fileName, text, logType):
 		logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=self.logFile, filemode='w')
@@ -161,45 +164,46 @@ class FileNameValidator:
 		dictionary["institute_id"]        = splitFileName[0]
 		if dictionary["institute_id"] == 'NOAA-GFDL':
 			dictionary["model_id"]          = splitFileName[1]
-			dictionary["initDate"]          = splitFileName[2]
+			dictionary["experiment_id"]     = splitFileName[2]
 			dictionary["frequency"]         = splitFileName[3]
 			dictionary["modeling_realm"]    = splitFileName[5]
 			dictionary["variable"]          = splitFileName[6]
 		elif dictionary["institute_id"] == 'CCCMA':
 			dictionary["model_id"]          = splitFileName[1]
-			dictionary["initDate"]          = splitFileName[2]
+			dictionary["experiment_id"]     = splitFileName[2]
 			dictionary["frequency"]         = splitFileName[3]
 			dictionary["modeling_realm"]    = splitFileName[4]
 			dictionary["variable"]          = splitFileName[6]
 		elif dictionary["institute_id"] == 'UM-RSMAS' or dictionary["institute_id"] == 'NASA-GMAO':
 			dictionary["model_id"]          = splitFileName[1]
-			dictionary["initDate"]          = splitFileName[2]
+			dictionary["experiment_id"]     = splitFileName[2]
 			dictionary["frequency"]         = splitFileName[3]
 			dictionary["modeling_realm"]    = splitFileName[4]
 			dictionary["variable"]          = splitFileName[5]
 		
-		dictionary["startyear"]             = dictionary["initDate"][:4]
-		dictionary["startmonth"]            = dictionary["initDate"][4:6]
-		dictionary["startday"]              = dictionary["initDate"][6:8]
+		dictionary["project_id"]            = "NMME"
+		dictionary["startyear"]             = dictionary["experiment_id"][:4]
+		dictionary["startmonth"]            = dictionary["experiment_id"][4:6]
+		dictionary["startday"]              = dictionary["experiment_id"][6:8]
 
 		dictionary["fileName"]              = os.path.basename(fullPath)
 		dictionary["dirName"]               = os.path.dirname(fullPath)
 		dictionary["fullPath"]              = fullPath
-		dictionary["splitFileName _"]       = fullPath.split("_")
-		dictionary["splitFileName ."]       = fullPath.split(".")
-		dictionary["extension"]             = dictionary["splitFileName ."][-1]
+		dictionary["ensemble"]              = [match for match in fullPath.split("_") if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
+		dictionary["realization"]           = dictionary["ensemble"].replace("r", "").split("i")[0]
+		dictionary["extension"]             = fullPath.split(".")[-1]
 
-		dictionary["rootFileName"]          = ".".join(dictionary["splitFileName ."][0:-1])
+		dictionary["rootFileName"]          = ".".join(fullPath.split(".")[:-1])
 		if not re.match(realizationRegex, dictionary["rootFileName"].split("_")[-1]):
 			dictionary["endDate"]           = dictionary["rootFileName"][-8:]
-			dictionary["startEnd"]          = "_"+dictionary["initDate"] + "-" + dictionary["endDate"]
+			dictionary["startEnd"]          = "_"+dictionary["experiment_id"] + "-" + dictionary["endDate"]
 		else:
 			dictionary["startEnd"]          = ""
 
 		self.pathDicts[fullPath] = dictionary
 
 	def get_new_filename(self, pathDict):
-		return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["initDate"]+"_"+pathDict["fileNameRealization"]+pathDict["startEnd"]+"."+pathDict["extension"]
+		return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["experiment_id"]+"_"+pathDict["ensemble"]+pathDict["startEnd"]+"."+pathDict["extension"]
 
 	def validate_variable(self, fileName):
 		pathDict = self.pathDicts[fileName]
@@ -252,29 +256,10 @@ class FileNameValidator:
 		else:
 			return True
 
-	def validate_realization(self, fileName):
-		self.pathDicts[fileName]["fileNameRealization"] = [match for match in self.pathDicts[fileName]["splitFileName _"] if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
-		pathDict = self.pathDicts[fileName]
-		# Grab realization number from metadata
-		realization = "r"+self.metadatacontroller.get_metadata(pathDict, "realization")+"i1p1"
-		# If the two values differ ==> fix the value in metadata to reflect filename
-		if realization != pathDict["fileNameRealization"]:
-			self.logger.log(pathDict["fileName"], [realization, pathDict["fileNameRealization"]], 'Realization Error')
-			if self.fixFlag:
-				# Find the number after "r" in fileNameRealization value
-				realizationNum = map(int, re.findall(r'\d+', pathDict["fileNameRealization"]))[0]
-				# Overwrite realization value in metadata
-				self.metadatacontroller.ncatted("realization", "global", "o", "i", realizationNum, pathDict["fullPath"], ("-h" if self.histFlag else ""))
-				self.logger.log(pathDict["fileName"], [realization, pathDict["fileNameRealization"]], 'Realization Fix')
-			# Error seen
-			return False
-		else:
-			return True
-
 	def validate_metadata(self, fileName):
 		pathDict = self.pathDicts[fileName]
 		flag = True
-		for meta in ["frequency", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "startday"]:
+		for meta in ["frequency", "realization", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "experiment_id", "project_id"]:
 			metadata = self.metadatacontroller.get_metadata(pathDict, meta)
 			if metadata != pathDict[meta]:
 				if self.fixFlag:
@@ -301,10 +286,9 @@ class FileNameValidator:
 	def fix_filename(self, fileName):
 		varFlag         = self.validate_variable(fileName)
 		freqFlag        = self.validate_frequency(fileName)
-		realizationFlag = self.validate_realization(fileName)
 		metadataFlag    = self.validate_metadata(fileName)
 		fileFlag        = self.validate_filename(fileName)
-		if not (varFlag and freqFlag and realizationFlag and metadataFlag and fileFlag):
+		if not (varFlag and freqFlag and metadataFlag and fileFlag):
 			return False
 		else:
 			return True
@@ -341,8 +325,7 @@ def main():
 
 	else:
 		l = Logger(args.logFile)
-		if not args.logFile:
-			l.set_logfile(args.srcDir or args.fileName)
+		l.set_logfile(args.srcDir or args.fileName)
 
 		v = FileNameValidator(args.srcDir, args.fileName, args.metadataFolder, l, args.fixFlag, args.histFlag)
 		v.validate()

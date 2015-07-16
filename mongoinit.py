@@ -77,9 +77,11 @@ def run():
 	# VALID FREQUENCIES TABLE
 	#----------------------------------------------------------------------------------------------------------
 	ValidFreq.insert({"Frequency": "3hr"})
+	ValidFreq.insert({"Frequency": "6hr"})
 	ValidFreq.insert({"Frequency": "day"})
 	ValidFreq.insert({"Frequency": "mon"})
 	ValidFreq.insert({"Frequency": "Omon"})
+	ValidFreq.insert({"Frequency": "yr"})
 	#----------------------------------------------------------------------------------------------------------
 
 
@@ -134,9 +136,3 @@ def run():
 	# FREQUENCIES KNOWN FIXES TABLE
 	#-----------------------------------------------------------------------------------------------------------
 	FreqFixes.insert({"Incorrect Freq": "month", "Known Fix": "mon"})
-
-
-
-
-
-

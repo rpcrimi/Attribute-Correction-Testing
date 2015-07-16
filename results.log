@@ -1,0 +1,380 @@
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r10i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r10i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r1i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r1i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r2i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r2i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r3i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r3i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r4i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r4i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r5i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r5i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r6i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r6i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r7i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r7i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r8i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r8i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r9i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/so/so_mon_GEOS-5_20090901_r9i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r10i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r10i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r1i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r1i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r2i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r2i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r3i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r3i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r4i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r4i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r5i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r5i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r6i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r6i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r7i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r7i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r8i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r8i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r9i1p1.nc]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/TO/TO_mon_GEOS-5_20090901_r9i1p1.nc4]
+DEBUG    Variable [TO] not recognized
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r10i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r10i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r1i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r1i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r2i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r2i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r3i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r3i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r4i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r4i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r5i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r5i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r6i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r6i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r7i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r7i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r8i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r8i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r9i1p1.nc]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting file name: [NASA-GMAO/GEOS-5/20090901/mon/atmos/uo/uo_mon_GEOS-5_20090901_r9i1p1.nc4]
+DEBUG    [institute_id] in metadata changed from [No Metadata] to [NASA-GMAO]
+DEBUG    [startyear] in metadata changed from [2009.] to [2009]
+DEBUG    [startmonth] in metadata changed from [9.] to [09]
+DEBUG    [experiment_id] in metadata changed from [sep2009] to [20090901]
