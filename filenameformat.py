@@ -17,6 +17,7 @@ ValidFreq         = db["ValidFreq"]
 FreqFixes         = db["FreqFixes"]
 realizationRegex  = re.compile('r[0-9]+i[0-9]+p[0-9]+')
 
+# Class to handle logging calls
 class Logger:
 	def __init__(self, logFile=None):
 		self.logFile = logFile
@@ -24,7 +25,7 @@ class Logger:
 	# Return formated date/time for logfile
 	def get_datetime(self): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
 
-
+	# Set logfile based on srcDir or fileName if logFile not provided
 	def set_logfile(self, src):
 		if self.logFile == None: 
 			if ".nc" in src:
@@ -32,6 +33,8 @@ class Logger:
 			else:
 				self.logFile = src.replace("/", "") + "_" + self.get_datetime() + ".log"
 
+	# Log info of type==logType about changes to fileName
+	# Text is a list of info to log
 	def log(self, fileName, text, logType):
 		logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=self.logFile, filemode='w')
 		if logType == 'File Started':
@@ -75,10 +78,12 @@ class Logger:
 		elif logType == 'Metadata Fix':
 			logging.debug("[%s] in metadata changed from [%s] to [%s]", text[0], text[1], text[2])
 
+# Class to handle Metadata queries and changes
 class MetadataController:
 	def __init__(self, metadataFolder):
 		self.metadataFolder = metadataFolder
-	# Grab the attribute = attr from the file = fullPath
+
+	# Grab the attribute==attr from the file==fullPath
 	# This should only be used for global attributes
 	def get_metadata(self, pathDict, attr):
 		# Create the grep string
@@ -98,6 +103,7 @@ class MetadataController:
 		else:
 			return "No Metadata"
 
+	# Grab the header from file==fullPath
 	def ncdump(self, fullPath):
 		call = "./ncdump.sh %s" % (fullPath)
 		p = subprocess.Popen(shlex.split(call), stdout=subprocess.PIPE)
@@ -106,18 +112,22 @@ class MetadataController:
 		if err: print(err)
 		else: return out
 
+	# Edit the attribute in the metadata of file==inputFile
+	# histFlag==True means do not update history
 	def ncatted(self, att_nm, var_nm, mode, att_type, att_val, inputFile, histFlag, outputFile=""):
 		call = "./ncatted.sh %s %s %s %s %s %s %s %s" % (att_nm, var_nm, mode, att_type, att_val, inputFile, outputFile, ("-h" if histFlag else ""))
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
 		if err: print(err)
 
+	# Rename the variable from oldName to newName in file==inputFile
 	def ncrename(self, oldName, newName, inputFile, histFlag, outputFile=""):
 		call = "./ncrename.sh %s %s %s %s %s" % (oldName, newName, ("-h" if histFlag else ""), inputFile, outputFile)
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
 		if err: print err
 
+	# Dump the header of file in pathDict to same directory structure under defined metadataFolder
 	def dump_metadata(self, pathDict):
 		out = self.ncdump(pathDict["fullPath"])
 		dstDir = self.metadataFolder+pathDict["dirName"]
@@ -129,7 +139,7 @@ class MetadataController:
 		with open(fileName, "w") as text_file:
 			text_file.write(out)
 
-
+# Class to validate file names and metadata
 class FileNameValidator:
 	def __init__(self, srcDir, fileName, metadataFolder, logger, fixFlag, histFlag):
 		if srcDir: 
@@ -144,6 +154,7 @@ class FileNameValidator:
 		self.histFlag            = histFlag
 		self.pathDicts           = {}
 
+	# Return a list of all netCDF files in srcDir or just list of single fileName
 	def get_nc_files(self):
 		if self.fileName:
 			return [self.fileName]
@@ -157,7 +168,8 @@ class FileNameValidator:
 					if filename.endswith(('.nc', '.nc4')):
 							matches.append(filename)
 			return matches
-	# Get model, initialization date, frequency, and variable from the full path of the given file
+
+	# Save all path info to pathDicts[fullPath] entry
 	def get_path_info(self, fullPath):
 		dictionary = {}
 		splitFileName = fullPath.split("/")
@@ -202,14 +214,17 @@ class FileNameValidator:
 
 		self.pathDicts[fullPath] = dictionary
 
+	# Return new file name based on path information
 	def get_new_filename(self, pathDict):
 		return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["experiment_id"]+"_"+pathDict["ensemble"]+pathDict["startEnd"]+"."+pathDict["extension"]
 
+	# Validate the variable provided in fileName
 	def validate_variable(self, fileName):
 		pathDict = self.pathDicts[fileName]
+		# Variable does not exist in CF Standards collection
 		if not db.CFVars.find_one({"Var Name": pathDict["variable"]}):
-			# Try to fix the variable name by making characters lowercase
-			#------------------------------------------------------------
+			# Try to find known fix for provided variable
+			#--------------------------------------------
 			cursor = db.VarNameFixes.find_one({"Incorrect Var Name": pathDict["variable"]})
 			if cursor:
 				self.logger.log(pathDict["fileName"], [pathDict["variable"], cursor["Known Fix"]], 'Var Name Fix')
@@ -221,7 +236,7 @@ class FileNameValidator:
 				# Get the name of the variable folder
 				parDirIndex = oldDir.rfind('/')
 				parDir      = oldDir[parDirIndex+1:]
-				# If folder is uppercase ==> make lowercase and rename folder
+				# Change variable directory to the known fix
 				parDir = cursor["Known Fix"]
 				newDir = oldDir[:parDirIndex+1]+parDir
 				if self.fixFlag:
@@ -234,13 +249,16 @@ class FileNameValidator:
 		else:
 			return True
 
+	# Validate the frequency provided in fileName
 	def validate_frequency(self, fileName):
 		pathDict = self.pathDicts[fileName]
+		# Frequency does not exist in CF Standards collection
 		if not db.ValidFreq.find_one({"Frequency": pathDict["frequency"]}):
-			
+			# Try to find known fix for provided variable
 			cursor = db.FreqFixes.find_one({"Incorrect Freq": pathDict["frequency"]})
 			if cursor:
-				# Rename Frequency folder
+				# Fix the folder that is named after the variable
+				#------------------------------------------------
 				oldDir = pathDict["fullPath"].split(pathDict["frequency"])[0]+pathDict["frequency"]+"/"
 				newDir = pathDict["fullPath"].split(pathDict["frequency"])[0]+cursor["Known Fix"]+"/"
 				if self.fixFlag:
@@ -256,20 +274,25 @@ class FileNameValidator:
 		else:
 			return True
 
+	# Validate the metadata in file==fileName
 	def validate_metadata(self, fileName):
 		pathDict = self.pathDicts[fileName]
 		flag = True
+		# For each desired value of metadata ==> Check against path information and update accordingly
 		for meta in ["frequency", "realization", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "experiment_id", "project_id"]:
 			metadata = self.metadatacontroller.get_metadata(pathDict, meta)
 			if metadata != pathDict[meta]:
 				if self.fixFlag:
+					# Update the metadata to path information
 					self.metadatacontroller.ncatted(meta, "global", "o", "c", pathDict[meta], pathDict["fullPath"], ("-h" if self.histFlag else ""))
 				self.logger.log(pathDict["fileName"], [meta, metadata, pathDict[meta]], 'Metadata Fix')
 				flag = False
 		return flag
 
+	# Validate the provided fileName
 	def validate_filename(self, fileName):
 		pathDict    = self.pathDicts[fileName]
+		# Create new file name based on path information
 		newFileName = self.get_new_filename(pathDict)
 		# If filename differs from created filename ==> rename file to created filename
 		if pathDict["fileName"] != newFileName:
@@ -283,6 +306,7 @@ class FileNameValidator:
 		else:
 			return True
 
+	# Fix the file name and metadata of file=fileName
 	def fix_filename(self, fileName):
 		varFlag         = self.validate_variable(fileName)
 		freqFlag        = self.validate_frequency(fileName)
@@ -293,17 +317,22 @@ class FileNameValidator:
 		else:
 			return True
 
+	# Validate the input's file names and metadata
 	def validate(self):
+		# Create list of all netCDF files in input
 		files = self.get_nc_files()
 		totalFiles = len(files)
 		i = 1
 		widgets = ['Percent Done: ', Percentage(), ' ', AnimatedMarker(), ' ', ETA()]
 		bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
-
+		# Fix each file in files list
 		for f in files:
+			# Set pathDicts[f] entry
 			self.get_path_info(f)
+			# Dump metadata to same folder structure
 			self.metadatacontroller.dump_metadata(self.pathDicts[f])
  			self.logger.log(self.pathDicts[f]["fullPath"], "", 'File Started')
+ 			# fix_filename saw no errors ==> file is confirmed
 			if self.fix_filename(f):
 				self.logger.log(self.pathDicts[f]["fullPath"], "", "File Confirmed")
 			bar.update(i)
