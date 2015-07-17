@@ -103,9 +103,8 @@ class MetadataController:
 		out, err = p2.communicate()
 		p2.stdout.close()
 		# Format metadata by removing tabs, newlines, and semicolons and grabbing the value
-		# lstrip("0") for realization numbers of the form r01i1p1
 		if out:
-			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
+			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"')
 			return metadata
 		else:
 			return "No Metadata"
@@ -142,7 +141,7 @@ class MetadataController:
 		if not os.path.exists(dstDir):
 			os.makedirs(dstDir)
 
-		fileName = self.metadataFolder+pathDict["fullPath"].replace(".nc", "").rstrip("4")+".txt"
+		fileName = self.metadataFolder+pathDict["fullPath"].replace(pathDict["extension"], ".txt")
 		with open(fileName, "w") as text_file:
 			text_file.write(out)
 
@@ -220,9 +219,9 @@ class FileNameValidator:
 		dictionary["fileName"]              = os.path.basename(fullPath)
 		dictionary["dirName"]               = os.path.dirname(fullPath)
 		dictionary["fullPath"]              = fullPath
-		dictionary["ensemble"]              = [match for match in fullPath.split("_") if re.match(realizationRegex, match)][0].replace(".nc", "").rstrip("4")
+		dictionary["extension"]             = "."+fullPath.split(".")[-1]
+		dictionary["ensemble"]              = [match for match in fullPath.split("_") if re.match(realizationRegex, match)][0].replace(dictionary["extension"], "")
 		dictionary["realization"]           = dictionary["ensemble"].replace("r", "").split("i")[0]
-		dictionary["extension"]             = fullPath.split(".")[-1]
 
 		dictionary["rootFileName"]          = ".".join(fullPath.split(".")[:-1])
 		if not re.match(realizationRegex, dictionary["rootFileName"].split("_")[-1]):
@@ -232,12 +231,12 @@ class FileNameValidator:
 			dictionary["startEnd"]          = "_"+dictionary["experiment_id"] + "-" + dictionary["endDate"]
 		else:
 			dictionary["startEnd"]          = ""
-
+		pprint.pprint(dictionary)
 		self.pathDicts[fullPath] = dictionary
 
 	# Return new file name based on path information
 	def get_new_filename(self, pathDict):
-		return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["experiment_id"]+"_"+pathDict["ensemble"]+pathDict["startEnd"]+"."+pathDict["extension"]
+		return pathDict["variable"]+"_"+pathDict["frequency"]+"_"+pathDict["model_id"]+"_"+pathDict["experiment_id"]+"_"+pathDict["ensemble"]+pathDict["startEnd"]+pathDict["extension"]
 
 	# Validate the variable provided in fileName
 	def validate_variable(self, fileName):
