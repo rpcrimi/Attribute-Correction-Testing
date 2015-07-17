@@ -83,12 +83,19 @@ class MetadataController:
 	def __init__(self, metadataFolder):
 		self.metadataFolder = metadataFolder
 
+	# Return the location of file==fileName
+	def get_file_name_location(self, fileName):
+		scriptDir = os.path.dirname(os.path.abspath(__file__))
+		for root, dirs, files in os.walk(scriptDir):
+			if fileName in files:
+				return os.path.join(root, fileName) + " "
+
 	# Grab the attribute==attr from the file==fullPath
 	# This should only be used for global attributes
 	def get_metadata(self, fullPath, attr):
 		# Create the grep string
 		grep = 'grep :'+attr
-		dump = './ncdump.sh ' + fullPath
+		dump = self.get_file_name_location("ncdump.sh") + fullPath
 		# Dump metadata and grep for attribute
 		p  = subprocess.Popen(shlex.split(dump), stdout=subprocess.PIPE)
 		p2 = subprocess.Popen(shlex.split(grep), stdin=p.stdout, stdout=subprocess.PIPE)
@@ -105,7 +112,7 @@ class MetadataController:
 
 	# Grab the header from file==fullPath
 	def ncdump(self, fullPath):
-		call = "./ncdump.sh %s" % (fullPath)
+		call = self.get_file_name_location("ncdump.sh") + fullPath 
 		p = subprocess.Popen(shlex.split(call), stdout=subprocess.PIPE)
 		out, err = p.communicate()
 		p.stdout.close()
@@ -115,14 +122,14 @@ class MetadataController:
 	# Edit the attribute in the metadata of file==inputFile
 	# histFlag==True means do not update history
 	def ncatted(self, att_nm, var_nm, mode, att_type, att_val, inputFile, histFlag, outputFile=""):
-		call = "./ncatted.sh %s %s %s %s %s %s %s %s" % (att_nm, var_nm, mode, att_type, att_val, inputFile, outputFile, ("-h" if histFlag else ""))
+		call = self.get_file_name_location("ncatted.sh") + "%s %s %s %s %s %s %s %s" % (att_nm, var_nm, mode, att_type, att_val, inputFile, outputFile, ("-h" if histFlag else ""))
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
 		if err: print(err)
 
 	# Rename the variable from oldName to newName in file==inputFile
 	def ncrename(self, oldName, newName, inputFile, histFlag, outputFile=""):
-		call = "./ncrename.sh %s %s %s %s %s" % (oldName, newName, ("-h" if histFlag else ""), inputFile, outputFile)
+		call = self.get_file_name_location("ncrename.sh") + "%s %s %s %s %s" % (oldName, newName, ("-h" if histFlag else ""), inputFile, outputFile)
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
 		if err: print err
@@ -173,30 +180,42 @@ class FileNameValidator:
 	def get_path_info(self, fullPath):
 		dictionary = {}
 		splitFileName = fullPath.split("/")
-		dictionary["institute_id"]        = splitFileName[0]
-		if dictionary["institute_id"] == 'NOAA-GFDL':
-			dictionary["model_id"]          = splitFileName[1]
-			dictionary["experiment_id"]     = splitFileName[2]
-			dictionary["frequency"]         = splitFileName[3]
-			dictionary["modeling_realm"]    = splitFileName[5]
-			dictionary["variable"]          = splitFileName[6]
-		elif dictionary["institute_id"] == 'CCCMA':
-			dictionary["model_id"]          = splitFileName[1]
-			dictionary["experiment_id"]     = splitFileName[2]
-			dictionary["frequency"]         = splitFileName[3]
-			dictionary["modeling_realm"]    = splitFileName[4]
-			dictionary["variable"]          = splitFileName[6]
-		elif dictionary["institute_id"] == 'UM-RSMAS' or dictionary["institute_id"] == 'NASA-GMAO':
-			dictionary["model_id"]          = splitFileName[1]
-			dictionary["experiment_id"]     = splitFileName[2]
-			dictionary["frequency"]         = splitFileName[3]
-			dictionary["modeling_realm"]    = splitFileName[4]
-			dictionary["variable"]          = splitFileName[5]
+		if 'NOAA-GFDL' in fullPath:
+			institute_id_index              = splitFileName.index('NOAA-GFDL')
+			dictionary["institute_id"]      = splitFileName[institute_id_index]
+			dictionary["model_id"]          = splitFileName[institute_id_index+1]
+			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
+			dictionary["frequency"]         = splitFileName[institute_id_index+3]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+5]
+			dictionary["variable"]          = splitFileName[institute_id_index+6]
+		elif 'CCCMA' in fullPath:
+			institute_id_index              = splitFileName.index('CCCMA')
+			dictionary["institute_id"]      = splitFileName[institute_id_index]
+			dictionary["model_id"]          = splitFileName[institute_id_index+1]
+			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
+			dictionary["frequency"]         = splitFileName[institute_id_index+3]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+4]
+			dictionary["variable"]          = splitFileName[institute_id_index+6]
+		elif 'UM-RSMAS' in fullPath:
+			institute_id_index              = splitFileName.index('UM-RSMAS')
+			dictionary["institute_id"]      = splitFileName[institute_id_index]
+			dictionary["model_id"]          = splitFileName[institute_id_index+1]
+			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
+			dictionary["frequency"]         = splitFileName[institute_id_index+3]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+4]
+			dictionary["variable"]          = splitFileName[institute_id_index+5]
+		elif 'NASA-GMAO' in fullPath:
+			institute_id_index              = splitFileName.index('NASA-GMAO')
+			dictionary["institute_id"]      = splitFileName[institute_id_index]
+			dictionary["model_id"]          = splitFileName[institute_id_index+1]
+			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
+			dictionary["frequency"]         = splitFileName[institute_id_index+3]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+4]
+			dictionary["variable"]          = splitFileName[institute_id_index+5]
 		
 		dictionary["project_id"]            = "NMME"
 		dictionary["startyear"]             = dictionary["experiment_id"][:4]
 		dictionary["startmonth"]            = dictionary["experiment_id"][4:6]
-		dictionary["startday"]              = dictionary["experiment_id"][6:8]
 
 		dictionary["fileName"]              = os.path.basename(fullPath)
 		dictionary["dirName"]               = os.path.dirname(fullPath)
@@ -208,6 +227,8 @@ class FileNameValidator:
 		dictionary["rootFileName"]          = ".".join(fullPath.split(".")[:-1])
 		if not re.match(realizationRegex, dictionary["rootFileName"].split("_")[-1]):
 			dictionary["endDate"]           = dictionary["rootFileName"][-8:]
+			dictionary["endyear"]           = dictionary["endDate"][:4]
+			dictionary["endmonth"]          = dictionary["endDate"][4:6]
 			dictionary["startEnd"]          = "_"+dictionary["experiment_id"] + "-" + dictionary["endDate"]
 		else:
 			dictionary["startEnd"]          = ""
@@ -279,7 +300,7 @@ class FileNameValidator:
 		pathDict = self.pathDicts[fileName]
 		flag = True
 		# For each desired value of metadata ==> Check against path information and update accordingly
-		for meta in ["frequency", "realization", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "experiment_id", "project_id"]:
+		for meta in ["frequency", "realization", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "endyear", "endmonth", "experiment_id", "project_id"]:
 			metadata = self.metadataController.get_metadata(pathDict["fullPath"], meta)
 			if metadata != pathDict[meta]:
 				if self.fixFlag:
