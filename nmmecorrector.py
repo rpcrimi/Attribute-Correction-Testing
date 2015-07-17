@@ -121,10 +121,13 @@ class MetadataController:
 
 	# Grab the attribute==attr from the file==fullPath
 	# This should only be used for global attributes
-	def get_metadata(self, fullPath, attr):
+	def get_metadata(self, fullPath, var, attr):
 		# Create the grep string
-		grep = 'grep :'+attr
-		dump = self.get_file_name_location("ncdump.sh") + fullPath
+		if var:
+			grep = 'grep ' + var+":"+attr
+		else:
+			grep = 'grep :'+attr
+		dump = './ncdump.sh ' + fullPath
 		# Dump metadata and grep for attribute
 		p  = subprocess.Popen(shlex.split(dump), stdout=subprocess.PIPE)
 		p2 = subprocess.Popen(shlex.split(grep), stdin=p.stdout, stdout=subprocess.PIPE)
@@ -132,8 +135,9 @@ class MetadataController:
 		out, err = p2.communicate()
 		p2.stdout.close()
 		# Format metadata by removing tabs, newlines, and semicolons and grabbing the value
+		# lstrip("0") for realization numbers of the form r01i1p1
 		if out:
-			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"')
+			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
 			return metadata
 		else:
 			return "No Metadata"
@@ -605,7 +609,7 @@ class StandardNameValidator:
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
-	parser.add_argument("-o", "--op", "--operation", dest="operation",      help = "Operation to run (initDB, resetDB, updateCollection, fixFiles)", default="fixFiles")
+	parser.add_argument("-o", "--op", "--operation", dest="operation",      help = "Operation to run (initDB, resetDB, snf=standard names fix, fnf=file names fix)", default="fixFiles")
 	parser.add_argument("-s", "--src", "--srcDir",   dest="srcDir",         help = "Source Directory")
 	parser.add_argument("--file", "--fileName",      dest="fileName",       help = "File Name for single file fix")
 	parser.add_argument("-d", "--dstDir",            dest="dstDir",         help = "Folder to copy fixed files to")
@@ -619,11 +623,21 @@ def main():
 		parser.print_help()
 
 	else:
-		l = Logger(args.logFile)
-		l.set_logfile(args.srcDir or args.fileName)
-
-		v = FileNameValidator(args.srcDir, args.fileName, args.metadataFolder, l, args.fixFlag, args.histFlag)
-		v.validate()
+		if args.operation == "initDB":
+			mongoinit.run()
+		elif args.operation == "resetDB":
+			dropDB.run()
+			mongoinit.run()
+		elif args.operation == "snf":
+			l = Logger(args.logFile)
+			l.set_logfile(args.srcDir)
+			v = StandardNameValidator(args.srcDir, None, args.dstDir, args.metadataFolder, l, args.fixFlag, args.histFlag)
+			v.validate()
+		elif args.operation == "fnf":			
+			l = Logger(args.logFile)
+			l.set_logfile(args.srcDir or args.fileName)
+			v = FileNameValidator(args.srcDir, args.fileName, args.metadataFolder, l, args.fixFlag, args.histFlag)
+			v.validate()
 
 if __name__ == "__main__":
 	main()
