@@ -1,19 +1,24 @@
 import pymongo
+from difflib import SequenceMatcher
+import logging
+import os
+import shutil
+import argparse
+import datetime
 import subprocess
 import shlex
-import re
-import argparse
-import os
-import logging
 import sys
-import datetime
+import re
 from progressbar import *
-import pprint
+import dropDB
+import mongoinit
+
 
 connection        = pymongo.MongoClient()
 db                = connection["Attribute_Correction"]
 CFVars            = db["CFVars"]
-ValidFreq         = db["ValidFreq"]
+StandardNameFixes = db["StandardNameFixes"]
+VarNameFixes      = db["VarNameFixes"]
 FreqFixes         = db["FreqFixes"]
 realizationRegex  = re.compile('r[0-9]+i[0-9]+p[0-9]+')
 
@@ -39,12 +44,35 @@ class Logger:
 		logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=self.logFile, filemode='w')
 		if logType == 'File Started':
 			logging.info("-" * 100)
-			logging.debug("Starting file name: [%s]", fileName)
+			logging.debug("Starting in file: [%s]", fileName)
 
 		elif logType == 'File Confirmed':
-			logging.debug("Confirmed file name: [%s]", fileName)
-			logging.info("-" * 100)
+			logging.info("Confirmed file: [%s]", fileName)
 
+		# Standard Name/Units Logs
+		elif logType == 'Standard Name Confirmed':
+			logging.info("Standard Name [%s] confirmed", text)
+
+		elif logType == 'Switched Standard Name':
+			logging.debug("Switched [%s] standard_name from [%s] to [%s]", text[0], text[1], text[2])
+
+		elif logType == 'Switched Variable':
+			logging.debug("Switched variable name from [%s:%s] to [%s:%s]", text[0], text[2], text[1], text[2])
+
+		elif logType == 'Estimated Standard Name':
+			logging.debug("Standard Name [%s:%s] best 3 estimates: %s", text[0], text[1], text[2])
+
+		elif logType == 'No Standard Names':
+			logging.debug("[%s]: no standard names defined", fileName)
+
+		elif logType == 'No Matching Var Name':
+			logging.debug("[%s] recommended Variable Names: %s", text[0], text[1])
+
+		elif logType == 'Changed Units':
+			logging.debug("Changed [%s] units from [%s] to [%s]", text[0], text[1], text[2])
+
+
+		# File Name Logs
 		elif logType == 'Var Error':
 			logging.debug("Variable [%s] not recognized", text)
 
@@ -77,6 +105,7 @@ class Logger:
 
 		elif logType == 'Metadata Fix':
 			logging.debug("[%s] in metadata changed from [%s] to [%s]", text[0], text[1], text[2])
+
 
 # Class to handle Metadata queries and changes
 class MetadataController:
@@ -141,9 +170,45 @@ class MetadataController:
 		if not os.path.exists(dstDir):
 			os.makedirs(dstDir)
 
-		fileName = self.metadataFolder+pathDict["fullPath"].replace(pathDict["extension"], ".txt")
+		fileName = self.metadataFolder+pathDict["fullPath"].replace(".nc", "").rstrip("4")+".txt"
 		with open(fileName, "w") as text_file:
 			text_file.write(out)
+
+	# Return formated output of grep call
+	def format_output(self, out):
+		# Remove tabs and newlines and split on " ;"
+		out = out.replace("\t", "").replace("\n", "").replace("standard_name = ", "").replace("\"", "").split(" ;")
+		# Return list without empty elements
+		return filter(None, out)
+
+	# Return a list of all netCDF files in "direrctory"
+	def get_nc_files(self, directory, dstFolder):
+		matches = []
+		# Do a walk through input directory
+		for root, dirnames, files in os.walk(directory):
+			# Find all filenames with .nc type
+			for filename in files:
+					if filename.endswith(('.nc', '.nc4')):
+						filename = os.path.join(root, filename)
+						dstFileName = dstFolder + filename
+						if not os.path.isfile(dstFileName):
+							# Add full path of netCDF file to matches list
+							matches.append(filename)
+		return matches
+
+	# Return a list of filenames and corresponding standard names in "ncFolder"
+	def get_standard_names_units(self, ncFolder, dstFolder):
+		standardNames = []
+		# Call ncdump and grep for :standard_name for each netCDF file in ncFolder
+		for f in self.get_nc_files(ncFolder, dstFolder):
+			p  = subprocess.Popen(['./ncdump.sh', f], stdout=subprocess.PIPE)
+			p2 = subprocess.Popen(shlex.split('grep :standard_name'), stdin=p.stdout, stdout=subprocess.PIPE)
+			p.stdout.close()
+			out, err = p2.communicate()
+			standardNames.append((f, self.format_output(out)))
+			p2.stdout.close()
+		
+		return standardNames
 
 # Class to validate file names and metadata
 class FileNameValidator:
@@ -358,6 +423,185 @@ class FileNameValidator:
 			bar.update(i)
 			i = i + 1
 		bar.finish()	
+
+class StandardNameValidator:
+	def __init__(self, srcDir, fileName, dstDir, metadataFolder, logger, fixFlag, histFlag):
+		if srcDir: 
+			self.srcDir          = srcDir
+			self.fileName        = None
+		else:
+			self.srcDir          = None      
+			self.fileName        = fileName
+		self.dstDir              = dstDir
+		self.metadataController  = MetadataController(metadataFolder)
+		self.logger              = logger
+		self.fileFlag            = True
+		self.fixFlag             = fixFlag
+		self.histFlag            = histFlag
+		self.pathDicts           = {}
+
+	# Return list of CF Standard Names from CFVars Collection
+	def get_CF_Standard_Names(self):
+		# Query CFVars for all Variables
+		cursor = db.CFVars.find()
+		CFStandards = []
+		# Append each CF STandard Name to CFStandards list
+		for standardName in cursor:
+			CFStandards.append(standardName["CF Standard Name"])
+		return CFStandards
+
+	# Return similarity ratio of string "a" and "b"
+	def similar(self, a, b):
+		a = a.lower()
+		b = b.lower()
+		return SequenceMatcher(None, a, b).ratio()*100
+
+	# Return the "N" # of CF Standard Vars with the most similarity to "wrongAttr"
+	def best_estimates(self, wrongAttr):
+		# Grab CF Standard Names
+		CFStandards = self.get_CF_Standard_Names()
+		similarities = []
+		# Calculate percent difference between the wrong attribute and each CF Standard Name
+		# Append (standardName, percentOff) tuple to similarities for future sorting
+		for standardName in CFStandards:
+			percentOff = self.similar(wrongAttr, standardName)
+			similarities.append((standardName, percentOff))
+		# Sort similarities list by second element in tuple
+		similarities.sort(key=lambda x: x[1])
+
+		return list(reversed(similarities[-3:]))
+
+	def estimate_standard_name(self, var, standardName, fileName):
+		bestEstimatesList = self.best_estimates(standardName)
+		bestEstimates = ""
+		for e in bestEstimatesList:
+			bestEstimates += str(e[0]) + " | "
+		self.logger.log(fileName, [var, standardName, bestEstimates], 'Estimated Standard Name')
+
+	def estimate_var_name(self, var, standardName, fileName):
+		cursor = db.CFVars.find({"Var Name": { '$eq': var.lower()}})
+		recommendations = ""
+		for v in cursor:
+			recommendations += v["Var Name"] + " | "
+		self.logger.log(fileName, [var+":"+standardName, recommendations], 'No Matching Var Name')	
+
+	def validate_var_standard_name_pair(self, var, standardName, fileName):
+		# Check if (var, standardName) is valid CF Standard Name pair
+		cursor = db.CFVars.find_one({ '$and': [{"CF Standard Name": { '$eq': standardName}}, {"Var Name": {'$eq': var}}]})
+		# Log notification of correct attribute
+		if (cursor):
+			# Check units for var, standardName pair
+			metadataUnits = self.metadataController.get_metadata(fileName, var, "units")
+			if cursor["Units"] != metadataUnits:
+				if self.fixFlag:
+					self.metadataController.ncatted("units", var, "o", "c", cursor["Units"], fileName, self.histFlag)
+				self.logger.log(fileName, [var, metadataUnits, cursor["Units"]], 'Changed Units')
+
+			text = var + ":" + standardName
+			self.logger.log(fileName, text, "Standard Name Confirmed")
+			# Return true for confirming file
+			return True
+
+	def find_var_known_fix(self, var, standardName, fileName):
+		# Check if (var, standardName) pair is in VarNameFixes collection
+		cursor = db.VarNameFixes.find_one({ '$and': [{"Incorrect Var Name": { '$eq': var}}, {"CF Standard Name": {'$eq': standardName}}]})
+		if (cursor):
+			if self.fixFlag:
+				self.metadataController.ncrename(var, cursor["Known Fix"], fileName, self.histFlag)
+			# Log the fix
+			self.logger.log(fileName, [var, cursor["Known Fix"], standardName], 'Switched Variable')
+			return (cursor["Known Fix"], True)
+		else:
+			return (var, False)
+
+	def find_standard_name_fix(self, var, standardName, fileName):
+		# Set all characters to lowercase
+		standardName = standardName.lower()
+		# Check if KnownFixes has seen this error before
+		cursor = db.StandardNameFixes.find_one({ '$and': [{"Incorrect Standard Name": { '$eq': standardName}}, {"Var Name": {'$eq': var}}]})
+		# If standardName exists in StandardNameFixes collection
+		if (cursor):
+			if self.fixFlag:
+				self.metadataController.ncatted("standard_name", var, "o", "c", cursor["Known Fix"], fileName, self.histFlag)
+			# Log the fix
+			self.logger.log(fileName, [var, standardName, cursor["Known Fix"]], 'Switched Standard Name')
+			return (cursor["Known Fix"], True)
+		else:
+			return (standardName, False)
+	
+	def confirm_file(self, fileName):
+		if self.fileFlag:
+			if self.fixFlag:
+				# New path for copying file
+				dstdir = self.dstDir+os.path.dirname(fileName)
+				# If path does not exist ==> create directory structure
+				if not os.path.exists(dstdir):
+					os.makedirs(dstdir)
+				# Copy original file to dstdir
+				shutil.move(fileName, dstdir)
+			# Log the confirmed file
+			self.logger.log(fileName, "", 'File Confirmed')
+
+	# Return validation of correct attribute
+	# or corrected attribute from Known fixes collection
+	# or return the top 3 matches from CFVars collection
+	def identify_attribute(self, var, standardName, fileName):
+		# Check if (var, standardName) is valid CF Standard Name pair
+		if self.validate_var_standard_name_pair(var, standardName, fileName):
+			return True
+
+		(standardName, sFlag) = self.find_standard_name_fix(var, standardName, fileName)
+		if self.validate_var_standard_name_pair(var, standardName, fileName):
+			return False	
+
+		(var, vFlag) = self.find_var_known_fix(var, standardName, fileName)
+		if self.validate_var_standard_name_pair(var, standardName, fileName):
+			return False
+
+		if not sFlag:
+			self.estimate_standard_name(var, standardName, fileName)
+		if not vFlag:
+			self.estimate_var_name(var, standardName, fileName)
+		return False
+
+	def validate(self):
+		# (filename, standard_name, units) list of all files in ncFolder
+		standardNamesUnits = self.metadataController.get_standard_names_units(self.srcDir, self.dstDir)
+		if standardNamesUnits:
+			# Number of files for use in progress bar
+			totalFiles = len(standardNamesUnits)
+			i = 1
+			widgets = ['Percent Done: ', Percentage(), ' ', AnimatedMarker(), ' ', ETA()]
+			bar = ProgressBar(widgets=widgets, maxval=totalFiles).start()
+			# For each file in the list
+			for f in standardNamesUnits:
+				fileName   = f[0]
+				standNames = f[1]
+				pathDict   = {}
+				pathDict["fullPath"] = fileName
+				pathDict["dirName"]  = os.path.dirname(fileName) 
+				self.metadataController.dump_metadata(pathDict)
+				self.logger.log(fileName, "", 'File Started')
+				# If the file has no standard names, log the issue
+				if not standNames:
+					self.logger.log(fileName, "", 'No Standard Names')
+					self.fileFlag = False
+				# For each attribute in standard_name list, format and identify attribute
+				else:
+					for attr in standNames:
+						splitAttr = attr.split(":")
+						# Check if something in file was changed
+						if not self.identify_attribute(splitAttr[0], splitAttr[1], fileName):
+							self.fileFlag = False
+				# If file had no errors or KnownFix occured ==> Confirm file
+				self.confirm_file(fileName)
+				# Reset fileFlag
+				self.fileFlag = True
+				# Update progress bar
+				bar.update(i)
+				i = i + 1
+			bar.finish()
+
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')

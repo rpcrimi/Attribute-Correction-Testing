@@ -1,432 +1,324 @@
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
 INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
-INFO     ----------------------------------------------------------------------------------------------------
-DEBUG    Starting file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-DEBUG    Confirmed file name: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
-INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Confirmed file: [finished/UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
