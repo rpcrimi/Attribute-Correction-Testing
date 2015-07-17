@@ -605,12 +605,14 @@ class StandardNameValidator:
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
-	parser.add_argument("-s", "--src", "--srcDir", dest="srcDir",         help = "Source Directory")
-	parser.add_argument("-f", "--fileName",        dest="fileName",       help = "File Name for single file fix")
-	parser.add_argument("--metadata",              dest="metadataFolder", help = "Folder to dump original metadata to", required = True)
-	parser.add_argument("-l", "--logFile",         dest="logFile",        help = "File to log metadata changes to")
-	parser.add_argument("--fix", "--fixFlag",      dest="fixFlag",        help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true',  default=False)
-	parser.add_argument("--hist", "--histFlag",    dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)",    action='store_false', default=True)
+	parser.add_argument("-o", "--op", "--operation", dest="operation",      help = "Operation to run (initDB, resetDB, updateCollection, fixFiles)", default="fixFiles")
+	parser.add_argument("-s", "--src", "--srcDir",   dest="srcDir",         help = "Source Directory")
+	parser.add_argument("--file", "--fileName",      dest="fileName",       help = "File Name for single file fix")
+	parser.add_argument("-d", "--dstDir",            dest="dstDir",         help = "Folder to copy fixed files to")
+	parser.add_argument("-m", "--metadata",          dest="metadataFolder", help = "Folder to dump original metadata to")
+	parser.add_argument("-l", "--logFile",           dest="logFile",        help = "File to log metadata changes to")
+	parser.add_argument("--fix", "--fixFlag",        dest="fixFlag",        help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true',  default=False)
+	parser.add_argument("--hist", "--histFlag",      dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)",    action='store_false', default=True)
 
 	args = parser.parse_args()
 	if(len(sys.argv) == 1):
