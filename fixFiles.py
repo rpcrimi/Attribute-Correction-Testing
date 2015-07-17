@@ -8,10 +8,6 @@ import datetime
 import subprocess
 import shlex
 from progressbar import *
-import grabmetadata
-import ncatted
-import ncrename
-import ncdump
 import dropDB
 import mongoinit
 import updateCollection
@@ -53,10 +49,10 @@ class Logger:
 			logging.info("Standard Name [%s] confirmed", text)
 
 		elif logType == 'Switched Standard Name':
-			logging.info("Switched [%s] standard_name from [%s] to [%s]", text[0], text[1], text[2])
+			logging.debug("Switched [%s] standard_name from [%s] to [%s]", text[0], text[1], text[2])
 
 		elif logType == 'Switched Variable':
-			logging.info("Switched variable name from [%s:%s] to [%s:%s]", text[0], text[2], text[1], text[2])
+			logging.debug("Switched variable name from [%s:%s] to [%s:%s]", text[0], text[2], text[1], text[2])
 
 		elif logType == 'Estimated Standard Name':
 			logging.debug("Standard Name [%s:%s] best 3 estimates: %s", text[0], text[1], text[2])
@@ -67,6 +63,9 @@ class Logger:
 		elif logType == 'No Matching Var Name':
 			logging.debug("[%s] recommended Variable Names: %s", text[0], text[1])
 
+		elif logType == 'Changed Units':
+			logging.debug("Changed [%s] units from [%s] to [%s]", text[0], text[1], text[2])
+
 # Class to handle Metadata queries and changes
 class MetadataController:
 	def __init__(self, metadataFolder):
@@ -74,10 +73,13 @@ class MetadataController:
 
 	# Grab the attribute==attr from the file==fullPath
 	# This should only be used for global attributes
-	def get_metadata(self, pathDict, attr):
+	def get_metadata(self, fullPath, var, attr):
 		# Create the grep string
-		grep = 'grep :'+attr
-		dump = './ncdump.sh ' + pathDict["fullPath"]
+		if var:
+			grep = 'grep ' + var+":"+attr
+		else:
+			grep = 'grep :'+attr
+		dump = './ncdump.sh ' + fullPath
 		# Dump metadata and grep for attribute
 		p  = subprocess.Popen(shlex.split(dump), stdout=subprocess.PIPE)
 		p2 = subprocess.Popen(shlex.split(grep), stdin=p.stdout, stdout=subprocess.PIPE)
@@ -104,17 +106,17 @@ class MetadataController:
 	# Edit the attribute in the metadata of file==inputFile
 	# histFlag==True means do not update history
 	def ncatted(self, att_nm, var_nm, mode, att_type, att_val, inputFile, histFlag, outputFile=""):
-		call = "./ncatted.sh %s %s %s %s %s %s %s %s" % (att_nm, var_nm, mode, att_type, att_val, inputFile, outputFile, ("-h" if histFlag else ""))
+		call = "./ncatted.sh %s %s %s %s '%s' %s %s %s" % (att_nm, var_nm, mode, att_type, att_val, inputFile, outputFile, ("-h" if histFlag else ""))
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
-		if err: print(err)
+		#if err: print(err)
 
 	# Rename the variable from oldName to newName in file==inputFile
 	def ncrename(self, oldName, newName, inputFile, histFlag, outputFile=""):
 		call = "./ncrename.sh %s %s %s %s %s" % (oldName, newName, ("-h" if histFlag else ""), inputFile, outputFile)
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
-		if err: print err
+		#if err: print err
 
 	# Dump the header of file in pathDict to same directory structure under defined metadataFolder
 	def dump_metadata(self, pathDict):
@@ -191,7 +193,7 @@ class StandardNameValidator:
 		return CFStandards
 
 	# Return similarity ratio of string "a" and "b"
-	def similar(self, a,b):
+	def similar(self, a, b):
 		a = a.lower()
 		b = b.lower()
 		return SequenceMatcher(None, a, b).ratio()*100
@@ -230,6 +232,13 @@ class StandardNameValidator:
 		cursor = db.CFVars.find_one({ '$and': [{"CF Standard Name": { '$eq': standardName}}, {"Var Name": {'$eq': var}}]})
 		# Log notification of correct attribute
 		if (cursor):
+			# Check units for var, standardName pair
+			metadataUnits = self.metadataController.get_metadata(fileName, var, "units")
+			if cursor["Units"] != metadataUnits:
+				if self.fixFlag:
+					self.metadataController.ncatted("units", var, "o", "c", cursor["Units"], fileName, self.histFlag)
+				self.logger.log(fileName, [var, metadataUnits, cursor["Units"]], 'Changed Units')
+
 			text = var + ":" + standardName
 			self.logger.log(fileName, text, "Standard Name Confirmed")
 			# Return true for confirming file
@@ -255,7 +264,7 @@ class StandardNameValidator:
 		# If standardName exists in StandardNameFixes collection
 		if (cursor):
 			if self.fixFlag:
-				self.metadataController.ncatted("standard_name", var, "o", "c", cursor["Known Fix"], fileName, histFlag)
+				self.metadataController.ncatted("standard_name", var, "o", "c", cursor["Known Fix"], fileName, self.histFlag)
 			# Log the fix
 			self.logger.log(fileName, [var, standardName, cursor["Known Fix"]], 'Switched Standard Name')
 			return (cursor["Known Fix"], True)
@@ -363,15 +372,12 @@ def main():
 			else:
 				parser.error("updateCollection requres collection and updates file")
 		elif args.operation == "fixFiles":
-			l = Logger(args.logFile)
-			l.set_logfile(args.srcDir)
-
-			v = StandardNameValidator(args.srcDir, None, args.dstDir, args.metadataFolder, l, args.fixFlag, args.histFlag)
-			v.validate()
-			return
 			if (args.srcDir and args.dstDir and args.metadataFolder):
-				logFile = args.logFile if args.logFile else get_logfile(args.srcDir)
-				fix_files(args.srcDir, args.dstDir, logFile, args.metadataFolder, args.fixFlag, ("-h" if args.histFlag else ""))
+				l = Logger(args.logFile)
+				l.set_logfile(args.srcDir)
+
+				v = StandardNameValidator(args.srcDir, None, args.dstDir, args.metadataFolder, l, args.fixFlag, args.histFlag)
+				v.validate()
 			else:
 				parser.error("fixFiles requires srcDirectory, dstDirectory, and metadataFolder")
 

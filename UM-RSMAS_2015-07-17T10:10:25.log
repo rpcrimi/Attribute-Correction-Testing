@@ -1,0 +1,246 @@
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [g:geopotential height (above sea level)] best 3 estimates: geopotential | sea_surface_height_above_geoid | velocity_potential_200_hpa | 
+DEBUG    [g:geopotential height (above sea level)] recommended Variable Names: g | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [TOTRUNOFF:total_runoff] best 3 estimates: total_runoff | sea_water_potential_temperature | stream_function_200_hpa | 
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed

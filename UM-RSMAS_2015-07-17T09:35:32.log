@@ -1,0 +1,1637 @@
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [g:geopotential height (above sea level)] best 3 estimates: geopotential | sea_surface_height_above_geoid | velocity_potential_200_hpa | 
+DEBUG    [g:geopotential height (above sea level)] recommended Variable Names: g | 
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Standard Name [g:geopotential] confirmed
+INFO     Standard Name [lat:latitude] confirmed
+INFO     Standard Name [lon:longitude] confirmed
+INFO     Confirmed file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched variable name from [G:geopotential] to [g:geopotential]
+INFO     Standard Name [g:geopotential] confirmed
+DEBUG    Changed [g] units from [m] to [m2 s-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [G:geopotential] to [g:geopotential]
+INFO     Standard Name [g:geopotential] confirmed
+DEBUG    Changed [g] units from [m] to [m2 s-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [G:geopotential] to [g:geopotential]
+INFO     Standard Name [g:geopotential] confirmed
+DEBUG    Changed [g] units from [m] to [m2 s-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/g/g_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [G] standard_name from [geopotential height (above sea level)] to [geopotential]
+INFO     Switched variable name from [G:geopotential] to [g:geopotential]
+INFO     Standard Name [g:geopotential] confirmed
+DEBUG    Changed [g] units from [m] to [m2 s-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hc/hc_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [HC:heat content of soil/snow/lake] best 3 estimates: sea_water_potential_temperature | geopotential | volume_fraction_of_condensed_water_in_soil | 
+DEBUG    [HC:heat content of soil/snow/lake] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hflsd/hflsd_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [LHFLX] standard_name from [surface latent heat flux] to [surface_downward_latent_heat_flux]
+INFO     Switched variable name from [LHFLX:surface_downward_latent_heat_flux] to [hflsd:surface_downward_latent_heat_flux]
+INFO     Standard Name [hflsd:surface_downward_latent_heat_flux] confirmed
+DEBUG    Changed [hflsd] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/hus/hus_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [HUS] standard_name from [specific humidity] to [specific_humidity]
+INFO     Switched variable name from [HUS:specific_humidity] to [hus:specific_humidity]
+INFO     Standard Name [hus:specific_humidity] confirmed
+DEBUG    Changed [hus] units from [kg/kg] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/mrsov/mrsov_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [MRSOV] standard_name from [total soil liquid water in total 15 columnn] to [volume_fraction_of_condensed_water_in_soil]
+INFO     Switched variable name from [MRSOV:volume_fraction_of_condensed_water_in_soil] to [mrsov:volume_fraction_of_condensed_water_in_soil]
+INFO     Standard Name [mrsov:volume_fraction_of_condensed_water_in_soil] confirmed
+DEBUG    Changed [mrsov] units from [kg/m2] to [1]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precc/precc_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/precl/precl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+DEBUG    Standard Name [PRECL:large scale precipitation rate] best 3 estimates: large_scale_precipitation XXXXXXX | lwe_precipitation_rate | convective_precipitation_rate | 
+DEBUG    [PRECL:large scale precipitation rate] recommended Variable Names: precl | 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/psl/psl_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [PSL] standard_name from [air pressure at sea level] to [air_pressure_at_sea_level]
+INFO     Switched variable name from [PSL:air_pressure_at_sea_level] to [psl:air_pressure_at_sea_level]
+INFO     Standard Name [psl:air_pressure_at_sea_level] confirmed
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rls/rls_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [FLNS] standard_name from [net longwave flux at surface] to [surface_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNS:surface_net_downward_longwave_flux] to [rls:surface_net_downward_longwave_flux]
+INFO     Standard Name [rls:surface_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rls] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rlt/rlt_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [FLNT] standard_name from [net longwave flux at top of model] to [toa_net_downward_longwave_flux]
+INFO     Switched variable name from [FLNT:toa_net_downward_longwave_flux] to [rlt:toa_net_downward_longwave_flux]
+INFO     Standard Name [rlt:toa_net_downward_longwave_flux] confirmed
+DEBUG    Changed [rlt] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rss/rss_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [FSNS] standard_name from [net solar flux at surface] to [surface_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNS:surface_net_downward_shortwave_flux] to [rss:surface_net_downward_shortwave_flux]
+INFO     Standard Name [rss:surface_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rss] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/rst/rst_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [FSNT] standard_name from [net solar flux at top of model] to [toa_net_downward_shortwave_flux]
+INFO     Switched variable name from [FSNT:toa_net_downward_shortwave_flux] to [rst:toa_net_downward_shortwave_flux]
+INFO     Standard Name [rst:toa_net_downward_shortwave_flux] confirmed
+DEBUG    Changed [rst] units from [W/m2] to [W m-2]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/runoff/runoff_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [TOTRUNOFF] standard_name from [total runoff (qover + qdrai + qrgwl)] to [total_runoff]
+DEBUG    [TOTRUNOFF:total_runoff] recommended Variable Names: 
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/stx/stx_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [STX] standard_name from [zonal surface stress] to [surface_zonal_stress_positive_to_the_west]
+INFO     Switched variable name from [STX:surface_zonal_stress_positive_to_the_west] to [stx:surface_zonal_stress_positive_to_the_west]
+INFO     Standard Name [stx:surface_zonal_stress_positive_to_the_west] confirmed
+DEBUG    Changed [stx] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r10i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r1i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r2i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r3i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r4i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r5i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r6i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r7i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r8i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]
+INFO     ----------------------------------------------------------------------------------------------------
+DEBUG    Starting in file: [UM-RSMAS/CCSM4/19820101/day/atmos/sty/sty_day_CCSM4_19820101_r9i1p1_19820101-19821231.nc]
+INFO     Switched [STY] standard_name from [meridional surface stress] to [surface_meridional_stress_positive_to_the_north]
+INFO     Switched variable name from [STY:surface_meridional_stress_positive_to_the_north] to [sty:surface_meridional_stress_positive_to_the_north]
+INFO     Standard Name [sty:surface_meridional_stress_positive_to_the_north] confirmed
+DEBUG    Changed [sty] units from [N/m2] to [Pa]
+INFO     Switched variable name from [LAT:latitude] to [lat:latitude]
+INFO     Standard Name [lat:latitude] confirmed
+DEBUG    Changed [lat] units from [degrees_north] to [degree_north]
+INFO     Switched variable name from [LON:longitude] to [lon:longitude]
+INFO     Standard Name [lon:longitude] confirmed
+DEBUG    Changed [lon] units from [degrees_east] to [degree_east]

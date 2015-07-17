@@ -85,10 +85,10 @@ class MetadataController:
 
 	# Grab the attribute==attr from the file==fullPath
 	# This should only be used for global attributes
-	def get_metadata(self, pathDict, attr):
+	def get_metadata(self, fullPath, attr):
 		# Create the grep string
 		grep = 'grep :'+attr
-		dump = './ncdump.sh ' + pathDict["fullPath"]
+		dump = './ncdump.sh ' + fullPath
 		# Dump metadata and grep for attribute
 		p  = subprocess.Popen(shlex.split(dump), stdout=subprocess.PIPE)
 		p2 = subprocess.Popen(shlex.split(grep), stdin=p.stdout, stdout=subprocess.PIPE)
@@ -280,7 +280,7 @@ class FileNameValidator:
 		flag = True
 		# For each desired value of metadata ==> Check against path information and update accordingly
 		for meta in ["frequency", "realization", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "experiment_id", "project_id"]:
-			metadata = self.metadataController.get_metadata(pathDict, meta)
+			metadata = self.metadataController.get_metadata(pathDict["fullPath"], meta)
 			if metadata != pathDict[meta]:
 				if self.fixFlag:
 					# Update the metadata to path information
