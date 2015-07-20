@@ -59,6 +59,7 @@ def run():
 	CFVars.insert({"Variable": "Sea-ice area fraction",                         "Var Name": "sic",       "CF Standard Name": "sea_ice_area_fraction",                          "Units": "1"})
 	CFVars.insert({"Variable": "Air pressure",                                  "Var Name": "plev",      "CF Standard Name": "air_pressure",                                   "Units": "Pa"})
 	CFVars.insert({"Variable": "Total Precipitation",                           "Var Name": "prlr",      "CF Standard Name": "lwe_precipitation_rate",                         "Units": "m s-1"})
+	CFVars.insert({"Variable": "Sea Water Temperature",                         "Var Name": "to",        "CF Standard Name": "sea_water_temperature",                          "Units": "K"})
 
 
 	CFVars.insert({"Variable": "Large scale precipitation",                     "Var Name": "precl",    "CF Standard Name": "large_scale_precipitation XXXXXXX",               "Units": "XXXXXXX"})
@@ -88,23 +89,25 @@ def run():
 
 	# STANDARD NAME KNOWN FIXES TABLE
 	#-----------------------------------------------------------------------------------------------------------
-	StandardNameFixes.insert({"Incorrect Standard Name": "air temp",                                    "Var Name": "tasmax",    "Known Fix": "air_temperature"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "air temp",                                    "Var Name": "tasmin",    "Known Fix": "air_temperature"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "zonal velocity",                              "Var Name": "uo",        "Known Fix": "sea_water_x_velocity"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "lat",                                         "Var Name": "lat",       "Known Fix": "latitude"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "geopotential height (above sea level)",       "Var Name": "G",         "Known Fix": "geopotential"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "surface latent heat flux",                    "Var Name": "LHFLX",     "Known Fix": "surface_downward_latent_heat_flux"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "specific humidity",                           "Var Name": "HUS",       "Known Fix": "specific_humidity"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "total soil liquid water in total 15 columnn", "Var Name": "MRSOV",     "Known Fix": "volume_fraction_of_condensed_water_in_soil"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "air pressure at sea level",                   "Var Name": "PSL",       "Known Fix": "air_pressure_at_sea_level"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "net longwave flux at surface",                "Var Name": "FLNS",      "Known Fix": "surface_net_downward_longwave_flux"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "net longwave flux at top of model",           "Var Name": "FLNT",      "Known Fix": "toa_net_downward_longwave_flux"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "net solar flux at surface",                   "Var Name": "FSNS",      "Known Fix": "surface_net_downward_shortwave_flux"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "net solar flux at top of model",              "Var Name": "FSNT",      "Known Fix": "toa_net_downward_shortwave_flux"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "total runoff (qover + qdrai + qrgwl)",        "Var Name": "TOTRUNOFF", "Known Fix": "total_runoff"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "zonal surface stress",                        "Var Name": "STX",       "Known Fix": "surface_zonal_stress_positive_to_the_west"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "meridional surface stress",                   "Var Name": "STY",       "Known Fix": "surface_meridional_stress_positive_to_the_north"})
-	StandardNameFixes.insert({"Incorrect Standard Name": "salinity",                                    "Var Name": "so",        "Known Fix": "sea_water_salinity"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "air temp",                                        "Var Name": "tasmax",    "Known Fix": "air_temperature"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "air temp",                                        "Var Name": "tasmin",    "Known Fix": "air_temperature"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "zonal velocity",                                  "Var Name": "uo",        "Known Fix": "sea_water_x_velocity"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "lat",                                             "Var Name": "lat",       "Known Fix": "latitude"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "geopotential height (above sea level)",           "Var Name": "G",         "Known Fix": "geopotential"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "surface latent heat flux",                        "Var Name": "LHFLX",     "Known Fix": "surface_downward_latent_heat_flux"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "specific humidity",                               "Var Name": "HUS",       "Known Fix": "specific_humidity"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "total soil liquid water in total 15 columnn",     "Var Name": "MRSOV",     "Known Fix": "volume_fraction_of_condensed_water_in_soil"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "air pressure at sea level",                       "Var Name": "PSL",       "Known Fix": "air_pressure_at_sea_level"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "net longwave flux at surface",                    "Var Name": "FLNS",      "Known Fix": "surface_net_downward_longwave_flux"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "net longwave flux at top of model",               "Var Name": "FLNT",      "Known Fix": "toa_net_downward_longwave_flux"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "net solar flux at surface",                       "Var Name": "FSNS",      "Known Fix": "surface_net_downward_shortwave_flux"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "net solar flux at top of model",                  "Var Name": "FSNT",      "Known Fix": "toa_net_downward_shortwave_flux"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "total runoff (qover + qdrai + qrgwl)",            "Var Name": "TOTRUNOFF", "Known Fix": "total_runoff"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "zonal surface stress",                            "Var Name": "STX",       "Known Fix": "surface_zonal_stress_positive_to_the_west"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "meridional surface stress",                       "Var Name": "STY",       "Known Fix": "surface_meridional_stress_positive_to_the_north"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "salinity",                                        "Var Name": "SO",        "Known Fix": "sea_water_salinity"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "temperature",                                     "Var Name": "TO",        "Known Fix": "sea_water_temperature"})
+	StandardNameFixes.insert({"Incorrect Standard Name": "surface_meridional_stress_positive_to_the_south", "Var Name": "sty",       "Known Fix": "surface_meridional_stress_positive_to_the_north"})
 	#-----------------------------------------------------------------------------------------------------------
 
 
@@ -131,6 +134,7 @@ def run():
 	VarNameFixes.insert({"Incorrect Var Name": "zos",    "CF Standard Name": "sea_surface_height_above_geoid",                  "Known Fix": "zoh"})
 	VarNameFixes.insert({"Incorrect Var Name": "lev",    "CF Standard Name": "air_pressure",                                    "Known Fix": "plev"})
 	VarNameFixes.insert({"Incorrect Var Name": "SO",     "CF Standard Name": "sea_water_salinity",                              "Known Fix": "so"})
+	VarNameFixes.insert({"Incorrect Var Name": "TO",     "CF Standard Name": "sea_water_temperature",                           "Known Fix": "to"})
 	#-----------------------------------------------------------------------------------------------------------
 
 

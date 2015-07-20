@@ -46,7 +46,7 @@ class Logger:
 		logging.basicConfig(level=logging.DEBUG, format='%(levelname)-8s %(message)s', filename=self.logFile, filemode='w')
 		if logType == 'File Started':
 			logging.info("-" * 100)
-			logging.debug("Starting in file: [%s]", fileName)
+			logging.info("Starting in file: [%s]", fileName)
 
 		elif logType == 'File Confirmed':
 			logging.info("Confirmed file: [%s]", fileName)
@@ -165,7 +165,7 @@ class MetadataController:
 
 	# Rename the variable from oldName to newName in file==inputFile
 	def ncrename(self, oldName, newName, inputFile, histFlag, outputFile=""):
-		call = self.get_file_name_location("ncrename.sh") + "%s %s %s %s %s" % (oldName, newName, ("" if histFlag else "-h"), inputFile, outputFile)
+		call = self.get_file_name_location("ncrename.sh") + "%s %s %s %s %s" % (oldName, newName, inputFile, outputFile, ("" if histFlag else "-h"))
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
 		if err: print err
@@ -374,7 +374,7 @@ class FileNameValidator:
 		# For each desired value of metadata ==> Check against path information and update accordingly
 		for meta in ["frequency", "realization", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "endyear", "endmonth", "experiment_id", "project_id"]:
 			metadata = self.metadataController.get_metadata(pathDict["fullPath"], None ,meta)
-			if metadata != pathDict[meta]:
+			if meta in pathDict and metadata != pathDict[meta]:
 				if self.fixFlag:
 					# Update the metadata to path information
 					self.metadataController.ncatted(meta, "global", "o", "c", pathDict[meta], pathDict["fullPath"], ("-h" if self.histFlag else ""))
@@ -672,7 +672,7 @@ class StandardNameValidator:
 
 def main():
 	parser = argparse.ArgumentParser(description='File Name Correction Algorithm')
-	parser.add_argument("-o", "--op", "--operation", dest="operation",      help = "Operation to run (initDB, resetDB, snf=standard names fix, fnf=file names fix)", default="fixFiles")
+	parser.add_argument("-o", "--op", "--operation", dest="operation",      help = "Operation to run (initDB, resetDB, snf=standard names fix, fnf=file names fix)", default="both")
 	parser.add_argument("-s", "--src", "--srcDir",   dest="srcDir",         help = "Source Directory")
 	parser.add_argument("--file", "--fileName",      dest="fileName",       help = "File Name for single file fix")
 	parser.add_argument("-d", "--dstDir",            dest="dstDir",         help = "Folder to copy fixed files to")
@@ -694,9 +694,9 @@ def main():
 		elif args.operation == "snf":
 			l = Logger(args.logFile)
 			l.set_logfile(args.srcDir)
-			v = StandardNameValidator(args.srcDir, None, args.dstDir, args.metadataFolder, l, args.fixFlag, args.histFlag)
+			v = StandardNameValidator(args.srcDir, args.fileName, args.dstDir, args.metadataFolder, l, args.fixFlag, args.histFlag)
 			v.validate()
-		elif args.operation == "fnf":			
+		elif args.operation == "fnf":
 			l = Logger(args.logFile)
 			l.set_logfile(args.srcDir or args.fileName)
 			v = FileNameValidator(args.srcDir, args.fileName, args.metadataFolder, l, args.fixFlag, args.histFlag)
