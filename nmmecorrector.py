@@ -12,6 +12,7 @@ import re
 from progressbar import *
 import dropDB
 import mongoinit
+import pprint
 
 
 connection        = pymongo.MongoClient()
@@ -28,7 +29,8 @@ class Logger:
 		self.logFile = logFile
 
 	# Return formated date/time for logfile
-	def get_datetime(self): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
+	@staticmethod
+	def get_datetime(): return str(datetime.datetime.now()).split(".")[0].replace(" ", "T")
 
 	# Set logfile based on srcDir or fileName if logFile not provided
 	def set_logfile(self, src):
@@ -70,6 +72,9 @@ class Logger:
 
 		elif logType == 'Changed Units':
 			logging.debug("Changed [%s] units from [%s] to [%s]", text[0], text[1], text[2])
+
+		elif logType == 'Confirmed Units':
+			logging.info("Units [%s:%s] confirmed", text[0], text[1])
 
 
 		# File Name Logs
@@ -135,9 +140,8 @@ class MetadataController:
 		out, err = p2.communicate()
 		p2.stdout.close()
 		# Format metadata by removing tabs, newlines, and semicolons and grabbing the value
-		# lstrip("0") for realization numbers of the form r01i1p1
 		if out:
-			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"').lstrip("0")
+			metadata = out.replace("\t", "").replace("\n", "").replace(" ;", "").split(" = ")[1].strip('"')
 			return metadata
 		else:
 			return "No Metadata"
@@ -154,14 +158,14 @@ class MetadataController:
 	# Edit the attribute in the metadata of file==inputFile
 	# histFlag==True means do not update history
 	def ncatted(self, att_nm, var_nm, mode, att_type, att_val, inputFile, histFlag, outputFile=""):
-		call = self.get_file_name_location("ncatted.sh") + "%s %s %s %s %s %s %s %s" % (att_nm, var_nm, mode, att_type, att_val, inputFile, outputFile, ("-h" if histFlag else ""))
+		call = self.get_file_name_location("ncatted.sh") + "%s %s %s %s %s %s %s %s" % (att_nm, var_nm, mode, att_type, att_val, inputFile, outputFile, ("" if histFlag else "-h"))
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
 		if err: print(err)
 
 	# Rename the variable from oldName to newName in file==inputFile
 	def ncrename(self, oldName, newName, inputFile, histFlag, outputFile=""):
-		call = self.get_file_name_location("ncrename.sh") + "%s %s %s %s %s" % (oldName, newName, ("-h" if histFlag else ""), inputFile, outputFile)
+		call = self.get_file_name_location("ncrename.sh") + "%s %s %s %s %s" % (oldName, newName, ("" if histFlag else "-h"), inputFile, outputFile)
 		p = subprocess.Popen(shlex.split(call))
 		out, err = p.communicate()
 		if err: print err
@@ -174,7 +178,7 @@ class MetadataController:
 		if not os.path.exists(dstDir):
 			os.makedirs(dstDir)
 
-		fileName = self.metadataFolder+pathDict["fullPath"].replace(".nc", "").rstrip("4")+".txt"
+		fileName = dstDir+pathDict["fileName"].replace(pathDict["extension"], ".txt")
 		with open(fileName, "w") as text_file:
 			text_file.write(out)
 
@@ -254,7 +258,7 @@ class FileNameValidator:
 			dictionary["model_id"]          = splitFileName[institute_id_index+1]
 			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
 			dictionary["frequency"]         = splitFileName[institute_id_index+3]
-			dictionary["modeling_realm"]    = splitFileName[institute_id_index+5]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+4]
 			dictionary["variable"]          = splitFileName[institute_id_index+6]
 		elif 'CCCMA' in fullPath:
 			institute_id_index              = splitFileName.index('CCCMA')
@@ -294,7 +298,7 @@ class FileNameValidator:
 
 		dictionary["rootFileName"]          = ".".join(fullPath.split(".")[:-1])
 		if not re.match(realizationRegex, dictionary["rootFileName"].split("_")[-1]):
-			dictionary["endDate"]           = dictionary["rootFileName"][-8:]
+			dictionary["endDate"]           = dictionary["rootFileName"].split("-")[-1]
 			dictionary["endyear"]           = dictionary["endDate"][:4]
 			dictionary["endmonth"]          = dictionary["endDate"][4:6]
 			dictionary["startEnd"]          = "_"+dictionary["experiment_id"] + "-" + dictionary["endDate"]
@@ -369,7 +373,7 @@ class FileNameValidator:
 		flag = True
 		# For each desired value of metadata ==> Check against path information and update accordingly
 		for meta in ["frequency", "realization", "model_id", "modeling_realm", "institute_id", "startyear", "startmonth", "endyear", "endmonth", "experiment_id", "project_id"]:
-			metadata = self.metadataController.get_metadata(pathDict["fullPath"], meta)
+			metadata = self.metadataController.get_metadata(pathDict["fullPath"], None ,meta)
 			if metadata != pathDict[meta]:
 				if self.fixFlag:
 					# Update the metadata to path information
@@ -444,6 +448,65 @@ class StandardNameValidator:
 		self.histFlag            = histFlag
 		self.pathDicts           = {}
 
+	# Save all path info to pathDicts[fullPath] entry
+	def get_path_info(self, fullPath):
+		dictionary = {}
+		splitFileName = fullPath.split("/")
+		if 'NOAA-GFDL' in fullPath:
+			institute_id_index              = splitFileName.index('NOAA-GFDL')
+			dictionary["institute_id"]      = splitFileName[institute_id_index]
+			dictionary["model_id"]          = splitFileName[institute_id_index+1]
+			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
+			dictionary["frequency"]         = splitFileName[institute_id_index+3]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+5]
+			dictionary["variable"]          = splitFileName[institute_id_index+6]
+		elif 'CCCMA' in fullPath:
+			institute_id_index              = splitFileName.index('CCCMA')
+			dictionary["institute_id"]      = splitFileName[institute_id_index]
+			dictionary["model_id"]          = splitFileName[institute_id_index+1]
+			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
+			dictionary["frequency"]         = splitFileName[institute_id_index+3]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+4]
+			dictionary["variable"]          = splitFileName[institute_id_index+6]
+		elif 'UM-RSMAS' in fullPath:
+			institute_id_index              = splitFileName.index('UM-RSMAS')
+			dictionary["institute_id"]      = splitFileName[institute_id_index]
+			dictionary["model_id"]          = splitFileName[institute_id_index+1]
+			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
+			dictionary["frequency"]         = splitFileName[institute_id_index+3]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+4]
+			dictionary["variable"]          = splitFileName[institute_id_index+5]
+		elif 'NASA-GMAO' in fullPath:
+			institute_id_index              = splitFileName.index('NASA-GMAO')
+			dictionary["institute_id"]      = splitFileName[institute_id_index]
+			dictionary["model_id"]          = splitFileName[institute_id_index+1]
+			dictionary["experiment_id"]     = splitFileName[institute_id_index+2]
+			dictionary["frequency"]         = splitFileName[institute_id_index+3]
+			dictionary["modeling_realm"]    = splitFileName[institute_id_index+4]
+			dictionary["variable"]          = splitFileName[institute_id_index+5]
+		
+		dictionary["project_id"]            = "NMME"
+		dictionary["startyear"]             = dictionary["experiment_id"][:4]
+		dictionary["startmonth"]            = dictionary["experiment_id"][4:6]
+
+		dictionary["fileName"]              = os.path.basename(fullPath)
+		dictionary["dirName"]               = os.path.dirname(fullPath)
+		dictionary["fullPath"]              = fullPath
+		dictionary["extension"]             = "."+fullPath.split(".")[-1]
+		dictionary["ensemble"]              = [match for match in fullPath.split("_") if re.match(realizationRegex, match)][0].replace(dictionary["extension"], "")
+		dictionary["realization"]           = dictionary["ensemble"].replace("r", "").split("i")[0]
+
+		dictionary["rootFileName"]          = ".".join(fullPath.split(".")[:-1])
+		if not re.match(realizationRegex, dictionary["rootFileName"].split("_")[-1]):
+			dictionary["endDate"]           = dictionary["rootFileName"][-8:]
+			dictionary["endyear"]           = dictionary["endDate"][:4]
+			dictionary["endmonth"]          = dictionary["endDate"][4:6]
+			dictionary["startEnd"]          = "_"+dictionary["experiment_id"] + "-" + dictionary["endDate"]
+		else:
+			dictionary["startEnd"]          = ""
+
+		self.pathDicts[fullPath] = dictionary
+
 	# Return list of CF Standard Names from CFVars Collection
 	def get_CF_Standard_Names(self):
 		# Query CFVars for all Variables
@@ -500,6 +563,8 @@ class StandardNameValidator:
 				if self.fixFlag:
 					self.metadataController.ncatted("units", var, "o", "c", cursor["Units"], fileName, self.histFlag)
 				self.logger.log(fileName, [var, metadataUnits, cursor["Units"]], 'Changed Units')
+			else:
+				self.logger.log(fileName, [var, metadataUnits], 'Confirmed Units')
 
 			text = var + ":" + standardName
 			self.logger.log(fileName, text, "Standard Name Confirmed")
@@ -581,10 +646,8 @@ class StandardNameValidator:
 			for f in standardNamesUnits:
 				fileName   = f[0]
 				standNames = f[1]
-				pathDict   = {}
-				pathDict["fullPath"] = fileName
-				pathDict["dirName"]  = os.path.dirname(fileName) 
-				self.metadataController.dump_metadata(pathDict)
+				self.get_path_info(fileName)
+				self.metadataController.dump_metadata(self.pathDicts[fileName])
 				self.logger.log(fileName, "", 'File Started')
 				# If the file has no standard names, log the issue
 				if not standNames:
@@ -616,7 +679,7 @@ def main():
 	parser.add_argument("-m", "--metadata",          dest="metadataFolder", help = "Folder to dump original metadata to")
 	parser.add_argument("-l", "--logFile",           dest="logFile",        help = "File to log metadata changes to")
 	parser.add_argument("--fix", "--fixFlag",        dest="fixFlag",        help = "Flag to fix file names or only report possible changes (-f = Fix File Names)",  action='store_true',  default=False)
-	parser.add_argument("--hist", "--histFlag",      dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)",    action='store_false', default=True)
+	parser.add_argument("--hist", "--histFlag",      dest="histFlag",       help = "Flag to append changes to history metadata (-h = do not append to history)",    action='store_true',  default=False)
 
 	args = parser.parse_args()
 	if(len(sys.argv) == 1):
